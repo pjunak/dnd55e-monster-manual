@@ -15,8 +15,15 @@
 //  register() must stay side-effect-free), caches it, then host.ui.rerender()s
 //  so anything drawn before the data landed refreshes.
 //
-//  Style/safety contract: HTML only via host.h (esc/breadcrumb); colours/
-//  spacing only via design tokens var(--…); chrome strings through i18n t().
+//  BROWSE UI. /bestiary is the filterable creature list (search + CR + type,
+//  CR-sorted); the detail page renders the stat block with the host's shared
+//  .codex-tile components (AC / HP / CR + the six ability tiles), traits, and
+//  the prose body. Records may carry an optional `image` (a bundled file,
+//  resolved via host.asset) — the picture seam for future artwork.
+//
+//  Style/safety contract: HTML only via host.h (esc/breadcrumb/dataOn);
+//  colours/spacing only via design tokens var(--…) + host component classes;
+//  chrome strings through i18n t().
 // ═══════════════════════════════════════════════════════════════
 
 import { t } from './i18n.js';
@@ -87,36 +94,92 @@ export default function register(host) {
     return r ? { kind: 'bestiary', id: 'monster:' + r.id } : null;
   });
 
+  // ── List state: search + CR + creature-type filters (session-lived) ──
+  const _q = { search: '', cr: '', type: '' };
+  let _qTimer = null;
+  host.registerAction('q', (field, value) => {
+    _q[field] = String(value == null ? '' : value);
+    if (_qTimer) { clearTimeout(_qTimer); _qTimer = null; }
+    const go = () => {
+      host.ui.rerender();
+      if (field === 'search' && typeof document !== 'undefined') setTimeout(() => {
+        const el = document.getElementById('mm-search');
+        if (el) { el.focus(); const n = el.value.length; try { el.setSelectionRange(n, n); } catch (_) {} }
+      }, 0);
+    };
+    if (field === 'search') _qTimer = setTimeout(go, 180); else go();
+  });
+  host.registerAction('qClear', () => { _q.search = ''; _q.cr = ''; _q.type = ''; host.ui.rerender(); });
+
+  // Diacritics-insensitive multi-word contains (mirrors the host's `norm`).
+  const norm = (s) => String(s == null ? '' : s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const hit = (m, q) => {
+    if (!q) return true;
+    const blob = norm([m.name, m.creatureType, m.type, m.alignment, m.size, m.cr].join(' '));
+    return norm(q).split(/\s+/).every((w) => !w || blob.includes(w));
+  };
+  const crToken = (cr) => String(cr || '').split(' ')[0];
+
   function renderIndex() {
     _ensureLoaded();
-    const items = monsters();
-    // Sort by CR then name — the natural bestiary reading order.
+    const all = monsters();
+    // Filter options derive from the live data.
+    const crOpts = [...new Set(all.map((m) => m.crValue).filter((v) => v != null))]
+      .sort((a, b) => a - b)
+      .map((v) => {
+        const sample = all.find((m) => m.crValue === v);
+        return { value: String(v), label: t('monster.cr', { cr: crToken(sample && sample.cr) || String(v) }) };
+      });
+    const typeOpts = [...new Set(all.map((m) => m.creatureType).filter(Boolean))].sort()
+      .map((x) => ({ value: x, label: x }));
+
+    const items = all.filter((m) => hit(m, _q.search)
+      && (!_q.cr || String(m.crValue) === _q.cr)
+      && (!_q.type || m.creatureType === _q.type));
     const sorted = [...items].sort((a, b) =>
       (Number(a.crValue) || 0) - (Number(b.crValue) || 0) || String(a.name).localeCompare(String(b.name)));
-    const count = items.length
-      ? `<span style="color:var(--text-muted);font-size:var(--text-xs);background:var(--bg-raised);border-radius:var(--radius-pill);padding:0 var(--space-2)">${esc(String(items.length))}</span>`
+
+    const select = (field, labelTxt, opts) => `
+      <label style="display:inline-flex;align-items:center;gap:var(--space-1);font-size:var(--text-xs);color:var(--text-muted)">${esc(labelTxt)}
+        <select class="edit-input" style="width:auto" ${host.h.dataOn('change', host.action('q'), field, '$value')}>
+          <option value="">${esc(t('filter.all'))}</option>
+          ${opts.map((o) => `<option value="${esc(o.value)}"${String(_q[field]) === String(o.value) ? ' selected' : ''}>${esc(o.label)}</option>`).join('')}
+        </select></label>`;
+    const clear = (_q.search || _q.cr || _q.type)
+      ? `<button type="button" class="inline-create-btn" ${host.h.dataAction(host.action('qClear'))}>✕ ${esc(t('filter.clear'))}</button>`
       : '';
-    const body = items.length
-      ? `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));gap:var(--space-1)">${sorted.map(itemLink).join('')}</div>`
-      : `<div style="color:var(--text-muted);font-size:var(--text-sm)">${esc(_loaded ? t('misc.empty') : t('misc.loading'))}</div>`;
+    const countLabel = sorted.length !== all.length ? `${sorted.length} / ${all.length}` : String(all.length);
+
     return `
-      <div class="page-header"><h1>🐉 ${esc(t('page.title'))}</h1></div>
+      <div class="page-header"><h1>🐉 ${esc(t('page.title'))}
+        <span style="color:var(--text-muted);font-size:var(--text-lg);font-weight:400">${esc(countLabel)}</span></h1></div>
       <p style="color:var(--text-muted);max-width:42rem">${esc(t('page.intro'))}</p>
       ${!_loaded ? `<p style="color:var(--text-muted)">${esc(t('misc.loading'))}</p>` : ''}
-      <section style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-3) var(--space-4);margin-top:var(--space-4)">
-        <div style="display:flex;align-items:center;gap:var(--space-2);margin-bottom:var(--space-3);padding-bottom:var(--space-1);border-bottom:1px solid var(--border-subtle)">
-          <span style="width:3px;height:.9rem;border-radius:var(--radius-pill);background:var(--accent-gold);flex:none"></span>
-          <span style="font-size:var(--text-sm);font-weight:600;color:var(--text-light);letter-spacing:.04em;text-transform:uppercase">${esc(t('kind.monsters'))}</span>
-          ${count ? `<span style="margin-left:auto">${count}</span>` : ''}
-        </div>${body}</section>`;
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);align-items:center;margin:var(--space-3) 0">
+        <input id="mm-search" class="edit-input" type="search" value="${esc(_q.search)}"
+          placeholder="${esc(t('filter.searchPlaceholder'))}" style="flex:1 1 14rem;max-width:22rem"
+          aria-label="${esc(t('filter.searchPlaceholder'))}"
+          ${host.h.dataOn('input', host.action('q'), 'search', '$value')}>
+        ${select('cr', t('filter.cr'), crOpts)}
+        ${select('type', t('label.creatureType'), typeOpts)}
+        ${clear}
+      </div>
+      ${sorted.length
+        ? `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:var(--space-1)">${sorted.map(itemLink).join('')}</div>`
+        : `<div style="color:var(--text-muted);font-size:var(--text-sm);padding:var(--space-3) 0">${esc(_loaded ? t('filter.noMatch') : t('misc.loading'))}</div>`}`;
   }
 
   function itemLink(m) {
+    const thumb = m.image
+      ? `<img src="${esc(host.asset(String(m.image)))}" alt="" loading="lazy"
+           style="width:2rem;height:2rem;object-fit:cover;border-radius:var(--radius-sm);flex:none"
+           ${host.h.dataOn('error', 'hide', '$el')}>`
+      : '';
     const sub = m.cr
-      ? ` <span style="color:var(--text-muted);font-size:var(--text-xs)">· ${esc(t('monster.cr', { cr: String(m.cr).split(' ')[0] }))}</span>`
+      ? ` <span style="color:var(--text-muted);font-size:var(--text-xs)">· ${esc(t('monster.cr', { cr: crToken(m.cr) }))}${m.creatureType ? ' · ' + esc(m.creatureType) : ''}</span>`
       : (m.creatureType ? ` <span style="color:var(--text-muted);font-size:var(--text-xs)">· ${esc(m.creatureType)}</span>` : '');
-    return `<a href="#/bestiary/monster:${esc(m.id)}" style="display:flex;align-items:baseline;gap:var(--space-1);padding:var(--space-1) var(--space-2);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);color:var(--text-light);text-decoration:none">
-      <span style="color:var(--text-parchment)">${esc(m.name || t('misc.unnamed'))}</span>${sub}</a>`;
+    return `<a href="#/bestiary/monster:${esc(m.id)}" style="display:flex;align-items:center;gap:var(--space-2);padding:var(--space-1) var(--space-2);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);color:var(--text-light);text-decoration:none;background:var(--bg-surface)">
+      ${thumb}<span style="min-width:0"><span style="color:var(--text-parchment)">${esc(m.name || t('misc.unnamed'))}</span>${sub}</span></a>`;
   }
 
   function renderItem(param) {
@@ -136,31 +199,72 @@ export default function register(host) {
       return `${crumbBar(t('misc.notFound'))}
         <div class="page-header"><h1>${esc(t('misc.notFound'))}</h1></div>`;
     }
-    // The stat-block meta card (plain text — esc()ed here; traits from
-    // frontmatter often are NOT in the prose body).
-    const meta = [];
-    const txt = (label, value) => { if (value != null && value !== '') meta.push({ label, value: String(value) }); };
-    txt(t('label.creatureType'), [rec.type, rec.alignment].filter(Boolean).join(', '));
-    txt(t('label.ac'), rec.ac);
-    txt(t('label.hp'), rec.hp);
-    txt(t('label.speed'), rec.speed);
-    txt(t('label.cr'), rec.cr);
-    const mod = (s) => { const m = Math.floor((Number(s) - 10) / 2); return (m >= 0 ? '+' : '') + m; };
+
+    // Badge chips: size/type + alignment + speed.
+    const chips = [];
+    const chip = (txt, accent) => chips.push(`<span style="display:inline-flex;align-items:center;border:1px solid ${accent ? 'rgba(var(--accent-gold-rgb),.45)' : 'var(--border-subtle)'};color:${accent ? 'var(--accent-gold)' : 'var(--text-light)'};background:var(--bg-raised);border-radius:var(--radius-pill);padding:0.1rem var(--space-2);font-size:var(--text-xs)">${esc(txt)}</span>`);
+    if (rec.type) chip(rec.type, true);
+    if (rec.alignment) chip(rec.alignment);
+    if (rec.speed) chip(`${t('label.speed')}: ${rec.speed}`);
+
+    // Headline stat tiles — the host's shared .codex-tile component. HP/CR
+    // values split their leading token big, the parenthetical small beneath.
+    const split = (s) => { const str = String(s || ''); const i = str.indexOf(' '); return i > 0 ? [str.slice(0, i), str.slice(i + 1)] : [str, '']; };
+    const tile = (label, value, sub, accent) => `
+      <div class="codex-tile${accent ? ' codex-tile-accent' : ''}" style="max-width:11rem">
+        <div class="codex-tile-label">${esc(label)}</div>
+        <div class="codex-tile-value">${esc(value)}</div>
+        ${sub ? `<div style="font-size:var(--text-xs);color:var(--text-muted);margin-top:1px">${esc(sub)}</div>` : ''}
+      </div>`;
+    const [hpMain, hpSub] = split(rec.hp);
+    const [crMain, crSub] = split(rec.cr);
+    const tiles = `
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-3) 0">
+        ${rec.ac != null ? tile(t('label.ac'), String(rec.ac), '', true) : ''}
+        ${rec.hp ? tile(t('label.hp'), hpMain, hpSub, true) : ''}
+        ${rec.cr ? tile(t('label.cr'), crMain, crSub) : ''}
+      </div>`;
+
+    // The six ability tiles (score + modifier).
     const ab = rec.stats || {};
-    txt(t('label.abilities'), ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA']
-      .map((a) => `${a} ${ab[a] != null ? ab[a] : 10} (${mod(ab[a])})`).join('   '));
-    for (const tr of rec.traits || []) if (tr.name) txt(tr.name, tr.text);
-    const metaHtml = meta.length
-      ? `<div style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-3) var(--space-4);margin:var(--space-3) 0;display:flex;flex-wrap:wrap;gap:var(--space-3) var(--space-5)">${meta.map((m) => `
-          <div style="min-width:8rem"><div style="color:var(--text-muted);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px">${esc(m.label)}</div>
-          <div style="color:var(--text-parchment)">${esc(m.value)}</div></div>`).join('')}</div>`
+    const mod = (s) => { const m = Math.floor((Number(s) - 10) / 2); return (m >= 0 ? '+' : '') + m; };
+    const abilities = `
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-1);margin:0 0 var(--space-3)">
+        ${['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'].map((a) => `
+          <div class="codex-tile" style="flex:0 1 5.5rem;min-width:4.5rem;padding:var(--space-1) var(--space-2)">
+            <div class="codex-tile-label">${esc(a)}</div>
+            <div class="codex-tile-value" style="font-size:var(--text-lg)">${esc(mod(ab[a]))}</div>
+            <div style="font-size:var(--text-xs);color:var(--text-muted)">${esc(String(ab[a] != null ? ab[a] : 10))}</div>
+          </div>`).join('')}
+      </div>`;
+
+    // Traits (frontmatter — often NOT in the prose body).
+    const traits = (rec.traits || []).filter((tr) => tr && tr.name);
+    const traitsHtml = traits.length
+      ? `<div style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-3) var(--space-4);margin:0 0 var(--space-3);display:flex;flex-wrap:wrap;gap:var(--space-3) var(--space-5)">${traits.map((tr) => `
+          <div style="min-width:8rem"><div style="color:var(--text-muted);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px">${esc(tr.name)}</div>
+          <div style="color:var(--text-parchment)">${esc(tr.text || '')}</div></div>`).join('')}</div>`
       : '';
+
+    // Optional bundled picture (record `image` via host.asset — the artwork seam).
+    const img = rec.image
+      ? `<img src="${esc(host.asset(String(rec.image)))}" alt="${esc(rec.name || '')}" loading="lazy"
+           style="float:right;max-width:min(280px,42%);border-radius:var(--radius-lg);margin:0 0 var(--space-3) var(--space-4);box-shadow:var(--shadow-md)"
+           ${host.h.dataOn('error', 'hide', '$el')}>`
+      : '';
+
     return `
       ${crumbBar(rec.name || t('misc.unnamed'))}
-      <div class="page-header">
-        <h1>${esc(rec.name || t('misc.unnamed'))} <span style="color:var(--text-muted);font-size:var(--text-lg);font-weight:400">${esc(t('kindName.monster'))}</span></h1>
-      </div>
-      ${metaHtml}
-      ${rec.text ? `<div class="md-view">${renderMarkdown(rec.text)}</div>` : ''}`;
+      <div style="display:flow-root">
+        ${img}
+        <div class="page-header">
+          <h1>${esc(rec.name || t('misc.unnamed'))} <span style="color:var(--text-muted);font-size:var(--text-lg);font-weight:400">${esc(t('kindName.monster'))}</span></h1>
+        </div>
+        ${chips.length ? `<div style="display:flex;flex-wrap:wrap;gap:var(--space-1);margin:0 0 var(--space-2)">${chips.join('')}</div>` : ''}
+        ${tiles}
+        ${abilities}
+        ${traitsHtml}
+        ${rec.text ? `<div class="md-view">${renderMarkdown(rec.text)}</div>` : ''}
+      </div>`;
   }
 }

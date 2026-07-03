@@ -78,13 +78,36 @@ test('bestiary: index sorts by CR and the detail renders the stat block', async 
   const idx = route.render('');
   assert.ok(idx.indexOf('Bandit') < idx.indexOf('Aboleth'), 'CR 1/8 lists before CR 5');
   assert.match(idx, /CR 5/, 'CR sublabel');
+  assert.match(idx, /mm-search/, 'search input on the list');
+  assert.match(idx, /<select/, 'CR + type filter selects');
   const mon = route.render('monster:aboleth');
   assert.match(mon, /Aboleth/);
+  assert.match(mon, /codex-tile/, 'headline stats as host stat tiles');
   assert.match(mon, /Armor Class|Hit Points|Challenge Rating/, 'stat-block labels');
-  assert.match(mon, /STR 14/, 'ability scores with values');
+  assert.match(mon, /STR/, 'ability tiles');
+  assert.match(mon, /\+2/, 'STR 14 → +2 modifier');
   assert.match(mon, /Resistances/, 'frontmatter traits rendered');
   const miss = route.render('monster:nope');
   assert.match(miss, /Not found/);
+});
+
+test('bestiary: search + CR/type filters narrow the list; clear resets', async () => {
+  const { rec } = await loaded();
+  const route = rec.routes.find(r => r.segment === 'bestiary');
+  const act = (name, ...args) => rec.actions.find(a => a.name === name).fn(...args);
+  // Type select applies immediately.
+  act('q', 'type', 'Humanoid');
+  let idx = route.render('');
+  assert.match(idx, /Bandit/);
+  assert.doesNotMatch(idx, /bestiary\/monster:aboleth/, 'Elemental filtered out');
+  act('qClear');
+  // Debounced text search, diacritics-insensitive.
+  act('q', 'search', 'ábol');
+  await new Promise((r) => setTimeout(r, 250));
+  idx = route.render('');
+  assert.match(idx, /Aboleth/);
+  assert.doesNotMatch(idx, /Bandit/, 'search narrows');
+  act('qClear');
 });
 
 test('bestiary: degrades gracefully BEFORE the content fetch resolves', () => {

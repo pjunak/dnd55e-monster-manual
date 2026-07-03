@@ -21,6 +21,13 @@ export default {
   'label.cr':           'Challenge Rating',
   'label.abilities':    'Abilities',
 
+  // ── List filters ─────────────────────────────────────────────────
+  'filter.all':               'All',
+  'filter.clear':             'Clear',
+  'filter.searchPlaceholder': 'Search…',
+  'filter.noMatch':           'Nothing matches the filters.',
+  'filter.cr':                'CR',
+
   // ── Misc ─────────────────────────────────────────────────────────
   'misc.empty':    'No content yet.',
   'misc.unnamed':  '(unnamed)',
