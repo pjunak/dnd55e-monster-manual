@@ -9,6 +9,7 @@
   "permissions": [
     "ui:route",
     "ui:sidebar",
+    "ui:action",
     "wiki:kind"
   ],
   "tests": { "client": "tests/smoke.mjs" },

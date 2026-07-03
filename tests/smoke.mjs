@@ -8,7 +8,7 @@ import assert from 'node:assert/strict';
 import { dryRunRegister, smokeRegistrations } from '../../ttrpg-codex/web/js/addon-test-harness.mjs';
 import register from '../entry.js';
 
-const META = { id: 'dnd55e-monster-manual', permissions: ['ui:route', 'ui:sidebar', 'wiki:kind'] };
+const META = { id: 'dnd55e-monster-manual', permissions: ['ui:route', 'ui:sidebar', 'ui:action', 'wiki:kind'] };
 const CONTENT_URL = '/api/addon/dnd55e-monster-manual/content';
 
 const SAMPLE = {
