@@ -15,9 +15,16 @@ today; combat automation would be a separate future addon.
 - **`/bestiary` pages** — an index sorted by Challenge Rating + a stat-block
   detail page per creature (type, AC, HP, speed, CR, abilities, traits, prose).
 - **`[[Name|monster]]` wiki-links** resolve into the detail pages.
-- **Data api** — `provide()`s `listMonsters(q?) / getItem / getItemByName /
-  getRecords / kinds` for future consumers (a combat or NPC addon would
-  `use('dnd55e-monster-manual')`).
+- **Data api** — `provide()`s `{ apiVersion: 1, listMonsters(q?), getItem,
+  getItemByName, getRecords, kinds, loadDetail }` for future consumers (a
+  combat or NPC addon would `use('dnd55e-monster-manual')`; `loadDetail()`
+  forces the lazy content fetch).
+
+> ⚠ **Data quality:** the records were bulk-scraped and a subset carries the
+> WRONG monster's stat block under its name (plus a few missing staples like
+> `werewolf`, `wolf`, `commoner`). See
+> [`data/KNOWN_ISSUES.md`](data/KNOWN_ISSUES.md) for the confirmed list and
+> the repair strategy before trusting or extending the data.
 
 ## How content is stored & served
 
@@ -32,11 +39,25 @@ aggregate once, lazily, and re-renders when it lands.
 ## Develop
 
 ```sh
-# from the ttrpg-codex repo — installs this addon locally (bypasses GitHub):
+# from the ttrpg-codex repo — installs this addon locally (bypasses GitHub);
+# takes effect on the next app launch, and repo edits are INVISIBLE until
+# you re-run it:
 node scripts/dev-install-addon.cjs ../dnd55e-monster-manual
 
-# tests (assume ttrpg-codex is a sibling checkout):
+# tests (assume ttrpg-codex is a sibling checkout). ⚠ Windows: use exactly
+# this RELATIVE form — `node --test tests/` (directory) and absolute paths
+# false-fail:
 node --test tests/smoke.mjs
 ```
 
-See [`AGENTS.md`](AGENTS.md) for the addon authoring contract.
+## Release
+
+Bump `version` in `addon.json` → commit → push. The DM installs/updates from
+the GitHub URL via the host's addon wizard (Settings → Doplňky). Because the
+manifest declares `contentDir`, content updates are **hot** — no server
+restart. One rule: "⬆ Aktualizovat vše" (update-all) keeps the existing
+permission grants, so a release that ADDS a `permissions[]` entry must be
+applied through the per-addon wizard (the DM re-reviews the grants).
+
+See [`AGENTS.md`](AGENTS.md) for the repo guide + the addon authoring
+contract, and [`data/SCHEMA.md`](data/SCHEMA.md) for the record shape.
