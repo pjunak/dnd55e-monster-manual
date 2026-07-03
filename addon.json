@@ -1,0 +1,16 @@
+{
+  "id": "dnd55e-monster-manual",
+  "name": "D&D 5.5e Monster Manual",
+  "version": "0.1.0",
+  "apiVersion": 1,
+  "hostVersion": ">=1.0.0",
+  "entry": "entry.js",
+  "contentDir": "data",
+  "permissions": [
+    "ui:route",
+    "ui:sidebar",
+    "wiki:kind"
+  ],
+  "tests": { "client": "tests/smoke.mjs" },
+  "summary": "The D&D 5.5e (2024) bestiary — 333 creature stat blocks with a browse UI ([[Name|monster]] wiki-links, /bestiary pages). The host serves its per-record JSON tree (no server code, no restart). One addon per book, toggled per campaign."
+}
