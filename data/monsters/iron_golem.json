@@ -3,28 +3,48 @@
   "kind": "monster",
   "name": "Iron Golem",
   "edition": "2024",
-  "cr": "3 (XP 700; PB +2)",
-  "crValue": 3,
-  "creatureType": "Humanoid",
-  "size": "Medium or Small",
-  "type": "Medium or Small Humanoid",
-  "alignment": "Neutral",
-  "ac": "18",
-  "hp": "52 (8d8 + 16)",
+  "cr": "16 (XP 15,000; PB +5)",
+  "crValue": 16,
+  "creatureType": "Construct",
+  "size": "Large",
+  "type": "Large Construct",
+  "alignment": "Unaligned",
+  "ac": "20",
+  "hp": "252 (24d10 + 120)",
   "speed": "30 ft.",
   "stats": {
-    "STR": 16,
-    "DEX": 11,
-    "CON": 14,
-    "INT": 11,
+    "STR": 24,
+    "DEX": 9,
+    "CON": 20,
+    "INT": 3,
     "WIS": 11,
-    "CHA": 15
+    "CHA": 1
   },
   "traits": [
     {
       "name": "Immunities",
-      "text": "Frightened"
+      "text": "Fire, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 120 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Understands Common plus two other languages but can't speak"
+    },
+    {
+      "name": "Fire Absorption",
+      "text": "Whenever the golem is subjected to Fire damage, it regains a number of Hit Points equal to the Fire damage dealt."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The golem can’t shape-shift."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The golem has Advantage on saving throws against spells and other magical effects."
     }
   ],
-  "text": "# Iron Golem\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Greatsword.** Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage plus 4 (1d8) Radiant damage.\n\n**Heavy Crossbow.** Ranged Attack Roll: +2, range 100/400 ft. Hit: 11 (2d10) Piercing damage plus 4 (1d8) Radiant damage."
+  "text": "# Iron Golem\n\n*Large Construct, Unaligned*\n\nA furnace-hearted colossus of iron, nearly indestructible and utterly obedient.\n\n### Actions\n\n**Bladed Arm.** Melee Attack Roll: +12, reach 10 ft. Hit: 20 (3d8 + 7) Slashing damage plus 10 (3d6) Fire damage.\n\n**Fiery Bolt.** Ranged Attack Roll: +10, range 120 ft. Hit: 36 (8d8) Fire damage.\n\n**Poison Breath (Recharge 6).** Constitution Saving Throw: DC 18, each creature in a 60-foot Cone. Failure: 55 (10d10) Poison damage. Success: Half damage."
 }

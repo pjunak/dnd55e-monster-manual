@@ -3,40 +3,36 @@
   "kind": "monster",
   "name": "Centaur Trooper",
   "edition": "2024",
-  "cr": "8 (XP 3,900; PB +3)",
-  "crValue": 8,
-  "creatureType": "Fiend (Devil)",
-  "size": "Medium",
-  "type": "Medium Fiend (Devil)",
-  "alignment": "Lawful Evil",
-  "ac": "15",
-  "hp": "85 (10d8 + 40)",
-  "speed": "30 ft.",
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
+  "creatureType": "Fey",
+  "size": "Large",
+  "type": "Large Fey",
+  "alignment": "Neutral Good",
+  "ac": "16",
+  "hp": "45 (6d10 + 12)",
+  "speed": "50 ft.",
   "stats": {
     "STR": 18,
-    "DEX": 15,
-    "CON": 18,
-    "INT": 11,
-    "WIS": 12,
-    "CHA": 14
+    "DEX": 14,
+    "CON": 14,
+    "INT": 9,
+    "WIS": 13,
+    "CHA": 11
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Bludgeoning, Cold, Piercing, Slashing"
+      "name": "Skills",
+      "text": "Athletics +6, Perception +3"
     },
     {
-      "name": "Immunities",
-      "text": "Fire, Poison; Poisoned"
+      "name": "Senses",
+      "text": "Passive Perception 13"
     },
     {
-      "name": "Diabolical Restoration",
-      "text": "If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
-    },
-    {
-      "name": "Magic Resistance",
-      "text": "The devil has Advantage on saving throws against spells and other magical effects."
+      "name": "Languages",
+      "text": "Elvish, Sylvan"
     }
   ],
-  "text": "# Centaur Trooper\n\n*Medium Fiend (Devil), Lawful Evil*\n\n### Actions\n\n**Chain.** Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Slashing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two chains, and it has the Restrained condition until the grapple ends.\n\n**Conjure Infernal Chain.** The devil conjures a fiery chain to bind a creature. Dexterity Saving Throw: DC 15, one creature the devil can see within 60 feet. Failure: 9 (2d4 + 4) Fire damage, and the target has the Restrained condition until the end of the devil’s next turn, at which point the chain disappears. If the target is Large or smaller, the devil moves the target up to 30 feet straight toward itself. Success: The chain disappears.\n\n**Unnerving Gaze.** Trigger: A creature the devil can see starts its turn within 30 feet of the devil and can see the devil. Response—Wisdom Saving Throw: DC 15, the triggering creature. Failure: The target has the Frightened condition until the end of its turn. Success: The target is immune to this devil’s Unnerving Gaze for 24 hours."
+  "text": "# Centaur Trooper\n\n*Large Fey, Neutral Good*\n\nA half-equine warrior charging with lance and hooves in defense of its herd.\n\n### Actions\n\n**Pike.** Melee Attack Roll: +6, reach 10 ft. Hit: 9 (1d10 + 4) Piercing damage.\n\n**Longbow.** Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage.\n\n**Trampling Charge (Recharge 5–6).** The centaur moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. Strength Saving Throw: DC 14. Failure: 7 (1d6 + 4) Bludgeoning damage, and the target has the Prone condition."
 }

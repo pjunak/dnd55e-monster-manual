@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +6, Wis +7"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +13, Stealth +6"
+    },
+    {
       "name": "Immunities",
       "text": "Fire"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Darkvision 120 ft.; Passive Perception 23"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
       "text": "If the dragon fails a saving throw, it can choose to succeed instead."
     }
   ],
-  "text": "# Adult Red Dragon\n\n*Huge Dragon (Chromatic), Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +14, reach 10 ft. Hit: 13 (1d10 + 8) Slashing damage plus 5 (2d4) Fire damage.\n\n**Fire Breath (Recharge 5–6).** Dexterity Saving Throw: DC 21, each creature in a 60-foot Cone. Failure: 59 (17d6) Fire damage. Success: Half damage."
+  "text": "# Adult Red Dragon\n\n*Huge Dragon (Chromatic), Chaotic Evil*\n\nAn adult red dragon in the full flush of its might: the most infamous of chromatic dragons — arrogant, avaricious, and wreathed in fire.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +14, reach 10 ft. Hit: 13 (1d10 + 8) Slashing damage plus 5 (2d4) Fire damage.\n\n**Fire Breath (Recharge 5–6).** Dexterity Saving Throw: DC 21, each creature in a 60-foot Cone. Failure: 59 (17d6) Fire damage. Success: Half damage."
 }

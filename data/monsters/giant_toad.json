@@ -3,23 +3,40 @@
   "kind": "monster",
   "name": "Giant Toad",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
+  "cr": "1 (XP 200; PB +2)",
+  "crValue": 1,
   "creatureType": "Beast",
-  "size": "Medium",
-  "type": "Medium Beast",
+  "size": "Large",
+  "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "14",
-  "hp": "11 (2d8 + 2)",
-  "speed": "40 ft., Swim 40 ft.",
+  "ac": "11",
+  "hp": "39 (6d10 + 6)",
+  "speed": "30 ft., Swim 30 ft.",
   "stats": {
-    "STR": 10,
-    "DEX": 18,
+    "STR": 15,
+    "DEX": 13,
     "CON": 13,
     "INT": 2,
     "WIS": 10,
     "CHA": 3
   },
-  "traits": [],
-  "text": "# Giant Toad\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 10 ft. Hit: 6 (1d4 + 4) Piercing damage plus 4 (1d8) Poison damage."
+  "traits": [
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Amphibious",
+      "text": "The toad can breathe air and water."
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The toad’s Long Jump is up to 20 feet and its High Jump is up to 10 feet with or without a running start."
+    }
+  ],
+  "text": "# Giant Toad\n\n*Large Beast, Unaligned*\n\nA boulder-sized amphibian that swallows victims alive.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 5 (2d4) Poison damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12).\n\n**Swallow.** The toad swallows a Medium or smaller target it is grappling. While swallowed, the target isn’t Grappled but has the Blinded and Restrained conditions, and it has Total Cover against attacks and other effects outside the toad. In addition, the target takes 10 (3d6) Acid damage at the end of each of the toad’s turns. The toad can have only one target swallowed at a time, and it can’t use Bite while it has a swallowed target. If the toad dies, a swallowed creature is no longer Restrained and can escape from the corpse using 5 feet of movement, exiting with the Prone condition."
 }

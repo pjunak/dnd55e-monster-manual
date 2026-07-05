@@ -20,6 +20,19 @@
     "WIS": 11,
     "CHA": 10
   },
-  "traits": [],
-  "text": "# Guard\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Spear.** Melee or Ranged Attack Roll: +3, reach 5 ft. or range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Common"
+    }
+  ],
+  "text": "# Guard\n\n*Medium or Small Humanoid, Neutral*\n\nA trained town watch soldier holding the line with spear and shield.\n\n### Actions\n\n**Spear.** Melee or Ranged Attack Roll: +3, reach 5 ft. or range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage."
 }

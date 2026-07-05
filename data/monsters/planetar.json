@@ -3,23 +3,60 @@
   "kind": "monster",
   "name": "Planetar",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
-  "creatureType": "Humanoid (Cleric)",
-  "size": "Medium or Small",
-  "type": "Medium or Small Humanoid (Cleric)",
-  "alignment": "Neutral",
-  "ac": "13",
-  "hp": "11 (2d8 + 2)",
-  "speed": "30 ft.",
+  "cr": "16 (XP 15,000; PB +5)",
+  "crValue": 16,
+  "creatureType": "Celestial (Angel)",
+  "size": "Large",
+  "type": "Large Celestial (Angel)",
+  "alignment": "Lawful Good",
+  "ac": "19",
+  "hp": "262 (21d10 + 147)",
+  "speed": "40 ft., Fly 120 ft. (hover)",
   "stats": {
-    "STR": 14,
-    "DEX": 10,
-    "CON": 12,
-    "INT": 10,
-    "WIS": 14,
-    "CHA": 11
+    "STR": 24,
+    "DEX": 20,
+    "CON": 24,
+    "INT": 19,
+    "WIS": 22,
+    "CHA": 25
   },
-  "traits": [],
-  "text": "# Planetar\n\n*Medium or Small Humanoid (Cleric), Neutral*\n\n### Actions\n\n**Mace.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage plus 2 (1d4) Radiant damage.\n\n**Radiant Flame.** Ranged Attack Roll: +4, range 60 ft. Hit: 7 (2d6) Radiant damage."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Str +12, Con +12, Wis +11, Cha +12"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +11"
+    },
+    {
+      "name": "Resistances",
+      "text": "Radiant"
+    },
+    {
+      "name": "Immunities",
+      "text": "Charmed, Exhaustion, Frightened"
+    },
+    {
+      "name": "Senses",
+      "text": "Truesight 120 ft.; Passive Perception 21"
+    },
+    {
+      "name": "Languages",
+      "text": "All; telepathy 120 ft."
+    },
+    {
+      "name": "Divine Awareness",
+      "text": "The planetar knows if it hears a lie."
+    },
+    {
+      "name": "Exalted Restoration",
+      "text": "If the planetar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The planetar has Advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "text": "# Planetar\n\n*Large Celestial (Angel), Lawful Good*\n\nA towering emerald-skinned celestial warrior, the sword-arm of the Upper Planes.\n\n### Actions\n\n**Radiant Sword.** Melee Attack Roll: +12, reach 10 ft. Hit: 14 (2d6 + 7) Slashing damage plus 18 (4d8) Radiant damage.\n\n**Holy Burst.** Dexterity Saving Throw: DC 20, each enemy in a 20-foot-radius Sphere centered on a point the planetar can see within 120 feet. Failure: 24 (7d6) Radiant damage. Success: Half damage."
 }

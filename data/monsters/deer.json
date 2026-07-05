@@ -3,28 +3,40 @@
   "kind": "monster",
   "name": "Deer",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
+  "cr": "0 (XP 10; PB +2)",
+  "crValue": 0,
   "creatureType": "Beast",
-  "size": "Large",
-  "type": "Large Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "14",
-  "hp": "22 (3d10 + 6)",
+  "ac": "13",
+  "hp": "4 (1d8)",
   "speed": "50 ft.",
   "stats": {
-    "STR": 17,
-    "DEX": 15,
-    "CON": 15,
-    "INT": 3,
-    "WIS": 12,
-    "CHA": 7
+    "STR": 11,
+    "DEX": 16,
+    "CON": 11,
+    "INT": 2,
+    "WIS": 14,
+    "CHA": 5
   },
   "traits": [
     {
-      "name": "Pack Tactics",
-      "text": "The wolf has Advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+      "name": "Skills",
+      "text": "Perception +4"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Agile",
+      "text": "The deer doesn’t provoke an Opportunity Attack when it moves out of an enemy’s reach."
     }
   ],
-  "text": "# Deer\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Piercing damage. If the target is a Large or smaller creature, it has the Prone condition."
+  "text": "# Deer\n\n*Medium Beast, Unaligned*\n\nA skittish woodland grazer, quick to bolt.\n\n### Actions\n\n**Ram.** Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Bludgeoning damage."
 }

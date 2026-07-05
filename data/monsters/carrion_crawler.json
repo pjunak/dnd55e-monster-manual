@@ -5,21 +5,38 @@
   "edition": "2024",
   "cr": "2 (XP 450; PB +2)",
   "crValue": 2,
-  "creatureType": "Fey",
+  "creatureType": "Monstrosity",
   "size": "Large",
-  "type": "Large Fey",
-  "alignment": "Neutral Good",
-  "ac": "16",
-  "hp": "45 (6d10 + 12)",
-  "speed": "50 ft.",
+  "type": "Large Monstrosity",
+  "alignment": "Unaligned",
+  "ac": "13",
+  "hp": "51 (6d10 + 18)",
+  "speed": "30 ft., Climb 30 ft.",
   "stats": {
-    "STR": 18,
-    "DEX": 14,
-    "CON": 14,
-    "INT": 9,
-    "WIS": 13,
-    "CHA": 11
+    "STR": 14,
+    "DEX": 13,
+    "CON": 16,
+    "INT": 1,
+    "WIS": 12,
+    "CHA": 5
   },
-  "traits": [],
-  "text": "# Carrion Crawler\n\n*Large Fey, Neutral Good*\n\n### Actions\n\n**Pike.** Melee Attack Roll: +6, reach 10 ft. Hit: 9 (1d10 + 4) Piercing damage.\n\n**Longbow.** Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage.\n\n**Trampling Charge (Recharge 5–6).** The centaur moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. Strength Saving Throw: DC 14. Failure: 7 (1d6 + 4) Bludgeoning damage, and the target has the Prone condition."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +5"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The carrion crawler can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+    }
+  ],
+  "text": "# Carrion Crawler\n\n*Large Monstrosity, Unaligned*\n\nA tunnel-dwelling scavenger whose paralytic tentacles let nothing edible go to waste.\n\n### Actions\n\n**Multiattack.** The carrion crawler uses Paralyzing Tentacles and makes one Bite attack.\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage plus 3 (1d6) Poison damage.\n\n**Paralyzing Tentacles.** Constitution Saving Throw: DC 12, one creature the carrion crawler can see within 10 feet. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Poisoned, the target has the Paralyzed condition."
 }

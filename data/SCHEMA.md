@@ -12,10 +12,10 @@ display string; `text` is the Markdown prose body (the readable stat block).
 kind-less record by its top-level DIR name (`"monsters"`, plural), which makes
 it silently invisible to `[[…|monster]]` and the browse page.
 
-⚠ **Data quality:** the shipped records were bulk-scraped and a subset is
-misattributed (a record can carry ANOTHER monster's stat block under its
-name). Read [`KNOWN_ISSUES.md`](KNOWN_ISSUES.md) before trusting or extending
-the data.
+**Data provenance:** the shipped records were bulk-scraped with a
+misattribution corruption that has since been repaired against the SRD 5.2.
+See [`KNOWN_ISSUES.md`](KNOWN_ISSUES.md) for the repair history before
+bulk-transforming the data.
 
 ## `monster`  (reference stat block — browse only; no engine consumes it)
 ```jsonc

@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Constrictor Snake",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
   "creatureType": "Beast",
-  "size": "Tiny",
-  "type": "Tiny Beast",
+  "size": "Large",
+  "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "3 (1d4 + 1)",
-  "speed": "20 ft., Swim 20 ft.",
+  "ac": "13",
+  "hp": "13 (2d10 + 2)",
+  "speed": "30 ft., Swim 30 ft.",
   "stats": {
-    "STR": 6,
-    "DEX": 11,
+    "STR": 15,
+    "DEX": 14,
     "CON": 12,
     "INT": 1,
-    "WIS": 8,
-    "CHA": 2
+    "WIS": 10,
+    "CHA": 3
   },
   "traits": [
     {
-      "name": "Amphibious",
-      "text": "The crab can breathe air and water."
+      "name": "Skills",
+      "text": "Perception +2, Stealth +4"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 10 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Constrictor Snake\n\n*Tiny Beast, Unaligned*"
+  "text": "# Constrictor Snake\n\n*Large Beast, Unaligned*\n\nA heavy-bodied serpent that crushes the breath from its prey.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage.\n\n**Constrict.** Strength Saving Throw: DC 12, one Medium or smaller creature the snake can see within 5 feet. Failure: 7 (3d4) Bludgeoning damage, and the target has the Grappled condition (escape DC 12)."
 }

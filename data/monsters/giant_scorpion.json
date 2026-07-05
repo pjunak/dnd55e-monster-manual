@@ -3,28 +3,32 @@
   "kind": "monster",
   "name": "Giant Scorpion",
   "edition": "2024",
-  "cr": "5 (XP 1,800; PB +3)",
-  "crValue": 5,
+  "cr": "3 (XP 700; PB +2)",
+  "crValue": 3,
   "creatureType": "Beast",
-  "size": "Huge",
-  "type": "Huge Beast",
+  "size": "Large",
+  "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "92 (8d12 + 40)",
-  "speed": "5 ft., Swim 60 ft.",
+  "ac": "15",
+  "hp": "52 (7d10 + 14)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 23,
-    "DEX": 11,
-    "CON": 21,
+    "STR": 16,
+    "DEX": 13,
+    "CON": 15,
     "INT": 1,
-    "WIS": 10,
-    "CHA": 5
+    "WIS": 9,
+    "CHA": 3
   },
   "traits": [
     {
-      "name": "Water Breathing",
-      "text": "The shark can breathe only underwater."
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Passive Perception 9"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Giant Scorpion\n\n*Huge Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +9 (with Advantage if the target doesn’t have all its Hit Points), reach 5 ft. Hit: 22 (3d10 + 6) Piercing damage."
+  "text": "# Giant Scorpion\n\n*Large Beast, Unaligned*\n\nA horse-sized arachnid whose stinger delivers lethal venom.\n\n### Actions\n\n**Claw.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 13) from one of two claws.\n\n**Sting.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage plus 11 (2d10) Poison damage."
 }

@@ -22,8 +22,24 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +9, Wis +10"
+    },
+    {
+      "name": "Skills",
+      "text": "Insight +10, Perception +17, Persuasion +16, Stealth +9"
+    },
+    {
       "name": "Immunities",
       "text": "Fire"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Darkvision 120 ft.; Passive Perception 27"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Amphibious",
@@ -34,5 +50,5 @@
       "text": "If the dragon fails a saving throw, it can choose to succeed instead."
     }
   ],
-  "text": "# Ancient Gold Dragon\n\n*Gargantuan Dragon (Metallic), Lawful Good*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +17 to hit, reach 15 ft. Hit: 19 (2d8 + 10) Slashing damage plus 9 (2d8) Fire damage.\n\n**Fire Breath(Recharge 5–6).** Dexterity Saving Throw: DC 24, each creature in a 90-foot Cone. Failure: 71 (13d10) Fire damage. Success: Half damage.\n\n**Weakening Breath.** Strength Saving Throw: DC 24, each creature that isn’t currently affected by this breath in a 90-foot Cone. Failure: The target has Disadvantage on Strength-based D20 Tests and subtracts 5 (1d10) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.\n\n**Banish.** Charisma Saving Throw: DC 24, one creature the dragon can see within 120 feet. Failure: 24 (7d6) Force damage, and the target has the Incapacitated condition and is transported to a harmless demiplane until the start of the dragon’s next turn, at which point it reappears in an unoccupied space of the dragon’s choice within 120 feet of the dragon. Failure or Success: The dragon can’t take this action again until the start of its next turn."
+  "text": "# Ancient Gold Dragon\n\n*Gargantuan Dragon (Metallic), Lawful Good*\n\nAn ancient gold dragon of world-shaking power: the most radiant and far-seeing of metallic dragons, its flame as purifying as it is destructive.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +17 to hit, reach 15 ft. Hit: 19 (2d8 + 10) Slashing damage plus 9 (2d8) Fire damage.\n\n**Fire Breath(Recharge 5–6).** Dexterity Saving Throw: DC 24, each creature in a 90-foot Cone. Failure: 71 (13d10) Fire damage. Success: Half damage.\n\n**Weakening Breath.** Strength Saving Throw: DC 24, each creature that isn’t currently affected by this breath in a 90-foot Cone. Failure: The target has Disadvantage on Strength-based D20 Tests and subtracts 5 (1d10) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.\n\n**Banish.** Charisma Saving Throw: DC 24, one creature the dragon can see within 120 feet. Failure: 24 (7d6) Force damage, and the target has the Incapacitated condition and is transported to a harmless demiplane until the start of the dragon’s next turn, at which point it reappears in an unoccupied space of the dragon’s choice within 120 feet of the dragon. Failure or Success: The dragon can’t take this action again until the start of its next turn."
 }

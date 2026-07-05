@@ -3,32 +3,44 @@
   "kind": "monster",
   "name": "Troll",
   "edition": "2024",
-  "cr": "1/2 (XP 100; PB +2)",
-  "crValue": 0.5,
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
   "creatureType": "Giant",
-  "size": "Small",
-  "type": "Small Giant",
+  "size": "Large",
+  "type": "Large Giant",
   "alignment": "Chaotic Evil",
-  "ac": "13",
-  "hp": "14 (4d6)",
-  "speed": "20 ft.",
+  "ac": "15",
+  "hp": "94 (9d10 + 45)",
+  "speed": "30 ft.",
   "stats": {
     "STR": 18,
-    "DEX": 12,
-    "CON": 10,
-    "INT": 1,
+    "DEX": 13,
+    "CON": 20,
+    "INT": 7,
     "WIS": 9,
-    "CHA": 1
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Regeneration",
-      "text": "The limb regains 5 Hit Points at the start of each of its turns. If the limb takes Acid or Fire damage, this trait doesn’t function on the limb’s next turn. The limb dies only if it starts its turn with 0 Hit Points and doesn’t regenerate."
+      "name": "Skills",
+      "text": "Perception +5"
     },
     {
-      "name": "Troll Spawn",
-      "text": "The limb uncannily has the same senses as a whole troll. If the limb isn’t destroyed within 24 hours, roll 1d12. On a 12, the limb turns into a Troll. Otherwise, the limb withers away."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "Giant"
+    },
+    {
+      "name": "Loathsome Limbs (4/Day)",
+      "text": "If the troll ends any turn Bloodied and took 15+ Slashing damage during that turn, one of the troll’s limbs is severed, falls into the troll’s space, and becomes a Troll Limb. The limb acts immediately after the troll’s turn. The troll has 1 Exhaustion level for each missing limb, and it grows replacement limbs the next time it regains Hit Points."
+    },
+    {
+      "name": "Regeneration",
+      "text": "The troll regains 15 Hit Points at the start of each of its turns. If the troll takes Acid or Fire damage, this trait doesn’t function on the troll’s next turn. The troll dies only if it starts its turn with 0 Hit Points and doesn’t regenerate."
     }
   ],
-  "text": "# Troll\n\n*Small Giant, Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Slashing damage."
+  "text": "# Troll\n\n*Large Giant, Chaotic Evil*\n\nA lanky, ever-regenerating horror that only fire or acid can truly kill.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Slashing damage."
 }

@@ -9,26 +9,38 @@
   "size": "Large",
   "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "39 (6d10 + 6)",
-  "speed": "30 ft., Swim 30 ft.",
+  "ac": "14",
+  "hp": "26 (4d10 + 4)",
+  "speed": "30 ft., Climb 30 ft.",
   "stats": {
-    "STR": 15,
-    "DEX": 13,
-    "CON": 13,
+    "STR": 14,
+    "DEX": 16,
+    "CON": 12,
     "INT": 2,
-    "WIS": 10,
-    "CHA": 3
+    "WIS": 11,
+    "CHA": 4
   },
   "traits": [
     {
-      "name": "Amphibious",
-      "text": "The toad can breathe air and water."
+      "name": "Skills",
+      "text": "Perception +4, Stealth +7"
     },
     {
-      "name": "Standing Leap",
-      "text": "The toad’s Long Jump is up to 20 feet and its High Jump is up to 10 feet with or without a running start."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Web Walker",
+      "text": "The spider ignores movement restrictions caused by webs, and it knows the location of any other creature in contact with the same web."
     }
   ],
-  "text": "# Giant Spider\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 5 (2d4) Poison damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12).\n\n**Swallow.** The toad swallows a Medium or smaller target it is grappling. While swallowed, the target isn’t Grappled but has the Blinded and Restrained conditions, and it has Total Cover against attacks and other effects outside the toad. In addition, the target takes 10 (3d6) Acid damage at the end of each of the toad’s turns. The toad can have only one target swallowed at a time, and it can’t use Bite while it has a swallowed target. If the toad dies, a swallowed creature is no longer Restrained and can escape from the corpse using 5 feet of movement, exiting with the Prone condition."
+  "text": "# Giant Spider\n\n*Large Beast, Unaligned*\n\nA web-spinning horror that trusses its prey for later.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage plus 7 (2d6) Poison damage.\n\n**Web (Recharge 5–6).** Dexterity Saving Throw: DC 13, one creature the spider can see within 60 feet. Failure: The target has the Restrained condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage)."
 }

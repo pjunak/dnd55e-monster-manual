@@ -3,32 +3,40 @@
   "kind": "monster",
   "name": "Mule",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
+  "cr": "1/8 (XP 25; PB +2)",
+  "crValue": 0.125,
   "creatureType": "Beast",
-  "size": "Small",
-  "type": "Small Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "12",
-  "hp": "3 (1d6)",
-  "speed": "5 ft., Swim 30 ft.",
+  "ac": "10",
+  "hp": "11 (2d8 + 2)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 4,
-    "DEX": 15,
-    "CON": 11,
-    "INT": 3,
+    "STR": 14,
+    "DEX": 10,
+    "CON": 13,
+    "INT": 2,
     "WIS": 10,
-    "CHA": 4
+    "CHA": 5
   },
   "traits": [
     {
-      "name": "Compression",
-      "text": "The octopus can move through a space as narrow as 1 inch without expending extra movement to do so."
+      "name": "Saving Throws",
+      "text": "Str +4"
     },
     {
-      "name": "Water Breathing",
-      "text": "The octopus can breathe only underwater."
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Beast of Burden",
+      "text": "The mule counts as one size larger for the purpose of determining its carrying capacity."
     }
   ],
-  "text": "# Mule\n\n*Small Beast, Unaligned*"
+  "text": "# Mule\n\n*Medium Beast, Unaligned*\n\nA stubborn but dependable beast of burden.\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage."
 }

@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Pony",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
-  "creatureType": "Beast (Dinosaur)",
+  "cr": "1/8 (XP 25; PB +2)",
+  "crValue": 0.125,
+  "creatureType": "Beast",
   "size": "Medium",
-  "type": "Medium Beast (Dinosaur)",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "13 (3d8)",
-  "speed": "10 ft., Fly 60 ft.",
+  "ac": "10",
+  "hp": "11 (2d8 + 2)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 12,
-    "DEX": 15,
-    "CON": 10,
+    "STR": 15,
+    "DEX": 10,
+    "CON": 13,
     "INT": 2,
-    "WIS": 9,
-    "CHA": 5
+    "WIS": 11,
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Flyby",
-      "text": "The pteranodon doesn’t provoke an Opportunity Attack when it flies out of an enemy’s reach."
+      "name": "Saving Throws",
+      "text": "Str +4"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Pony\n\n*Medium Beast (Dinosaur), Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage."
+  "text": "# Pony\n\n*Medium Beast, Unaligned*\n\nA small, steady mount suited to halflings and children.\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage."
 }

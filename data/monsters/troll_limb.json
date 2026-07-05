@@ -3,36 +3,40 @@
   "kind": "monster",
   "name": "Troll Limb",
   "edition": "2024",
-  "cr": "5 (XP 1,800; PB +3)",
-  "crValue": 5,
-  "creatureType": "Celestial",
-  "size": "Large",
-  "type": "Large Celestial",
-  "alignment": "Lawful Good",
-  "ac": "12",
-  "hp": "97 (13d10 + 26)",
-  "speed": "50 ft.",
+  "cr": "1/2 (XP 100; PB +2)",
+  "crValue": 0.5,
+  "creatureType": "Giant",
+  "size": "Small",
+  "type": "Small Giant",
+  "alignment": "Chaotic Evil",
+  "ac": "13",
+  "hp": "14 (4d6)",
+  "speed": "20 ft.",
   "stats": {
     "STR": 18,
-    "DEX": 14,
-    "CON": 15,
-    "INT": 11,
-    "WIS": 17,
-    "CHA": 16
+    "DEX": 12,
+    "CON": 10,
+    "INT": 1,
+    "WIS": 9,
+    "CHA": 1
   },
   "traits": [
     {
-      "name": "Immunities",
-      "text": "Poison; Charmed, Paralyzed, Poisoned"
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 9"
     },
     {
-      "name": "Legendary Resistance (3/Day)",
-      "text": "If the unicorn fails a saving throw, it can choose to succeed instead."
+      "name": "Languages",
+      "text": "None"
     },
     {
-      "name": "Magic Resistance",
-      "text": "The unicorn has Advantage on saving throws against spells and other magical effects."
+      "name": "Regeneration",
+      "text": "The limb regains 5 Hit Points at the start of each of its turns. If the limb takes Acid or Fire damage, this trait doesn’t function on the limb’s next turn. The limb dies only if it starts its turn with 0 Hit Points and doesn’t regenerate."
+    },
+    {
+      "name": "Troll Spawn",
+      "text": "The limb uncannily has the same senses as a whole troll. If the limb isn’t destroyed within 24 hours, roll 1d12. On a 12, the limb turns into a Troll. Otherwise, the limb withers away."
     }
   ],
-  "text": "# Troll Limb\n\n*Large Celestial, Lawful Good*\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Bludgeoning damage.\n\n**Radiant Horn.** Melee Attack Roll: +7, reach 5 ft. Hit: 9 (1d10 + 4) Radiant damage."
+  "text": "# Troll Limb\n\n*Small Giant, Chaotic Evil*\n\nA severed troll limb that fights on, scrabbling with a will of its own.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Slashing damage."
 }

@@ -3,23 +3,44 @@
   "kind": "monster",
   "name": "Nightmare",
   "edition": "2024",
-  "cr": "1/8 (XP 25; PB +2)",
-  "crValue": 0.125,
-  "creatureType": "Humanoid",
-  "size": "Medium or Small",
-  "type": "Medium or Small Humanoid",
-  "alignment": "Neutral",
-  "ac": "15",
-  "hp": "9 (2d8)",
-  "speed": "30 ft.",
+  "cr": "3 (XP 700; PB +2)",
+  "crValue": 3,
+  "creatureType": "Fiend",
+  "size": "Large",
+  "type": "Large Fiend",
+  "alignment": "Neutral Evil",
+  "ac": "13",
+  "hp": "68 (8d10 + 24)",
+  "speed": "60 ft., Fly 90 ft. (hover)",
   "stats": {
-    "STR": 11,
-    "DEX": 12,
-    "CON": 11,
-    "INT": 12,
-    "WIS": 14,
-    "CHA": 16
+    "STR": 18,
+    "DEX": 15,
+    "CON": 16,
+    "INT": 10,
+    "WIS": 13,
+    "CHA": 15
   },
-  "traits": [],
-  "text": "# Nightmare\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Rapier.** Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Piercing damage."
+  "traits": [
+    {
+      "name": "Immunities",
+      "text": "Fire"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 11"
+    },
+    {
+      "name": "Languages",
+      "text": "Understands Abyssal, Common, And Infernal but can't speak"
+    },
+    {
+      "name": "Confer Fire Resistance",
+      "text": "The nightmare can grant Resistance to Fire damage to a rider while it is on the nightmare."
+    },
+    {
+      "name": "Illumination",
+      "text": "The nightmare sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet."
+    }
+  ],
+  "text": "# Nightmare\n\n*Large Fiend, Neutral Evil*\n\nA flame-maned steed of the Lower Planes that carries riders between worlds.\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage plus 10 (3d6) Fire damage."
 }

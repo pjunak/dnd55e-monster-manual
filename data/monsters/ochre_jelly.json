@@ -5,21 +5,46 @@
   "edition": "2024",
   "cr": "2 (XP 450; PB +2)",
   "crValue": 2,
-  "creatureType": "Giant",
+  "creatureType": "Ooze",
   "size": "Large",
-  "type": "Large Giant",
-  "alignment": "Chaotic Evil",
-  "ac": "11",
-  "hp": "68 (8d10 + 24)",
-  "speed": "40 ft.",
+  "type": "Large Ooze",
+  "alignment": "Unaligned",
+  "ac": "8",
+  "hp": "52 (7d10 + 14)",
+  "speed": "20 ft., Climb 20 ft.",
   "stats": {
-    "STR": 19,
-    "DEX": 8,
-    "CON": 16,
-    "INT": 5,
-    "WIS": 7,
-    "CHA": 7
+    "STR": 15,
+    "DEX": 6,
+    "CON": 14,
+    "INT": 2,
+    "WIS": 6,
+    "CHA": 1
   },
-  "traits": [],
-  "text": "# Ochre Jelly\n\n*Large Giant, Chaotic Evil*\n\n### Actions\n\n**Greatclub.** Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage.\n\n**Javelin.** Melee or Ranged Attack Roll: +6, reach 5 ft. or range 30/120 ft. Hit: 11 (2d6 + 4) Piercing damage."
+  "traits": [
+    {
+      "name": "Resistances",
+      "text": "Acid"
+    },
+    {
+      "name": "Immunities",
+      "text": "Lightning, Slashing; Charmed, Deafened, Exhaustion, Frightened, Grappled, Prone, Restrained"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Passive Perception 8"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Amorphous",
+      "text": "The jelly can move through a space as narrow as 1 inch without expending extra movement to do so."
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The jelly can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+    }
+  ],
+  "text": "# Ochre Jelly\n\n*Large Ooze, Unaligned*\n\nA seeping amber ooze that splits in two when struck by blade or bolt.\n\n### Actions\n\n**Pseudopod.** Melee Attack Roll: +4, reach 5 ft. Hit: 12 (3d6 + 2) Acid damage."
 }

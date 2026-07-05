@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Hill Giant",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
-  "creatureType": "Monstrosity",
-  "size": "Large",
-  "type": "Large Monstrosity",
-  "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "26 (4d10 + 4)",
-  "speed": "40 ft., Fly 60 ft.",
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
+  "creatureType": "Giant",
+  "size": "Huge",
+  "type": "Huge Giant",
+  "alignment": "Chaotic Evil",
+  "ac": "13",
+  "hp": "105 (10d12 + 40)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 17,
-    "DEX": 13,
-    "CON": 13,
-    "INT": 2,
-    "WIS": 12,
-    "CHA": 8
+    "STR": 21,
+    "DEX": 8,
+    "CON": 19,
+    "INT": 5,
+    "WIS": 9,
+    "CHA": 6
   },
   "traits": [
     {
-      "name": "Flyby",
-      "text": "The hippogriff doesn’t provoke an Opportunity Attack when it flies out of an enemy’s reach."
+      "name": "Skills",
+      "text": "Perception +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Giant"
     }
   ],
-  "text": "# Hill Giant\n\n*Large Monstrosity, Unaligned*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage."
+  "text": "# Hill Giant\n\n*Huge Giant, Chaotic Evil*\n\nA dim, gluttonous giant that measures every problem by whether it can be eaten or smashed.\n\n### Actions\n\n**Tree Club.** Melee Attack Roll: +8, reach 10 ft. Hit: 18 (3d8 + 5) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.\n\n**Trash Lob.** Ranged Attack Roll: +8, range 60/240 ft. Hit: 16 (2d10 + 5) Bludgeoning damage, and the target has the Poisoned condition until the end of its next turn."
 }

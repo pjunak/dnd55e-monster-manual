@@ -6,20 +6,37 @@
   "cr": "1/4 (XP 50; PB +2)",
   "crValue": 0.25,
   "creatureType": "Beast",
-  "size": "Large",
-  "type": "Large Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
   "ac": "13",
-  "hp": "22 (4d10)",
-  "speed": "10 ft., Fly 60 ft.",
+  "hp": "15 (2d8 + 6)",
+  "speed": "30 ft., Burrow 10 ft.",
   "stats": {
-    "STR": 15,
-    "DEX": 16,
-    "CON": 11,
+    "STR": 13,
+    "DEX": 10,
+    "CON": 17,
     "INT": 2,
     "WIS": 12,
-    "CHA": 6
+    "CHA": 5
   },
-  "traits": [],
-  "text": "# Giant Badger\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +3"
+    },
+    {
+      "name": "Resistances",
+      "text": "Poison"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Giant Badger\n\n*Medium Beast, Unaligned*\n\nA burrowing brute the size of a bear, twice as stubborn as its lesser kin.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +3, reach 5 ft. Hit: 6 (2d4 + 1) Piercing damage."
 }

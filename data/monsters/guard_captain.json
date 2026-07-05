@@ -20,6 +20,19 @@
     "WIS": 14,
     "CHA": 13
   },
-  "traits": [],
-  "text": "# Guard Captain\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Javelin.** Melee or Ranged Attack Roll: +6, reach 5 ft. or range 30/120 ft. Hit: 14 (3d6 + 4) Piercing damage.\n\n**Longsword.** Melee Attack Roll: +6, reach 5 ft. Hit: 15 (2d10 + 4) Slashing damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Athletics +6, Perception +4"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "Common"
+    }
+  ],
+  "text": "# Guard Captain\n\n*Medium or Small Humanoid, Neutral*\n\nA veteran officer who commands the watch with discipline earned in the field.\n\n### Actions\n\n**Javelin.** Melee or Ranged Attack Roll: +6, reach 5 ft. or range 30/120 ft. Hit: 14 (3d6 + 4) Piercing damage.\n\n**Longsword.** Melee Attack Roll: +6, reach 5 ft. Hit: 15 (2d10 + 4) Slashing damage."
 }

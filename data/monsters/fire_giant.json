@@ -3,48 +3,44 @@
   "kind": "monster",
   "name": "Fire Giant",
   "edition": "2024",
-  "cr": "5 (XP 1,800; PB +3)",
-  "crValue": 5,
-  "creatureType": "Construct",
-  "size": "Medium",
-  "type": "Medium Construct",
-  "alignment": "Neutral",
-  "ac": "9",
-  "hp": "127 (15d8 + 60)",
+  "cr": "9 (XP 5,000; PB +4)",
+  "crValue": 9,
+  "creatureType": "Giant",
+  "size": "Huge",
+  "type": "Huge Giant",
+  "alignment": "Lawful Evil",
+  "ac": "18",
+  "hp": "162 (13d12 + 78)",
   "speed": "30 ft.",
   "stats": {
-    "STR": 19,
+    "STR": 25,
     "DEX": 9,
-    "CON": 18,
-    "INT": 6,
-    "WIS": 10,
-    "CHA": 5
+    "CON": 23,
+    "INT": 10,
+    "WIS": 14,
+    "CHA": 13
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +3, Con +10, Cha +5"
+    },
+    {
+      "name": "Skills",
+      "text": "Athletics +11, Perception +6"
+    },
+    {
       "name": "Immunities",
-      "text": "Lightning, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+      "text": "Fire"
     },
     {
-      "name": "Aversion to Fire",
-      "text": "If the golem takes Fire damage, it has Disadvantage on attack rolls and ability checks until the end of its next turn."
+      "name": "Senses",
+      "text": "Passive Perception 16"
     },
     {
-      "name": "Berserk",
-      "text": "Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it remains so until it is destroyed or it is no longer Bloodied."
-    },
-    {
-      "name": "Immutable Form",
-      "text": "The golem can’t shape-shift."
-    },
-    {
-      "name": "Lightning Absorption",
-      "text": ". Whenever the golem is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt."
-    },
-    {
-      "name": "Magic Resistance",
-      "text": "The golem has Advantage on saving throws against spells and other magical effects."
+      "name": "Languages",
+      "text": "Giant"
     }
   ],
-  "text": "# Fire Giant\n\n*Medium Construct, Neutral*\n\n### Actions\n\n**Slam.** Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage plus 4 (1d8) Lightning damage."
+  "text": "# Fire Giant\n\n*Huge Giant, Lawful Evil*\n\nA master smith of volcanic forges whose martial discipline matches its towering strength.\n\n### Actions\n\n**Flame Sword.** Melee Attack Roll: +11, reach 10 ft. Hit: 21 (4d6 + 7) Slashing damage plus 10 (3d6) Fire damage.\n\n**Hammer Throw.** Ranged Attack Roll: +11, range 60/240 ft. Hit: 23 (3d10 + 7) Bludgeoning damage plus 4 (1d8) Fire damage, and the target is pushed up to 15 feet straight away from the giant and has Disadvantage on the next attack roll it makes before the end of its next turn."
 }

@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Sprite",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
-  "creatureType": "Humanoid",
-  "size": "Medium or Small",
-  "type": "Medium or Small Humanoid",
-  "alignment": "Neutral",
-  "ac": "12",
-  "hp": "27 (6d8)",
-  "speed": "30 ft., Climb 30 ft.",
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
+  "creatureType": "Fey",
+  "size": "Tiny",
+  "type": "Tiny Fey",
+  "alignment": "Neutral Good",
+  "ac": "15",
+  "hp": "10 (4d4)",
+  "speed": "10 ft., Fly 40 ft.",
   "stats": {
-    "STR": 10,
-    "DEX": 15,
+    "STR": 3,
+    "DEX": 18,
     "CON": 10,
-    "INT": 12,
-    "WIS": 14,
-    "CHA": 16
+    "INT": 14,
+    "WIS": 13,
+    "CHA": 11
   },
-  "traits": [],
-  "text": "# Sprite\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Shortsword.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 7 (2d6) Poison damage.\n\n**Hand Crossbow.** Ranged Attack Roll: +4, range 30/120 ft. Hit: 5 (1d6 + 2) Piercing damage plus 7 (2d6) Poison damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +3, Stealth +8"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Elvish, Sylvan"
+    }
+  ],
+  "text": "# Sprite\n\n*Tiny Fey, Neutral Good*\n\nA tiny fey duelist that judges hearts and defends its glade with poisoned arrows.\n\n### Actions\n\n**Needle Sword.** Melee Attack Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Piercing damage.\n\n**Heart Sight.** Charisma Saving Throw: DC 10, one creature within 5 feet the sprite can see (Celestials, Fiends, and Undead automatically fail the save). Failure: The sprite knows the target’s emotions and alignment."
 }

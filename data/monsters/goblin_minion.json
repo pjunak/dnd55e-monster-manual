@@ -20,6 +20,19 @@
     "WIS": 8,
     "CHA": 8
   },
-  "traits": [],
-  "text": "# Goblin Minion\n\n*Small Fey (Goblinoid), Chaotic Neutral*\n\n### Actions\n\n**Dagger.** Melee or Ranged Attack Roll: +4, reach 5 ft. or range 20/60 ft. Hit: 4 (1d4 + 2) Piercing damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Stealth +6"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 9"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Goblin"
+    }
+  ],
+  "text": "# Goblin Minion\n\n*Small Fey (Goblinoid), Chaotic Neutral*\n\nThe smallest and most expendable of goblinkind, brave only in mobs.\n\n### Actions\n\n**Dagger.** Melee or Ranged Attack Roll: +4, reach 5 ft. or range 20/60 ft. Hit: 4 (1d4 + 2) Piercing damage."
 }

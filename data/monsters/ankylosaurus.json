@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Ankylosaurus",
   "edition": "2024",
-  "cr": "1/2 (XP 100; PB +2)",
-  "crValue": 0.5,
-  "creatureType": "Beast",
-  "size": "Medium",
-  "type": "Medium Beast",
+  "cr": "3 (XP 700; PB +2)",
+  "crValue": 3,
+  "creatureType": "Beast (Dinosaur)",
+  "size": "Huge",
+  "type": "Huge Beast (Dinosaur)",
   "alignment": "Unaligned",
-  "ac": "12",
-  "hp": "19 (3d8 + 6)",
-  "speed": "30 ft., Climb 30 ft.",
+  "ac": "15",
+  "hp": "68 (8d12 + 16)",
+  "speed": "30 ft.",
   "stats": {
-    "STR": 16,
-    "DEX": 14,
-    "CON": 14,
-    "INT": 6,
+    "STR": 19,
+    "DEX": 11,
+    "CON": 15,
+    "INT": 2,
     "WIS": 12,
-    "CHA": 7
+    "CHA": 5
   },
-  "traits": [],
-  "text": "# Ankylosaurus\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Fist.** Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Bludgeoning damage.\n\n**Rock (Recharge 6).** Ranged Attack Roll: +5, range 25/50 ft. Hit: 10 (2d6 + 3) Bludgeoning damage."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Str +6"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 11"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Ankylosaurus\n\n*Huge Beast (Dinosaur), Unaligned*\n\nAn armored herbivorous dinosaur whose clubbed tail can shatter bone and splinter shields.\n\n### Actions\n\n**Tail.** Melee Attack Roll: +6, reach 10 ft. Hit: 9 (1d10 + 4) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition."
 }

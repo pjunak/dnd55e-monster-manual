@@ -1,7 +1,7 @@
 {
-  "id": "blue_dragons",
+  "id": "bone_devil",
   "kind": "monster",
-  "name": "Blue Dragons",
+  "name": "Bone Devil",
   "edition": "2024",
   "cr": "9 (XP 5,000; PB +4)",
   "crValue": 9,
@@ -22,12 +22,28 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Str +8, Int +5, Wis +6, Cha +7"
+    },
+    {
+      "name": "Skills",
+      "text": "Deception +7, Insight +6"
+    },
+    {
       "name": "Resistances",
       "text": "Cold"
     },
     {
       "name": "Immunities",
       "text": "Fire, Poison; Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 120 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Infernal; telepathy 120 ft."
     },
     {
       "name": "Diabolical Restoration",
@@ -38,5 +54,5 @@
       "text": "The devil has Advantage on saving throws against spells and other magical effects."
     }
   ],
-  "text": "# Blue Dragons\n\n*Large Fiend (Devil), Lawful Evil*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +8, reach 10 ft. Hit: 13 (2d8 + 4) Slashing damage.\n\n**Infernal Sting.** Melee Attack Roll: +8, reach 10 ft. Hit: 15 (2d10 + 4) Piercing damage plus 18 (4d8) Poison damage, and the target has the Poisoned condition until the start of the devil’s next turn. While Poisoned, the target can’t regain Hit Points."
+  "text": "# Bone Devil\n\n*Large Fiend (Devil), Lawful Evil*\n\nA skeletal infernal enforcer with a scorpion tail, feared even by other devils.\n\n### Actions\n\n**Claw.** Melee Attack Roll: +8, reach 10 ft. Hit: 13 (2d8 + 4) Slashing damage.\n\n**Infernal Sting.** Melee Attack Roll: +8, reach 10 ft. Hit: 15 (2d10 + 4) Piercing damage plus 18 (4d8) Poison damage, and the target has the Poisoned condition until the start of the devil’s next turn. While Poisoned, the target can’t regain Hit Points."
 }

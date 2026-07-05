@@ -13,5 +13,5 @@
     "wiki:kind"
   ],
   "tests": { "client": "tests/smoke.mjs" },
-  "summary": "The D&D 5.5e (2024) bestiary — 333 creature stat blocks with a browse UI ([[Name|monster]] wiki-links, /bestiary pages). The host serves its per-record JSON tree (no server code, no restart). One addon per book, toggled per campaign."
+  "summary": "The D&D 5.5e (2024) bestiary â€” 313 creature stat blocks with a browse UI ([[Name|monster]] wiki-links, /bestiary pages). The host serves its per-record JSON tree (no server code, no restart). One addon per book, toggled per campaign."
 }

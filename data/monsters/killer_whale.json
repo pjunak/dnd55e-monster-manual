@@ -3,32 +3,40 @@
   "kind": "monster",
   "name": "Killer Whale",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
+  "cr": "3 (XP 700; PB +2)",
+  "crValue": 3,
   "creatureType": "Beast",
-  "size": "Large",
-  "type": "Large Beast",
+  "size": "Huge",
+  "type": "Huge Beast",
   "alignment": "Unaligned",
   "ac": "12",
-  "hp": "22 (4d10)",
-  "speed": "50 ft.",
+  "hp": "90 (12d12 + 12)",
+  "speed": "5 ft., Swim 60 ft.",
   "stats": {
-    "STR": 17,
-    "DEX": 15,
-    "CON": 11,
+    "STR": 19,
+    "DEX": 14,
+    "CON": 13,
     "INT": 3,
     "WIS": 12,
-    "CHA": 8
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Pack Tactics",
-      "text": "The lion has Advantage on an attack roll against a creature if at least one of the lion’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+      "name": "Skills",
+      "text": "Perception +3, Stealth +4"
     },
     {
-      "name": "Running Leap",
-      "text": "With a 10-foot running start, the lion can Long Jump up to 25 feet."
+      "name": "Senses",
+      "text": "Blindsight 120 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Hold Breath",
+      "text": "The whale can hold its breath for 30 minutes."
     }
   ],
-  "text": "# Killer Whale\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage.\n\n**Roar.** Wisdom Saving Throw: DC 11, one creature within 15 feet. Failure: The target has the Frightened condition until the start of the lion’s next turn."
+  "text": "# Killer Whale\n\n*Huge Beast, Unaligned*\n\nAn apex pod-hunter of cold seas.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 5 ft. Hit: 21 (5d6 + 4) Piercing damage."
 }

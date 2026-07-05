@@ -28,7 +28,15 @@
     {
       "name": "Immunities",
       "text": "Poison; Exhaustion, Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 9"
+    },
+    {
+      "name": "Languages",
+      "text": "Understands Common plus one other language but can't speak"
     }
   ],
-  "text": "# Skeleton\n\n*Medium Undead, Lawful Evil*\n\n### Actions\n\n**Shortsword.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage.\n\n**Shortbow.** Ranged Attack Roll: +5, range 80/320 ft. Hit: 6 (1d6 + 3) Piercing damage."
+  "text": "# Skeleton\n\n*Medium Undead, Lawful Evil*\n\nAnimated bones bound by necromancy to tireless, unquestioning service.\n\n### Actions\n\n**Shortsword.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage.\n\n**Shortbow.** Ranged Attack Roll: +5, range 80/320 ft. Hit: 6 (1d6 + 3) Piercing damage."
 }

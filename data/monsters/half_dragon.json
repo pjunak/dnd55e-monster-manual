@@ -3,23 +3,48 @@
   "kind": "monster",
   "name": "Half-Dragon",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
-  "creatureType": "Monstrosity",
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
+  "creatureType": "Dragon",
   "size": "Medium",
-  "type": "Medium Monstrosity",
-  "alignment": "Chaotic Evil",
-  "ac": "11",
-  "hp": "38 (7d8 + 7)",
-  "speed": "20 ft., Fly 40 ft.",
+  "type": "Medium Dragon",
+  "alignment": "Neutral",
+  "ac": "18",
+  "hp": "105 (14d8 + 42)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 12,
-    "DEX": 13,
-    "CON": 12,
-    "INT": 7,
-    "WIS": 10,
-    "CHA": 13
+    "STR": 19,
+    "DEX": 14,
+    "CON": 16,
+    "INT": 10,
+    "WIS": 15,
+    "CHA": 14
   },
-  "traits": [],
-  "text": "# Half-Dragon\n\n*Medium Monstrosity, Chaotic Evil*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +3, reach 5 ft. Hit: 6 (2d4 + 1) Slashing damage.\n\n**Luring Song.** The harpy sings a magical melody, which lasts until the harpy’s Concentration ends on it. Wisdom Saving Throw: DC 11, each Humanoid and Giant in a 300-foot Emanation originating from the harpy when the song starts. Failure: The target has the Charmed condition until the song ends and repeats the save at the end of each of its turns. While Charmed, the target has the Incapacitated condition and ignores the Luring Song of other harpies. If the target is more than 5 feet from the harpy, the target moves on its turn toward the harpy by the most direct route, trying to get within 5 feet of the harpy. It doesn’t avoid Opportunity Attacks; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes damage from a source other than the harpy, the target repeats the save. Success: The target is immune to this harpy’s Luring Song for 24 hours."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Dex +5, Wis +5"
+    },
+    {
+      "name": "Skills",
+      "text": "Athletics +7, Perception +5, Stealth +5"
+    },
+    {
+      "name": "Resistances",
+      "text": "Damage type chosen for the Draconic Origin trait below"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 10 ft.; Darkvision 60 ft.; Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
+    },
+    {
+      "name": "Draconic Origin",
+      "text": "The half-dragon is related to a type of dragon associated with one of the following damage types (DM’s choice): Acid, Cold, Fire, Lightning, or Poison. This choice affects other aspects of the stat block."
+    }
+  ],
+  "text": "# Half-Dragon\n\n*Medium Dragon, Neutral*\n\nA warrior in whose veins draconic power burns, breath and pride included.\n\n### Actions\n\n**Claw.** Melee Attack Roll: +7, reach 10 ft. Hit: 6 (1d4 + 4) Slashing damage plus 7 (2d6) damage of the type chosen for the Draconic Origin trait.\n\n**Dragon’s Breath (Recharge 5–6).** Dexterity Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 28 (8d6) damage of the type chosen for the Draconic Origin trait. Success: Half damage."
 }

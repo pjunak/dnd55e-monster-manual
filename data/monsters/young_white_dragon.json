@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +3, Wis +3"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +6, Stealth +3"
+    },
+    {
       "name": "Immunities",
       "text": "Cold"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 30 ft.; Darkvision 120 ft.; Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Ice Walk",
       "text": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn’t cost it extra movement."
     }
   ],
-  "text": "# Young White Dragon\n\n*Large Dragon (Chromatic), Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 10 ft. Hit: 9 (2d4 + 4) Slashing damage plus 2 (1d4) Cold damage.\n\n**Cold Breath (Recharge 5–6).** Constitution Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: 40 (9d8) Cold damage. Success: Half damage."
+  "text": "# Young White Dragon\n\n*Large Dragon (Chromatic), Chaotic Evil*\n\nA young white dragon coming into its power: the most feral of chromatic dragons, a glacier-hunting predator of primal hunger.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 10 ft. Hit: 9 (2d4 + 4) Slashing damage plus 2 (1d4) Cold damage.\n\n**Cold Breath (Recharge 5–6).** Constitution Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: 40 (9d8) Cold damage. Success: Half damage."
 }

@@ -3,40 +3,44 @@
   "kind": "monster",
   "name": "Dryad",
   "edition": "2024",
-  "cr": "5 (XP 1,800; PB +3)",
-  "crValue": 5,
-  "creatureType": "Elemental",
-  "size": "Large",
-  "type": "Large Elemental",
+  "cr": "1 (XP 200; PB +2)",
+  "crValue": 1,
+  "creatureType": "Fey",
+  "size": "Medium",
+  "type": "Medium Fey",
   "alignment": "Neutral",
-  "ac": "17",
-  "hp": "147 (14d10 + 70)",
-  "speed": "30 ft., Burrow 30 ft.",
+  "ac": "16",
+  "hp": "22 (5d8)",
+  "speed": "30 ft.",
   "stats": {
-    "STR": 20,
-    "DEX": 8,
-    "CON": 20,
-    "INT": 5,
-    "WIS": 10,
-    "CHA": 5
+    "STR": 10,
+    "DEX": 12,
+    "CON": 11,
+    "INT": 14,
+    "WIS": 15,
+    "CHA": 18
   },
   "traits": [
     {
-      "name": "Vulnerabilities",
-      "text": "Thunder"
+      "name": "Skills",
+      "text": "Perception +4, Stealth +5"
     },
     {
-      "name": "Immunities",
-      "text": "Poison; Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious"
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 14"
     },
     {
-      "name": "Earth Glide",
-      "text": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn’t disturb the material it moves through."
+      "name": "Languages",
+      "text": "Elvish, Sylvan"
     },
     {
-      "name": "Siege Monster",
-      "text": "The elemental deals double damage to objects and structures."
+      "name": "Magic Resistance",
+      "text": "The dryad has Advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Speak with Beasts and Plants",
+      "text": "The dryad can communicate with Beasts and Plants as if they shared a language."
     }
   ],
-  "text": "# Dryad\n\n*Large Elemental, Neutral*\n\n### Actions\n\n**Slam.** Melee Attack Roll: +8, reach 10 ft. Hit: 14 (2d8 + 5) Bludgeoning damage.\n\n**Rock Launch.** Ranged Attack Roll: +8, range 60 ft. Hit: 8 (1d6 + 5) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition."
+  "text": "# Dryad\n\n*Medium Fey, Neutral*\n\nA fey spirit bound to a tree, beguiling intruders to protect her grove.\n\n### Actions\n\n**Vine Lash.** Melee Attack Roll: +6, reach 10 ft. Hit: 8 (1d8 + 4) Slashing damage.\n\n**Thorn Burst.** Ranged Attack Roll: +6, range 60 ft. Hit: 7 (1d6 + 4) Piercing damage."
 }

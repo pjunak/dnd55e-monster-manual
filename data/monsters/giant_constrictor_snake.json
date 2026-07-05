@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Giant Constrictor Snake",
   "edition": "2024",
-  "cr": "1/8 (XP 25; PB +2)",
-  "crValue": 0.125,
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
   "creatureType": "Beast",
-  "size": "Medium",
-  "type": "Medium Beast",
+  "size": "Huge",
+  "type": "Huge Beast",
   "alignment": "Unaligned",
-  "ac": "15",
-  "hp": "13 (3d8)",
+  "ac": "12",
+  "hp": "60 (8d12 + 8)",
   "speed": "30 ft., Swim 30 ft.",
   "stats": {
-    "STR": 13,
-    "DEX": 13,
-    "CON": 11,
+    "STR": 19,
+    "DEX": 14,
+    "CON": 12,
     "INT": 1,
-    "WIS": 9,
+    "WIS": 10,
     "CHA": 3
   },
   "traits": [
     {
-      "name": "Amphibious",
-      "text": "The crab can breathe air and water."
+      "name": "Skills",
+      "text": "Perception +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 10 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Giant Constrictor Snake\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 11) from one of two claws."
+  "text": "# Giant Constrictor Snake\n\n*Huge Beast, Unaligned*\n\nA serpent vast enough to crush and swallow a horse.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 10 ft. Hit: 11 (2d6 + 4) Piercing damage.\n\n**Constrict.** Strength Saving Throw: DC 14, one Large or smaller creature the snake can see within 10 feet. Failure: 13 (2d8 + 4) Bludgeoning damage, and the target has the Grappled condition (escape DC 14)."
 }

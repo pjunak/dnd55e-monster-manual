@@ -3,44 +3,44 @@
   "kind": "monster",
   "name": "Hell Hound",
   "edition": "2024",
-  "cr": "8 (XP 3,900; PB +3)",
-  "crValue": 8,
-  "creatureType": "Fiend (Demon)",
-  "size": "Large",
-  "type": "Large Fiend (Demon)",
-  "alignment": "Chaotic Evil",
-  "ac": "18",
-  "hp": "157 (15d10 + 75)",
-  "speed": "30 ft.",
+  "cr": "3 (XP 700; PB +2)",
+  "crValue": 3,
+  "creatureType": "Fiend",
+  "size": "Medium",
+  "type": "Medium Fiend",
+  "alignment": "Lawful Evil",
+  "ac": "15",
+  "hp": "58 (9d8 + 18)",
+  "speed": "50 ft.",
   "stats": {
-    "STR": 19,
-    "DEX": 17,
-    "CON": 20,
-    "INT": 5,
-    "WIS": 12,
-    "CHA": 13
+    "STR": 17,
+    "DEX": 12,
+    "CON": 14,
+    "INT": 6,
+    "WIS": 13,
+    "CHA": 6
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Cold, Fire, Lightning"
+      "name": "Skills",
+      "text": "Perception +5"
     },
     {
       "name": "Immunities",
-      "text": "Poison; Poisoned"
+      "text": "Fire"
     },
     {
-      "name": "Demonic Restoration",
-      "text": "If the hezrou dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 15"
     },
     {
-      "name": "Magic Resistance",
-      "text": "The hezrou has Advantage on saving throws against spells and other magical effects."
+      "name": "Languages",
+      "text": "Understands Infernal but can't speak"
     },
     {
-      "name": "Stench",
-      "text": "Constitution Saving Throw: DC 16, any creature that starts its turn in a 10-foot Emanation originating from the hezrou. Failure: The target has the Poisoned condition until the start of its next turn."
+      "name": "Pack Tactics",
+      "text": "The hound has Advantage on an attack roll against a creature if at least one of the hound’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
     }
   ],
-  "text": "# Hell Hound\n\n*Large Fiend (Demon), Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 5 ft. Hit: 6 (1d4 + 4) Slashing damage plus 9 (2d8) Poison damage."
+  "text": "# Hell Hound\n\n*Medium Fiend, Lawful Evil*\n\nA fire-breathing hunting hound of the Lower Planes, loyal only to crueler masters.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage plus 3 (1d6) Fire damage.\n\n**Fire Breath (Recharge 5–6).** Dexterity Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 17 (5d6) Fire damage. Success: Half damage."
 }

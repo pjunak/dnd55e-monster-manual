@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Allosaurus",
   "edition": "2024",
-  "cr": "3 (XP 700; PB +2)",
-  "crValue": 3,
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
   "creatureType": "Beast (Dinosaur)",
-  "size": "Huge",
-  "type": "Huge Beast (Dinosaur)",
+  "size": "Large",
+  "type": "Large Beast (Dinosaur)",
   "alignment": "Unaligned",
-  "ac": "15",
-  "hp": "68 (8d12 + 16)",
-  "speed": "30 ft.",
+  "ac": "13",
+  "hp": "51 (6d10 + 18)",
+  "speed": "60 ft.",
   "stats": {
     "STR": 19,
-    "DEX": 11,
-    "CON": 15,
+    "DEX": 13,
+    "CON": 17,
     "INT": 2,
     "WIS": 12,
     "CHA": 5
   },
-  "traits": [],
-  "text": "# Allosaurus\n\n*Huge Beast (Dinosaur), Unaligned*\n\n### Actions\n\n**Tail.** Melee Attack Roll: +6, reach 10 ft. Hit: 9 (1d10 + 4) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +5"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Allosaurus\n\n*Large Beast (Dinosaur), Unaligned*\n\nA swift pack-hunting dinosaur that runs down prey with shocking bursts of speed.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 5 ft. Hit: 15 (2d10 + 4) Piercing damage.\n\n**Claws.** Melee Attack Roll: +6, reach 5 ft. Hit: 8 (1d8 + 4) Slashing damage. If the target is a Large or smaller creature and the allosaurus moved 30+ feet straight toward it immediately before the hit, the target has the Prone condition, and the allosaurus can make one Bite attack against it."
 }

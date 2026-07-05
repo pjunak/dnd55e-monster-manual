@@ -3,23 +3,56 @@
   "kind": "monster",
   "name": "Hezrou",
   "edition": "2024",
-  "cr": "5 (XP 1,800; PB +3)",
-  "crValue": 5,
-  "creatureType": "Giant",
-  "size": "Huge",
-  "type": "Huge Giant",
+  "cr": "8 (XP 3,900; PB +3)",
+  "crValue": 8,
+  "creatureType": "Fiend (Demon)",
+  "size": "Large",
+  "type": "Large Fiend (Demon)",
   "alignment": "Chaotic Evil",
-  "ac": "13",
-  "hp": "105 (10d12 + 40)",
-  "speed": "40 ft.",
+  "ac": "18",
+  "hp": "157 (15d10 + 75)",
+  "speed": "30 ft.",
   "stats": {
-    "STR": 21,
-    "DEX": 8,
-    "CON": 19,
+    "STR": 19,
+    "DEX": 17,
+    "CON": 20,
     "INT": 5,
-    "WIS": 9,
-    "CHA": 6
+    "WIS": 12,
+    "CHA": 13
   },
-  "traits": [],
-  "text": "# Hezrou\n\n*Huge Giant, Chaotic Evil*\n\n### Actions\n\n**Tree Club.** Melee Attack Roll: +8, reach 10 ft. Hit: 18 (3d8 + 5) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.\n\n**Trash Lob.** Ranged Attack Roll: +8, range 60/240 ft. Hit: 16 (2d10 + 5) Bludgeoning damage, and the target has the Poisoned condition until the end of its next turn."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Str +7, Con +8, Wis +4"
+    },
+    {
+      "name": "Resistances",
+      "text": "Cold, Fire, Lightning"
+    },
+    {
+      "name": "Immunities",
+      "text": "Poison; Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 120 ft.; Passive Perception 11"
+    },
+    {
+      "name": "Languages",
+      "text": "Abyssal; telepathy 120 ft."
+    },
+    {
+      "name": "Demonic Restoration",
+      "text": "If the hezrou dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The hezrou has Advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Stench",
+      "text": "Constitution Saving Throw: DC 16, any creature that starts its turn in a 10-foot Emanation originating from the hezrou. Failure: The target has the Poisoned condition until the start of its next turn."
+    }
+  ],
+  "text": "# Hezrou\n\n*Large Fiend (Demon), Chaotic Evil*\n\nA toad-like demon shock trooper whose stench fells the strong before its claws do.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 5 ft. Hit: 6 (1d4 + 4) Slashing damage plus 9 (2d8) Poison damage."
 }

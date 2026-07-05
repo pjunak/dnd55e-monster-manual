@@ -3,44 +3,52 @@
   "kind": "monster",
   "name": "Nalfeshnee",
   "edition": "2024",
-  "cr": "5 (XP 1,800; PB +3)",
-  "crValue": 5,
-  "creatureType": "Fiend",
-  "size": "Medium",
-  "type": "Medium Fiend",
-  "alignment": "Neutral Evil",
-  "ac": "17",
-  "hp": "112 (15d8 + 45)",
-  "speed": "30 ft.",
+  "cr": "13 (XP 10,000; PB +5)",
+  "crValue": 13,
+  "creatureType": "Fiend (Demon)",
+  "size": "Large",
+  "type": "Large Fiend (Demon)",
+  "alignment": "Chaotic Evil",
+  "ac": "18",
+  "hp": "184 (16d10 + 96)",
+  "speed": "20 ft., Fly 30 ft.",
   "stats": {
-    "STR": 18,
-    "DEX": 15,
-    "CON": 16,
-    "INT": 16,
-    "WIS": 14,
-    "CHA": 16
+    "STR": 21,
+    "DEX": 10,
+    "CON": 22,
+    "INT": 19,
+    "WIS": 12,
+    "CHA": 15
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Con +11, Int +9, Wis +6, Cha +7"
+    },
+    {
       "name": "Resistances",
-      "text": "Cold, Fire"
+      "text": "Cold, Fire, Lightning"
     },
     {
       "name": "Immunities",
-      "text": "Charmed"
+      "text": "Poison; Frightened, Poisoned"
     },
     {
-      "name": "Coven Magic",
-      "text": "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell’s normal casting time, and using Intelligence as the spellcasting ability (spell save DC 14): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again."
+      "name": "Senses",
+      "text": "Truesight 120 ft.; Passive Perception 11"
+    },
+    {
+      "name": "Languages",
+      "text": "Abyssal; telepathy 120 ft."
+    },
+    {
+      "name": "Demonic Restoration",
+      "text": "If the nalfeshnee dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
     },
     {
       "name": "Magic Resistance",
-      "text": "The hag has Advantage on saving throws against spells and other magical effects."
-    },
-    {
-      "name": "Soul Bag",
-      "text": "The hag has a soul bag. While holding or carrying the bag, the hag can use its Nightmare Haunting action."
+      "text": "The nalfeshnee has Advantage on saving throws against spells and other magical effects."
     }
   ],
-  "text": "# Nalfeshnee\n\n*Medium Fiend, Neutral Evil*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage."
+  "text": "# Nalfeshnee\n\n*Large Fiend (Demon), Chaotic Evil*\n\nA boar-headed demon magistrate that judges lesser fiends and devours the failures.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +10, reach 10 ft. Hit: 16 (2d10 + 5) Slashing damage plus 11 (2d10) Force damage.\n\n**Horror Nimbus (Recharge 5–6).** Wisdom Saving Throw: DC 15, each creature in a 15-foot Emanation originating from the nalfeshnee. Failure: 28 (8d6) Psychic damage, and the target has the Frightened condition for 1 minute, until it takes damage, or until it ends its turn with the nalfeshnee out of line of sight. Success: The target is immune to this nalfeshnee’s Horror Nimbus for 24 hours."
 }

@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Giant Hyena",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
+  "cr": "1 (XP 200; PB +2)",
+  "crValue": 1,
   "creatureType": "Beast",
   "size": "Large",
   "type": "Large Beast",
   "alignment": "Unaligned",
   "ac": "12",
-  "hp": "19 (3d10 + 3)",
-  "speed": "40 ft., Climb 40 ft.",
+  "hp": "45 (6d10 + 12)",
+  "speed": "50 ft.",
   "stats": {
-    "STR": 15,
-    "DEX": 12,
-    "CON": 13,
+    "STR": 16,
+    "DEX": 14,
+    "CON": 14,
     "INT": 2,
-    "WIS": 10,
-    "CHA": 5
+    "WIS": 12,
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Spider Climb",
-      "text": "The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      "name": "Skills",
+      "text": "Perception +3"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Giant Hyena\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage."
+  "text": "# Giant Hyena\n\n*Large Beast, Unaligned*\n\nA cackling pack hunter big enough to drag off a warrior.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Piercing damage."
 }

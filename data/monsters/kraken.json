@@ -3,23 +3,56 @@
   "kind": "monster",
   "name": "Kraken",
   "edition": "2024",
-  "cr": "4 (XP 1,100; PB +2)",
-  "crValue": 4,
-  "creatureType": "Fiend",
-  "size": "Large",
-  "type": "Large Fiend",
+  "cr": "23 (XP 50,000, or 62,000 in lair; PB +7)",
+  "crValue": 23,
+  "creatureType": "Monstrosity (Titan)",
+  "size": "Gargantuan",
+  "type": "Gargantuan Monstrosity (Titan)",
   "alignment": "Chaotic Evil",
-  "ac": "13",
-  "hp": "97 (13d10 + 26)",
-  "speed": "40 ft.",
+  "ac": "18",
+  "hp": "481 (26d20 + 208)",
+  "speed": "30 ft., Swim 120 ft.",
   "stats": {
-    "STR": 16,
-    "DEX": 13,
-    "CON": 15,
-    "INT": 14,
-    "WIS": 15,
-    "CHA": 16
+    "STR": 30,
+    "DEX": 11,
+    "CON": 26,
+    "INT": 22,
+    "WIS": 18,
+    "CHA": 20
   },
-  "traits": [],
-  "text": "# Kraken\n\n*Large Fiend, Chaotic Evil*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage plus 7 (2d6) Psychic damage.\n\n**Corrupting Touch.** Wisdom Saving Throw: DC 13, one creature the lamia can see within 5 feet. Failure: 13 (3d8) Psychic damage, and the target is cursed for 1 hour. Until the curse ends, the target has the Charmed and Poisoned conditions."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Str +17, Dex +7, Con +15, Wis +11"
+    },
+    {
+      "name": "Skills",
+      "text": "History +13, Perception +11"
+    },
+    {
+      "name": "Immunities",
+      "text": "Cold, Lightning; Frightened, Grappled, Paralyzed, Restrained"
+    },
+    {
+      "name": "Senses",
+      "text": "Truesight 120 ft.; Passive Perception 21"
+    },
+    {
+      "name": "Languages",
+      "text": "Understands Abyssal, Celestial, Infernal, And Primordial but can't speak; telepathy 120 ft."
+    },
+    {
+      "name": "Amphibious",
+      "text": "The kraken can breathe air and water."
+    },
+    {
+      "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
+      "text": "If the kraken fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The kraken deals double damage to objects and structures."
+    }
+  ],
+  "text": "# Kraken\n\n*Gargantuan Monstrosity (Titan), Chaotic Evil*\n\nA god-sized terror of the abyssal deeps whose tentacles have dragged whole fleets under.\n\n### Actions\n\n**Tentacle.** Melee Attack Roll: +17, reach 30 ft. Hit: 24 (4d6 + 10) Bludgeoning damage. The target has the Grappled condition (escape DC 20) from one of ten tentacles, and it has the Restrained condition until the grapple ends.\n\n**Fling.** The kraken throws a Large or smaller creature Grappled by it to a space it can see within 60 feet of itself that isn’t in the air. Dexterity Saving Throw: DC 25, the creature thrown and each creature in the destination space. Failure: 18 (4d8) Bludgeoning damage, and the target has the Prone condition. Success: Half damage only.\n\n**Lightning Strike.** Dexterity Saving Throw: DC 23, one creature the kraken can see within 120 feet. Failure: 33 (6d10) Lightning damage. Success: Half damage.\n\n**Swallow.** Dexterity Saving Throw: DC 25, one creature Grappled by the kraken (it can have up to four creatures swallowed at a time). Failure: 23 (3d8 + 10) Piercing damage. If the target is Large or smaller, it is swallowed and no longer Grappled. A swallowed creature has the Restrained condition, has Total Cover against attacks and other effects outside the kraken, and takes 24 (7d6) Acid damage at the start of each of its turns.\n\n**Toxic Ink.** Constitution Saving Throw: DC 23, each creature in a 15-foot Emanation originating from the kraken while it is underwater. Failure: The target has the Blinded and Poisoned conditions until the end of the kraken’s next turn. The kraken then moves up to its Speed. Failure or Success: The kraken can’t take this action again until the start of its next turn."
 }

@@ -22,8 +22,20 @@
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Stealth +2"
+    },
+    {
       "name": "Immunities",
       "text": "Fire, Poison; Exhaustion, Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Primordial (Aquan, Ignan)"
     },
     {
       "name": "Blurred Form",
@@ -34,5 +46,5 @@
       "text": "The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Fire damage. Success: Half damage."
     }
   ],
-  "text": "# Steam Mephit\n\n*Small Elemental, Neutral Evil*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Slashing damage plus 2 (1d4) Fire damage.\n\n**Steam Breath (Recharge 6).** Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target’s Speed decreases by 10 feet until the end of the mephit’s next turn. Success: Half damage only. Failure or Success: Being underwater doesn’t grant Resistance to this Fire damage."
+  "text": "# Steam Mephit\n\n*Small Elemental, Neutral Evil*\n\nA hissing imp of scalding vapor that erupts in boiling mist when slain.\n\n### Actions\n\n**Claw.** Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Slashing damage plus 2 (1d4) Fire damage.\n\n**Steam Breath (Recharge 6).** Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target’s Speed decreases by 10 feet until the end of the mephit’s next turn. Success: Half damage only. Failure or Success: Being underwater doesn’t grant Resistance to this Fire damage."
 }

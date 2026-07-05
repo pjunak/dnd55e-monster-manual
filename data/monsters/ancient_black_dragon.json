@@ -22,8 +22,24 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +9, Wis +9"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +16, Stealth +9"
+    },
+    {
       "name": "Immunities",
       "text": "Acid"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Darkvision 120 ft.; Passive Perception 26"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Amphibious",
@@ -34,5 +50,5 @@
       "text": "If the dragon fails a saving throw, it can choose to succeed instead."
     }
   ],
-  "text": "# Ancient Black Dragon\n\n*Gargantuan Dragon (Chromatic), Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +15, reach 15 ft. Hit: 17 (2d8 + 8) Slashing damage plus 9 (2d8) Acid damage.\n\n**Acid Breath (Recharge 5–6).** Dexterity Saving Throw: DC 22, each creature in a 90-foot-long, 10-foot-wide Line. Failure: 67 (15d8) Acid damage. Success: Half damage.\n\n**Cloud of Insects.** Dexterity Saving Throw: DC 21, one creature the dragon can see within 120 feet. Failure: 33 (6d10) Poison damage, and the target has Disadvantage on saving throws to maintain Concentration until the end of its next turn. Failure or Success: The dragon can’t take this action again until the start of its next turn."
+  "text": "# Ancient Black Dragon\n\n*Gargantuan Dragon (Chromatic), Chaotic Evil*\n\nAn ancient black dragon of world-shaking power: an acid-spewing tyrant of swamps and drowned ruins that savors the slow decay of its victims.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +15, reach 15 ft. Hit: 17 (2d8 + 8) Slashing damage plus 9 (2d8) Acid damage.\n\n**Acid Breath (Recharge 5–6).** Dexterity Saving Throw: DC 22, each creature in a 90-foot-long, 10-foot-wide Line. Failure: 67 (15d8) Acid damage. Success: Half damage.\n\n**Cloud of Insects.** Dexterity Saving Throw: DC 21, one creature the dragon can see within 120 feet. Failure: 33 (6d10) Poison damage, and the target has Disadvantage on saving throws to maintain Concentration until the end of its next turn. Failure or Success: The dragon can’t take this action again until the start of its next turn."
 }

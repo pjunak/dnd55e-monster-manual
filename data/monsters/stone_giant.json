@@ -3,36 +3,40 @@
   "kind": "monster",
   "name": "Stone Giant",
   "edition": "2024",
-  "cr": "10 (XP 5,900; PB +4)",
-  "crValue": 10,
-  "creatureType": "Construct",
-  "size": "Large",
-  "type": "Large Construct",
-  "alignment": "Unaligned",
-  "ac": "18",
-  "hp": "220 (21d10 + 105)",
-  "speed": "30 ft.",
+  "cr": "7 (XP 2,900; PB +3)",
+  "crValue": 7,
+  "creatureType": "Giant",
+  "size": "Huge",
+  "type": "Huge Giant",
+  "alignment": "Neutral",
+  "ac": "17",
+  "hp": "126 (11d12 + 55)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 22,
-    "DEX": 9,
+    "STR": 23,
+    "DEX": 15,
     "CON": 20,
-    "INT": 3,
-    "WIS": 11,
-    "CHA": 1
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 9
   },
   "traits": [
     {
-      "name": "Immunities",
-      "text": "Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+      "name": "Saving Throws",
+      "text": "Dex +5, Con +8, Wis +4"
     },
     {
-      "name": "Immutable Form",
-      "text": "The golem can’t shape-shift."
+      "name": "Skills",
+      "text": "Athletics +12, Perception +4, Stealth +5"
     },
     {
-      "name": "Magic Resistance",
-      "text": "The golem has Advantage on saving throws against spells and other magical effects."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "Giant"
     }
   ],
-  "text": "# Stone Giant\n\n*Large Construct, Unaligned*\n\n### Actions\n\n**Slam.** Melee Attack Roll: +10, reach 5 ft. Hit: 15 (2d8 + 6) Bludgeoning damage plus 9 (2d8) Force damage.\n\n**Force Bolt.** Ranged Attack Roll: +9, range 120 ft. Hit: 22 (4d10) Force damage."
+  "text": "# Stone Giant\n\n*Huge Giant, Neutral*\n\nA reclusive cavern artist that hurls boulders as easily as an athlete throws stones.\n\n### Actions\n\n**Stone Club.** Melee Attack Roll: +9, reach 15 ft. Hit: 22 (3d10 + 6) Bludgeoning damage.\n\n**Boulder.** Ranged Attack Roll: +9, range 60/240 ft. Hit: 15 (2d8 + 6) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.\n\n**Deflect Missile (Recharge 5–6).** Trigger: The giant is hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it. Response: The giant reduces the damage it takes from the attack by 11 (1d10 + 6), and if that damage is reduced to 0, the giant can redirect some of the attack’s force. Dexterity Saving Throw: DC 17, one creature the giant can see within 60 feet. Failure: 11 (1d10 + 6) Force damage."
 }

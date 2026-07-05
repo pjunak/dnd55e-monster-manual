@@ -3,23 +3,40 @@
   "kind": "monster",
   "name": "Magmin",
   "edition": "2024",
-  "cr": "3 (XP 700; PB +2)",
-  "crValue": 3,
-  "creatureType": "Monstrosity",
-  "size": "Large",
-  "type": "Large Monstrosity",
-  "alignment": "Lawful Evil",
+  "cr": "1/2 (XP 100; PB +2)",
+  "crValue": 0.5,
+  "creatureType": "Elemental",
+  "size": "Small",
+  "type": "Small Elemental",
+  "alignment": "Chaotic Neutral",
   "ac": "14",
-  "hp": "68 (8d10 + 24)",
-  "speed": "30 ft., Fly 50 ft.",
+  "hp": "13 (3d6 + 3)",
+  "speed": "30 ft.",
   "stats": {
-    "STR": 17,
-    "DEX": 16,
-    "CON": 17,
-    "INT": 7,
-    "WIS": 12,
-    "CHA": 8
+    "STR": 7,
+    "DEX": 15,
+    "CON": 12,
+    "INT": 8,
+    "WIS": 11,
+    "CHA": 10
   },
-  "traits": [],
-  "text": "# Magmin\n\n*Large Monstrosity, Lawful Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage.\n\n**Tail Spike.** Ranged Attack Roll: +5, range 100/200 ft. Hit: 7 (1d8 + 3) Piercing damage."
+  "traits": [
+    {
+      "name": "Immunities",
+      "text": "Fire"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Primordial (Ignan)"
+    },
+    {
+      "name": "Death Burst",
+      "text": "The magmin explodes when it dies. Dexterity Saving Throw: DC 11, each creature in a 10-foot Emanation originating from the magmin. Failure: 7 (2d6) Fire damage. Success: Half damage."
+    }
+  ],
+  "text": "# Magmin\n\n*Small Elemental, Chaotic Neutral*\n\nA capering elemental firebrand that ignites everything it can reach, gleefully.\n\n### Actions\n\n**Touch.** Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Fire damage. If the target is a creature or a flammable object that isn’t being worn or carried, it starts burning."
 }

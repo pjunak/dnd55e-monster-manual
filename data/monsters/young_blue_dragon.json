@@ -22,9 +22,25 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +4, Wis +5"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +9, Stealth +4"
+    },
+    {
       "name": "Immunities",
       "text": "Lightning"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 30 ft.; Darkvision 120 ft.; Passive Perception 19"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     }
   ],
-  "text": "# Young Blue Dragon\n\n*Large Dragon (Chromatic), Lawful Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +9, reach 10 ft. Hit: 12 (2d6 + 5) Slashing damage plus 5 (1d10) Lightning damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 16, each creature in a 60-foot-long, 5-foot-wide Line. Failure: 55 (10d10) Lightning damage. Success: Half damage."
+  "text": "# Young Blue Dragon\n\n*Large Dragon (Chromatic), Lawful Evil*\n\nA young blue dragon coming into its power: a lightning-wreathed schemer that lairs beneath shifting desert sands.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +9, reach 10 ft. Hit: 12 (2d6 + 5) Slashing damage plus 5 (1d10) Lightning damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 16, each creature in a 60-foot-long, 5-foot-wide Line. Failure: 55 (10d10) Lightning damage. Success: Half damage."
 }

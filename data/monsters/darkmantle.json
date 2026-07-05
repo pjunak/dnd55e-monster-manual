@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Darkmantle",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
-  "creatureType": "Monstrosity",
-  "size": "Medium",
-  "type": "Medium Monstrosity",
-  "alignment": "Neutral Evil",
-  "ac": "12",
-  "hp": "39 (6d8 + 12)",
-  "speed": "40 ft.",
+  "cr": "1/2 (XP 100; PB +2)",
+  "crValue": 0.5,
+  "creatureType": "Aberration",
+  "size": "Small",
+  "type": "Small Aberration",
+  "alignment": "Unaligned",
+  "ac": "11",
+  "hp": "22 (5d6 + 5)",
+  "speed": "10 ft., Fly 30 ft.",
   "stats": {
-    "STR": 15,
-    "DEX": 14,
-    "CON": 14,
-    "INT": 3,
-    "WIS": 13,
-    "CHA": 6
+    "STR": 16,
+    "DEX": 12,
+    "CON": 13,
+    "INT": 2,
+    "WIS": 10,
+    "CHA": 5
   },
   "traits": [
     {
-      "name": "Immunities",
-      "text": "Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious"
+      "name": "Skills",
+      "text": "Stealth +3"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Darkmantle\n\n*Medium Monstrosity, Neutral Evil*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage. If the target is a creature, it is subjected to the following effect. Constitution Saving Throw: DC 12. First Failure: The target has the Poisoned condition. While Poisoned, the target’s Hit Point maximum doesn’t return to normal when finishing a Long Rest, and it repeats the save every 24 hours that elapse, ending the effect on itself on a success. Subsequent Failures: The Poisoned target’s Hit Point maximum decreases by 5 (1d10)."
+  "text": "# Darkmantle\n\n*Small Aberration, Unaligned*\n\nA cave-ceiling lurker that drops onto prey and smothers it in leathery folds of darkness.\n\n### Actions\n\n**Crush.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage, and the darkmantle attaches to the target. If the target is a Medium or smaller creature and the darkmantle had Advantage on the attack roll, it covers the target, which has the Blinded condition and is suffocating while the darkmantle is attached in this way."
 }

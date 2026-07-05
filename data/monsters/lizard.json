@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Lizard",
   "edition": "2024",
-  "cr": "6 (XP 2,300; PB +3)",
-  "crValue": 6,
+  "cr": "0 (XP 10; PB +2)",
+  "crValue": 0,
   "creatureType": "Beast",
-  "size": "Huge",
-  "type": "Huge Beast",
+  "size": "Tiny",
+  "type": "Tiny Beast",
   "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "126 (11d12 + 55)",
-  "speed": "50 ft.",
+  "ac": "10",
+  "hp": "2 (1d4)",
+  "speed": "20 ft., Climb 20 ft.",
   "stats": {
-    "STR": 24,
-    "DEX": 9,
-    "CON": 21,
-    "INT": 3,
-    "WIS": 11,
-    "CHA": 6
+    "STR": 2,
+    "DEX": 11,
+    "CON": 10,
+    "INT": 1,
+    "WIS": 8,
+    "CHA": 3
   },
-  "traits": [],
-  "text": "# Lizard\n\n*Huge Beast, Unaligned*\n\n### Actions\n\n**Gore.** Melee Attack Roll: +10, reach 10 ft. Hit: 18 (2d10 + 7) Piercing damage. If the target is a Huge or smaller creature and the mammoth moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.\n\n**Trample.** Dexterity Saving Throw: DC 18, one creature within 5 feet that has the Prone condition. Failure: 29 (4d10 + 7) Bludgeoning damage. Success: Half damage."
+  "traits": [
+    {
+      "name": "Senses",
+      "text": "Darkvision 30 ft.; Passive Perception 9"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+    }
+  ],
+  "text": "# Lizard\n\nA darting wall-climbing reptile.\n\n*Tiny Beast, Unaligned*"
 }

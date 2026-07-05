@@ -3,23 +3,44 @@
   "kind": "monster",
   "name": "Cloaker",
   "edition": "2024",
-  "cr": "9 (XP 5,000; PB +4)",
-  "crValue": 9,
-  "creatureType": "Giant",
-  "size": "Huge",
-  "type": "Huge Giant",
-  "alignment": "Neutral",
+  "cr": "8 (XP 3,900; PB +3)",
+  "crValue": 8,
+  "creatureType": "Aberration",
+  "size": "Large",
+  "type": "Large Aberration",
+  "alignment": "Chaotic Neutral",
   "ac": "14",
-  "hp": "200 (16d12 + 96)",
-  "speed": "40 ft., Fly 20 ft. (hover)",
+  "hp": "91 (14d10 + 14)",
+  "speed": "10 ft., Fly 40 ft.",
   "stats": {
-    "STR": 27,
-    "DEX": 10,
-    "CON": 22,
-    "INT": 12,
-    "WIS": 16,
-    "CHA": 16
+    "STR": 17,
+    "DEX": 15,
+    "CON": 12,
+    "INT": 13,
+    "WIS": 14,
+    "CHA": 7
   },
-  "traits": [],
-  "text": "# Cloaker\n\n*Huge Giant, Neutral*\n\n### Actions\n\n**Thunderous Mace.** Melee Attack Roll: +12, reach 10 ft. Hit: 21 (3d8 + 8) Bludgeoning damage plus 7 (2d6) Thunder damage.\n\n**Thundercloud.** Ranged Attack Roll: +12, range 240 ft. Hit: 18 (3d6 + 8) Thunder damage, and the target has the Incapacitated condition until the end of its next turn."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Stealth +5"
+    },
+    {
+      "name": "Immunities",
+      "text": "Frightened"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 120 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Deep Speech, Undercommon"
+    },
+    {
+      "name": "Light Sensitivity",
+      "text": "While in Bright Light, the cloaker has Disadvantage on attack rolls."
+    }
+  ],
+  "text": "# Cloaker\n\n*Large Aberration, Chaotic Neutral*\n\nA ray-like lurker of lightless caverns that drapes over prey and moans dread into the dark.\n\n### Actions\n\n**Attach.** Melee Attack Roll: +6, reach 5 ft. Hit: 13 (3d6 + 3) Piercing damage. If the target is a Large or smaller creature, the cloaker attaches to it. While the cloaker is attached, the target has the Blinded condition, and the cloaker can’t make Attach attacks against other targets. In addition, the cloaker halves the damage it takes (round down), and the target takes the same amount of damage.\n\n**Tail.** Melee Attack Roll: +6, reach 10 ft. Hit: 8 (1d10 + 3) Slashing damage.\n\n**Moan.** Wisdom Saving Throw: DC 13, each creature in a 60-foot Emanation originating from the cloaker. Failure: The target has the Frightened condition until the end of the cloaker’s next turn. Success: The target is immune to this cloaker’s Moan for the next 24 hours."
 }

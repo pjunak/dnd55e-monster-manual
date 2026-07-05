@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +5, Wis +3"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +6, Stealth +5"
+    },
+    {
       "name": "Immunities",
       "text": "Acid"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 30 ft.; Darkvision 120 ft.; Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Amphibious",
       "text": "The dragon can breathe air and water."
     }
   ],
-  "text": "# Young Black Dragon\n\n*Large Dragon (Chromatic), Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 10 ft. Hit: 9 (2d4 + 4) Slashing damage plus 3 (1d6) Acid damage.\n\n**Acid Breath (Recharge 5–6).** Dexterity Saving Throw: DC 14, each creature in a 30-foot-long, 5-foot-wide Line. Failure: 49 (14d6) Acid damage. Success: Half damage."
+  "text": "# Young Black Dragon\n\n*Large Dragon (Chromatic), Chaotic Evil*\n\nA young black dragon coming into its power: an acid-spewing tyrant of swamps and drowned ruins that savors the slow decay of its victims.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 10 ft. Hit: 9 (2d4 + 4) Slashing damage plus 3 (1d6) Acid damage.\n\n**Acid Breath (Recharge 5–6).** Dexterity Saving Throw: DC 14, each creature in a 30-foot-long, 5-foot-wide Line. Failure: 49 (14d6) Acid damage. Success: Half damage."
 }

@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +7, Wis +9"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +16, Stealth +7"
+    },
+    {
       "name": "Immunities",
       "text": "Fire"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Darkvision 120 ft.; Passive Perception 26"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
       "text": "If the dragon fails a saving throw, it can choose to succeed instead."
     }
   ],
-  "text": "# Ancient Red Dragon\n\n*Gargantuan Dragon (Chromatic), Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +17, reach 15 ft. Hit: 19 (2d8 + 10) Slashing damage plus 10 (3d6) Fire damage.\n\n**Fire Breath (Recharge 5–6).** Dexterity Saving Throw: DC 24, each creature in a 90-foot Cone. Failure: 91 (26d6) Fire damage. Success: Half damage."
+  "text": "# Ancient Red Dragon\n\n*Gargantuan Dragon (Chromatic), Chaotic Evil*\n\nAn ancient red dragon of world-shaking power: the most infamous of chromatic dragons — arrogant, avaricious, and wreathed in fire.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +17, reach 15 ft. Hit: 19 (2d8 + 10) Slashing damage plus 10 (3d6) Fire damage.\n\n**Fire Breath (Recharge 5–6).** Dexterity Saving Throw: DC 24, each creature in a 90-foot Cone. Failure: 91 (26d6) Fire damage. Success: Half damage."
 }

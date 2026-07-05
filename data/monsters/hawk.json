@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Hawk",
   "edition": "2024",
-  "cr": "4 (XP 1,100; PB +2)",
-  "crValue": 4,
+  "cr": "0 (XP 10; PB +2)",
+  "crValue": 0,
   "creatureType": "Beast",
-  "size": "Large",
-  "type": "Large Beast",
+  "size": "Tiny",
+  "type": "Tiny Beast",
   "alignment": "Unaligned",
-  "ac": "14",
-  "hp": "82 (11d10 + 22)",
-  "speed": "30 ft., Swim 30 ft.",
+  "ac": "13",
+  "hp": "1 (1d4 − 1)",
+  "speed": "10 ft., Fly 60 ft.",
   "stats": {
-    "STR": 21,
-    "DEX": 7,
-    "CON": 15,
+    "STR": 5,
+    "DEX": 16,
+    "CON": 8,
     "INT": 2,
-    "WIS": 12,
-    "CHA": 4
+    "WIS": 14,
+    "CHA": 6
   },
   "traits": [
     {
-      "name": "Hold Breath",
-      "text": "The hippopotamus can hold its breath for 10 minutes."
+      "name": "Skills",
+      "text": "Perception +6"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Hawk\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +7, reach 5 ft. Hit: 16 (2d10 + 5) Piercing damage."
+  "text": "# Hawk\n\nA darting raptor with eyes that miss nothing.\n\n*Tiny Beast, Unaligned*"
 }

@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Bulette",
   "edition": "2024",
-  "cr": "2 (XP 450; PB +2)",
-  "crValue": 2,
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
   "creatureType": "Monstrosity",
   "size": "Large",
   "type": "Large Monstrosity",
   "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "51 (6d10 + 18)",
-  "speed": "30 ft., Climb 30 ft.",
+  "ac": "17",
+  "hp": "94 (9d10 + 45)",
+  "speed": "40 ft., Burrow 40 ft.",
   "stats": {
-    "STR": 14,
-    "DEX": 13,
-    "CON": 16,
-    "INT": 1,
-    "WIS": 12,
+    "STR": 19,
+    "DEX": 11,
+    "CON": 21,
+    "INT": 2,
+    "WIS": 10,
     "CHA": 5
   },
   "traits": [
     {
-      "name": "Spider Climb",
-      "text": "The carrion crawler can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      "name": "Skills",
+      "text": "Perception +6"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Tremorsense 120 ft.; Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Bulette\n\n*Large Monstrosity, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage plus 3 (1d6) Poison damage.\n\n**Paralyzing Tentacles.** Constitution Saving Throw: DC 12, one creature the carrion crawler can see within 10 feet. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Poisoned, the target has the Paralyzed condition."
+  "text": "# Bulette\n\n*Large Monstrosity, Unaligned*\n\nA land shark that swims through earth and erupts beneath its prey in a spray of soil.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +7, reach 5 ft. Hit: 17 (2d12 + 4) Piercing damage.\n\n**Deadly Leap.** The bulette spends 5 feet of movement to jump to a space within 15 feet that contains one or more Large or smaller creatures. Dexterity Saving Throw: DC 15, each creature in the bulette’s destination space. Failure: 19 (3d12) Bludgeoning damage, and the target has the Prone condition. Success: Half damage, and the target is pushed 5 feet straight away from the bulette."
 }

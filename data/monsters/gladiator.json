@@ -3,23 +3,40 @@
   "kind": "monster",
   "name": "Gladiator",
   "edition": "2024",
-  "cr": "1/2 (XP 100; PB +2)",
-  "crValue": 0.5,
-  "creatureType": "Fiend",
-  "size": "Medium",
-  "type": "Medium Fiend",
-  "alignment": "Chaotic Evil",
-  "ac": "15",
-  "hp": "27 (6d8)",
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
+  "creatureType": "Humanoid",
+  "size": "Medium or Small",
+  "type": "Medium or Small Humanoid",
+  "alignment": "Neutral",
+  "ac": "16",
+  "hp": "112 (15d8 + 45)",
   "speed": "30 ft.",
   "stats": {
-    "STR": 14,
-    "DEX": 12,
-    "CON": 11,
-    "INT": 6,
-    "WIS": 10,
-    "CHA": 7
+    "STR": 18,
+    "DEX": 15,
+    "CON": 16,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 15
   },
-  "traits": [],
-  "text": "# Gladiator\n\n*Medium Fiend, Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.\n\n**Bone Bow.** Ranged Attack Roll: +3, range 150/600 ft. Hit: 6 (1d10 + 1) Piercing damage."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Str +7, Dex +5, Con +6, Wis +4"
+    },
+    {
+      "name": "Skills",
+      "text": "Athletics +10, Performance +5"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 11"
+    },
+    {
+      "name": "Languages",
+      "text": "Common"
+    }
+  ],
+  "text": "# Gladiator\n\n*Medium or Small Humanoid, Neutral*\n\nA celebrated arena fighter who performs violence as art.\n\n### Actions\n\n**Spear.** Melee or Ranged Attack Roll: +7, reach 5 ft. or range 20/60 ft. Hit: 11 (2d6 + 4) Piercing damage.\n\n**Shield Bash.** Strength Saving Throw: DC 15, one creature within 5 feet that the gladiator can see. Failure: 9 (2d4 + 4) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Prone condition."
 }

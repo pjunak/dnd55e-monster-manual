@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +2, Wis +2"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +4, Stealth +2"
+    },
+    {
       "name": "Immunities",
       "text": "Cold"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 10 ft.; Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "Draconic"
     },
     {
       "name": "Ice Walk",
       "text": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn’t cost it extra movement."
     }
   ],
-  "text": "# White Dragon Wyrmling\n\n*Medium Dragon (Chromatic), Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Slashing damage plus 2 (1d4) Cold damage.\n\n**Cold Breath (Recharge 5–6).** Constitution Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 22 (5d8) Cold damage. Success: Half damage."
+  "text": "# White Dragon Wyrmling\n\n*Medium Dragon (Chromatic), Chaotic Evil*\n\nA newly hatched white dragon, feral from the egg and hungry always.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Slashing damage plus 2 (1d4) Cold damage.\n\n**Cold Breath (Recharge 5–6).** Constitution Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 22 (5d8) Cold damage. Success: Half damage."
 }

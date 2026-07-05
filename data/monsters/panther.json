@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Panther",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
   "creatureType": "Beast",
-  "size": "Tiny",
-  "type": "Tiny Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
   "ac": "13",
-  "hp": "1 (1d4 − 1)",
-  "speed": "5 ft., Swim 40 ft.",
+  "hp": "13 (3d8)",
+  "speed": "50 ft., Climb 40 ft.",
   "stats": {
-    "STR": 2,
+    "STR": 14,
     "DEX": 16,
-    "CON": 9,
-    "INT": 1,
-    "WIS": 7,
-    "CHA": 2
+    "CON": 10,
+    "INT": 3,
+    "WIS": 14,
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Water Breathing",
-      "text": "The piranha can breathe only underwater."
+      "name": "Skills",
+      "text": "Perception +4, Stealth +6"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Panther\n\n*Tiny Beast, Unaligned*"
+  "text": "# Panther\n\n*Medium Beast, Unaligned*\n\nA shadow-silent jungle cat that strikes from above.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage."
 }

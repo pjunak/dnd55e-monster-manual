@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Cockatrice",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
-  "creatureType": "Humanoid",
-  "size": "Medium or Small",
-  "type": "Medium or Small Humanoid",
-  "alignment": "Neutral",
-  "ac": "10",
-  "hp": "4 (1d8)",
-  "speed": "30 ft.",
+  "cr": "1/2 (XP 100; PB +2)",
+  "crValue": 0.5,
+  "creatureType": "Monstrosity",
+  "size": "Small",
+  "type": "Small Monstrosity",
+  "alignment": "Unaligned",
+  "ac": "11",
+  "hp": "22 (5d6 + 5)",
+  "speed": "20 ft., Fly 40 ft.",
   "stats": {
-    "STR": 10,
-    "DEX": 10,
-    "CON": 10,
-    "INT": 10,
-    "WIS": 10,
-    "CHA": 10
+    "STR": 6,
+    "DEX": 12,
+    "CON": 12,
+    "INT": 2,
+    "WIS": 13,
+    "CHA": 5
   },
   "traits": [
     {
-      "name": "Training",
-      "text": "The commoner has proficiency in one skill of the DM’s choice and has Advantage whenever it makes an ability check using that skill."
+      "name": "Immunities",
+      "text": "Petrified"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 11"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Cockatrice\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Club.** Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Bludgeoning damage."
+  "text": "# Cockatrice\n\n*Small Monstrosity, Unaligned*\n\nAn irritable rooster-lizard hybrid whose peck turns flesh to stone.\n\n### Actions\n\n**Petrifying Bite.** Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Piercing damage. If the target is a creature, it is subjected to the following effect. Constitution Saving Throw: DC 11. First Failure: The target has the Restrained condition. The target repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition, instead of the Restrained condition, for 24 hours."
 }

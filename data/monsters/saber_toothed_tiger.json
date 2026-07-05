@@ -3,23 +3,44 @@
   "kind": "monster",
   "name": "Saber-Toothed Tiger",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
   "creatureType": "Beast",
-  "size": "Tiny",
-  "type": "Tiny Beast",
+  "size": "Large",
+  "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "1 (1d4 − 1)",
-  "speed": "10 ft.",
+  "ac": "13",
+  "hp": "52 (7d10 + 14)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 2,
-    "DEX": 11,
-    "CON": 8,
-    "INT": 1,
-    "WIS": 8,
-    "CHA": 2
+    "STR": 18,
+    "DEX": 17,
+    "CON": 15,
+    "INT": 3,
+    "WIS": 12,
+    "CHA": 8
   },
-  "traits": [],
-  "text": "# Saber-Toothed Tiger\n\n*Tiny Beast, Unaligned*\n\n### Actions\n\n**Sting.** Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage plus 3 (1d6) Poison damage."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Str +6, Dex +5"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +5, Stealth +7"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Running Leap",
+      "text": "With a 10-foot running start, the tiger can Long Jump up to 25 feet."
+    }
+  ],
+  "text": "# Saber-Toothed Tiger\n\n*Large Beast, Unaligned*\n\nA prehistoric great cat with dagger-length fangs.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +6, reach 5 ft. Hit: 11 (2d6 + 4) Slashing damage."
 }

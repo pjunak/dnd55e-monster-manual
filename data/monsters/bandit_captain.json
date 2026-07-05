@@ -20,6 +20,23 @@
     "WIS": 11,
     "CHA": 14
   },
-  "traits": [],
-  "text": "# Bandit Captain\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Scimitar.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.\n\n**Pistol.** Ranged Attack Roll: +5, range 30/90 ft. Hit: 8 (1d10 + 3) Piercing damage."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Str +4, Dex +5, Wis +2"
+    },
+    {
+      "name": "Skills",
+      "text": "Athletics +4, Deception +4"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Thieves' cant"
+    }
+  ],
+  "text": "# Bandit Captain\n\n*Medium or Small Humanoid, Neutral*\n\nA cunning outlaw leader who keeps a rough crew in line through charisma and swift steel.\n\n### Actions\n\n**Scimitar.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.\n\n**Pistol.** Ranged Attack Roll: +5, range 30/90 ft. Hit: 8 (1d10 + 3) Piercing damage."
 }

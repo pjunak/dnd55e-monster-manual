@@ -3,28 +3,52 @@
   "kind": "monster",
   "name": "Djinni",
   "edition": "2024",
-  "cr": "3 (XP 700; PB +2)",
-  "crValue": 3,
-  "creatureType": "Monstrosity",
-  "size": "Medium",
-  "type": "Medium Monstrosity",
-  "alignment": "Neutral",
-  "ac": "14",
-  "hp": "52 (8d8 + 16)",
-  "speed": "30 ft.",
+  "cr": "11 (XP 7,200; PB +4)",
+  "crValue": 11,
+  "creatureType": "Elemental (Genie)",
+  "size": "Large",
+  "type": "Large Elemental (Genie)",
+  "alignment": "Chaotic Good",
+  "ac": "17",
+  "hp": "218 (19d10 + 114)",
+  "speed": "30 ft., Fly 90 ft. (hover)",
   "stats": {
-    "STR": 11,
-    "DEX": 18,
-    "CON": 14,
-    "INT": 11,
-    "WIS": 12,
-    "CHA": 14
+    "STR": 21,
+    "DEX": 15,
+    "CON": 22,
+    "INT": 15,
+    "WIS": 16,
+    "CHA": 20
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +6, Wis +7"
+    },
+    {
       "name": "Immunities",
-      "text": "Charmed"
+      "text": "Lightning, Thunder"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 120 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "Primordial (Auran)"
+    },
+    {
+      "name": "Elemental Restoration",
+      "text": "If the djinni dies outside the Elemental Plane of Air, its body dissolves into mist, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Air."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The djinni has Advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Wishes",
+      "text": "The djinni has a 30 percent chance of knowing the Wish spell. If the djinni knows it, the djinni can cast it only on behalf of a non-genie creature who communicates a wish in a way the djinni can understand. If the djinni casts the spell for the creature, the djinni suffers none of the spell’s stress. Once the djinni has cast it three times, the djinni can’t do so again for 365 days."
     }
   ],
-  "text": "# Djinni\n\n*Medium Monstrosity, Neutral*\n\n### Actions\n\n**Slam.** Melee Attack Roll: +6 (with Advantage during the first round of each combat), reach 5 ft. Hit: 11 (2d6 + 4) Bludgeoning damage.\n\n**Unsettling Visage (Recharge 6).** Wisdom Saving Throw: DC 12, each creature in a 15-foot Emanation originating from the doppelganger that can see the doppelganger. Failure: The target has the Frightened condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+  "text": "# Djinni\n\n*Large Elemental (Genie), Chaotic Good*\n\nA whimsical air genie of cloud palaces, generous to guests and dangerous to the presumptuous.\n\n### Actions\n\n**Storm Blade.** Melee Attack Roll: +9, reach 5 feet. Hit: 12 (2d6 + 5) Slashing damage plus 7 (2d6) Lightning damage.\n\n**Storm Bolt.** Ranged Attack Roll: +9, range 120 feet. Hit: 13 (3d8) Thunder damage. If the target is a Large or smaller creature, it has the Prone condition."
 }

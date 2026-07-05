@@ -22,8 +22,24 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +6, Wis +3"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +3, Stealth +6"
+    },
+    {
       "name": "Resistances",
       "text": "Necrotic"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus one other language"
     },
     {
       "name": "Spider Climb",
@@ -50,5 +66,5 @@
       "text": "The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
     }
   ],
-  "text": "# Vampire Spawn\n\n*Medium or Small Undead, Neutral Evil*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +6, reach 5 ft. Hit: 8 (2d4 + 3) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two claws.\n\n**Bite.** Constitution Saving Throw: DC 14, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 5 (1d4 + 3) Piercing damage plus 10 (3d6) Necrotic damage. The target’s Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount."
+  "text": "# Vampire Spawn\n\n*Medium or Small Undead, Neutral Evil*\n\nA newly turned undead predator enslaved to the vampire that made it.\n\n### Actions\n\n**Claw.** Melee Attack Roll: +6, reach 5 ft. Hit: 8 (2d4 + 3) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two claws.\n\n**Bite.** Constitution Saving Throw: DC 14, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 5 (1d4 + 3) Piercing damage plus 10 (3d6) Necrotic damage. The target’s Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount."
 }

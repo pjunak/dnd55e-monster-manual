@@ -3,32 +3,56 @@
   "kind": "monster",
   "name": "Clay Golem",
   "edition": "2024",
-  "cr": "8 (XP 3,900; PB +3)",
-  "crValue": 8,
-  "creatureType": "Aberration",
+  "cr": "9 (XP 5,000; PB +4)",
+  "crValue": 9,
+  "creatureType": "Construct",
   "size": "Large",
-  "type": "Large Aberration",
-  "alignment": "Chaotic Neutral",
+  "type": "Large Construct",
+  "alignment": "Unaligned",
   "ac": "14",
-  "hp": "91 (14d10 + 14)",
-  "speed": "10 ft., Fly 40 ft.",
+  "hp": "123 (13d10 + 52)",
+  "speed": "30 ft.",
   "stats": {
-    "STR": 17,
-    "DEX": 15,
-    "CON": 12,
-    "INT": 13,
-    "WIS": 14,
-    "CHA": 7
+    "STR": 20,
+    "DEX": 9,
+    "CON": 18,
+    "INT": 3,
+    "WIS": 8,
+    "CHA": 1
   },
   "traits": [
     {
-      "name": "Immunities",
-      "text": "Frightened"
+      "name": "Resistances",
+      "text": "Bludgeoning, Piercing, Slashing"
     },
     {
-      "name": "Light Sensitivity",
-      "text": "While in Bright Light, the cloaker has Disadvantage on attack rolls."
+      "name": "Immunities",
+      "text": "Acid, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 9"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus one other language"
+    },
+    {
+      "name": "Acid Absorption",
+      "text": "Whenever the golem is subjected to Acid damage, it takes no damage and instead regains a number of Hit Points equal to the Acid damage dealt."
+    },
+    {
+      "name": "Berserk",
+      "text": "Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it continues to be berserk until it is destroyed or it is no longer Bloodied."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The golem can’t shape-shift."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The golem has Advantage on saving throws against spells and other magical effects."
     }
   ],
-  "text": "# Clay Golem\n\n*Large Aberration, Chaotic Neutral*\n\n### Actions\n\n**Attach.** Melee Attack Roll: +6, reach 5 ft. Hit: 13 (3d6 + 3) Piercing damage. If the target is a Large or smaller creature, the cloaker attaches to it. While the cloaker is attached, the target has the Blinded condition, and the cloaker can’t make Attach attacks against other targets. In addition, the cloaker halves the damage it takes (round down), and the target takes the same amount of damage.\n\n**Tail.** Melee Attack Roll: +6, reach 10 ft. Hit: 8 (1d10 + 3) Slashing damage.\n\n**Moan.** Wisdom Saving Throw: DC 13, each creature in a 60-foot Emanation originating from the cloaker. Failure: The target has the Frightened condition until the end of the cloaker’s next turn. Success: The target is immune to this cloaker’s Moan for the next 24 hours."
+  "text": "# Clay Golem\n\n*Large Construct, Unaligned*\n\nA ponderous construct of consecrated clay that can fly into unstoppable rampages.\n\n### Actions\n\n**Slam.** Melee Attack Roll: +9, reach 5 ft. Hit: 10 (1d10 + 5) Bludgeoning damage plus 6 (1d12) Acid damage, and the target’s Hit Point maximum decreases by an amount equal to the Acid damage taken."
 }

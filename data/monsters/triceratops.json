@@ -3,23 +3,32 @@
   "kind": "monster",
   "name": "Triceratops",
   "edition": "2024",
-  "cr": "8 (XP 3,900; PB +3)",
-  "crValue": 8,
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
   "creatureType": "Beast (Dinosaur)",
   "size": "Huge",
   "type": "Huge Beast (Dinosaur)",
   "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "136 (13d12 + 52)",
+  "ac": "14",
+  "hp": "114 (12d12 + 36)",
   "speed": "50 ft.",
   "stats": {
-    "STR": 25,
-    "DEX": 10,
-    "CON": 19,
+    "STR": 22,
+    "DEX": 9,
+    "CON": 17,
     "INT": 2,
-    "WIS": 12,
-    "CHA": 9
+    "WIS": 11,
+    "CHA": 5
   },
-  "traits": [],
-  "text": "# Triceratops\n\n*Huge Beast (Dinosaur), Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +10, reach 10 ft. Hit: 33 (4d12 + 7) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 17). While Grappled, the target has the Restrained condition and can’t be targeted by the tyrannosaurus’s Tail.\n\n**Tail.** Melee Attack Roll: +10, reach 15 ft. Hit: 25 (4d8 + 7) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition."
+  "traits": [
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Triceratops\n\n*Huge Beast (Dinosaur), Unaligned*\n\nA three-horned herd dinosaur that charges like a living battering ram.\n\n### Actions\n\n**Gore.** Melee Attack Roll: +9, reach 5 ft. Hit: 19 (2d12 + 6) Piercing damage. If the target is Huge or smaller and the triceratops moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 (2d8) Piercing damage and has the Prone condition."
 }

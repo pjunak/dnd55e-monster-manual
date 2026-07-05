@@ -3,40 +3,48 @@
   "kind": "monster",
   "name": "Earth Elemental",
   "edition": "2024",
-  "cr": "11 (XP 7,200; PB +4)",
-  "crValue": 11,
-  "creatureType": "Elemental (Genie)",
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
+  "creatureType": "Elemental",
   "size": "Large",
-  "type": "Large Elemental (Genie)",
+  "type": "Large Elemental",
   "alignment": "Neutral",
   "ac": "17",
-  "hp": "212 (17d10 + 119)",
-  "speed": "40 ft., Fly 60 ft. (hover)",
+  "hp": "147 (14d10 + 70)",
+  "speed": "30 ft., Burrow 30 ft.",
   "stats": {
-    "STR": 22,
-    "DEX": 12,
-    "CON": 24,
-    "INT": 16,
-    "WIS": 15,
-    "CHA": 19
+    "STR": 20,
+    "DEX": 8,
+    "CON": 20,
+    "INT": 5,
+    "WIS": 10,
+    "CHA": 5
   },
   "traits": [
     {
+      "name": "Vulnerabilities",
+      "text": "Thunder"
+    },
+    {
       "name": "Immunities",
-      "text": "Fire"
+      "text": "Poison; Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious"
     },
     {
-      "name": "Elemental Restoration",
-      "text": "If the efreeti dies outside the Elemental Plane of Fire, its body dissolves into ash, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Fire."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Tremorsense 60 ft.; Passive Perception 10"
     },
     {
-      "name": "Magic Resistance",
-      "text": "The efreeti has Advantage on saving throws against spells and other magical effects."
+      "name": "Languages",
+      "text": "Primordial (Terran)"
     },
     {
-      "name": "Wishes",
-      "text": "The efreeti has a 30 percent chance of knowing the Wish spell. If the efreeti knows it, the efreeti can cast it only on behalf of a non-genie creature who communicates a wish in a way the efreeti can understand. If the efreeti casts the spell for the creature, the efreeti suffers none of the spell’s stress. Once the efreeti has cast it three times, the efreeti can’t do so again for 365 days."
+      "name": "Earth Glide",
+      "text": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn’t disturb the material it moves through."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The elemental deals double damage to objects and structures."
     }
   ],
-  "text": "# Earth Elemental\n\n*Large Elemental (Genie), Neutral*\n\n### Actions\n\n**Heated Blade.** Melee Attack Roll: +10, reach 5 ft. Hit: 13 (2d6 + 6) Slashing damage plus 13 (2d12) Fire damage.\n\n**Hurl Flame.** Ranged Attack Roll: +8, range 120 ft. Hit: 24 (7d6) Fire damage."
+  "text": "# Earth Elemental\n\n*Large Elemental, Neutral*\n\nA walking hillside of stone and soil that glides through earth as easily as air.\n\n### Actions\n\n**Slam.** Melee Attack Roll: +8, reach 10 ft. Hit: 14 (2d8 + 5) Bludgeoning damage.\n\n**Rock Launch.** Ranged Attack Roll: +8, range 60 ft. Hit: 8 (1d6 + 5) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition."
 }

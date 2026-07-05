@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Wererat",
   "edition": "2024",
-  "cr": "4 (XP 1,100; PB +2)",
-  "crValue": 4,
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
   "creatureType": "Monstrosity (Lycanthrope)",
   "size": "Medium or Small",
   "type": "Medium or Small Monstrosity (Lycanthrope)",
-  "alignment": "Neutral",
-  "ac": "12",
-  "hp": "120 (16d8 + 48)",
-  "speed": "30 ft., 40 ft. (tiger form only)",
+  "alignment": "Lawful Evil",
+  "ac": "13",
+  "hp": "60 (11d8 + 11)",
+  "speed": "30 ft., Climb 30 ft.",
   "stats": {
-    "STR": 17,
-    "DEX": 15,
-    "CON": 16,
-    "INT": 10,
-    "WIS": 13,
-    "CHA": 11
+    "STR": 10,
+    "DEX": 16,
+    "CON": 12,
+    "INT": 11,
+    "WIS": 10,
+    "CHA": 8
   },
-  "traits": [],
-  "text": "# Wererat\n\n*Medium or Small Monstrosity (Lycanthrope), Neutral*\n\n### Actions\n\n**Bite (Tiger or Hybrid Form Only).** Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 13. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Weretiger under the DM’s control and has 10 Hit Points. Success: The target is immune to this weretiger’s curse for 24 hours.\n\n**Scratch.** Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.\n\n**Longbow (Humanoid or Hybrid Form Only).** Ranged Attack Roll: +4, range 150/600 ft. Hit: 11 (2d8 + 2) Piercing damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +4, Stealth +5"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "Common (can't speak in rat form)"
+    }
+  ],
+  "text": "# Wererat\n\n*Medium or Small Monstrosity (Lycanthrope), Lawful Evil*\n\nA sneaking lycanthrope at home in sewers, guilds, and conspiracies.\n\n### Actions\n\n**Bite (Rat or Hybrid Form Only).** Melee Attack Roll: +5, reach 5 ft. Hit: 8 (2d4 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 11. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Wererat under the DM’s control and has 10 Hit Points. Success: The target is immune to this wererat’s curse for 24 hours.\n\n**Scratch.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.\n\n**Hand Crossbow (Humanoid or Hybrid Form Only).** Ranged Attack Roll: +5, range 30/120 ft. Hit: 6 (1d6 + 3) Piercing damage."
 }

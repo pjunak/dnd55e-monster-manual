@@ -3,40 +3,44 @@
   "kind": "monster",
   "name": "Incubus",
   "edition": "2024",
-  "cr": "6 (XP 2,300; PB +3)",
-  "crValue": 6,
-  "creatureType": "Elemental",
-  "size": "Large",
-  "type": "Large Elemental",
-  "alignment": "Neutral",
-  "ac": "14",
-  "hp": "97 (13d10 + 26)",
-  "speed": "50 ft., Fly 50 ft. (hover)",
+  "cr": "4 (XP 1,100; PB +2)",
+  "crValue": 4,
+  "creatureType": "Fiend",
+  "size": "Medium",
+  "type": "Medium Fiend",
+  "alignment": "Neutral Evil",
+  "ac": "15",
+  "hp": "66 (12d8 + 12)",
+  "speed": "30 ft., Fly 60 ft.",
   "stats": {
-    "STR": 16,
-    "DEX": 19,
-    "CON": 14,
-    "INT": 10,
-    "WIS": 15,
-    "CHA": 11
+    "STR": 8,
+    "DEX": 17,
+    "CON": 13,
+    "INT": 15,
+    "WIS": 12,
+    "CHA": 20
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Deception +9, Insight +5, Perception +5, Persuasion +9, Stealth +7"
+    },
+    {
       "name": "Resistances",
-      "text": "Bludgeoning, Piercing, Slashing"
+      "text": "Cold, Fire, Poison, Psychic"
     },
     {
-      "name": "Immunities",
-      "text": "Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 15"
     },
     {
-      "name": "Air Form",
-      "text": "The stalker can enter an enemy’s space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so."
+      "name": "Languages",
+      "text": "Abyssal, Common, Infernal; telepathy 60 ft."
     },
     {
-      "name": "Invisibility",
-      "text": "The stalker has the Invisible condition."
+      "name": "Succubus Form",
+      "text": "When the incubus finishes a Long Rest, it can shape-shift into a Succubus, using that stat block instead of this one. Any equipment it is wearing or carrying isn’t transformed."
     }
   ],
-  "text": "# Incubus\n\n*Large Elemental, Neutral*\n\n### Actions\n\n**Wind Swipe.** Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Force damage.\n\n**Vortex.** Constitution Saving Throw: DC 14, one Large or smaller creature in the stalker’s space. Failure: 7 (1d8 + 3) Thunder damage, and the target has the Grappled condition (escape DC 13). Until the grapple ends, the target can’t cast spells with a Verbal component and takes 7 (2d6) Thunder damage at the start of each of the stalker’s turns."
+  "text": "# Incubus\n\n*Medium Fiend, Neutral Evil*\n\nA dream-stalking fiend that feeds on desire and drains life through devotion.\n\n### Actions\n\n**Restless Touch.** Melee Attack Roll: +7, reach 5 ft. Hit: 15 (3d6 + 5) Psychic damage, and the target is cursed for 24 hours or until the incubus dies. Until the curse ends, the target gains no benefit from finishing Short Rests.\n\n**Nightmare (Recharge 6).** Wisdom Saving Throw: DC 15, one creature the incubus can see within 60 feet. Failure: If the target has 20 Hit Points or fewer, it has the Unconscious condition for 1 hour, until it takes damage, or until a creature within 5 feet of it takes an action to wake it. Otherwise, the target takes 18 (4d8) Psychic damage."
 }

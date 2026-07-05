@@ -22,6 +22,22 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Con +4, Wis +5, Cha +3"
+    },
+    {
+      "name": "Skills",
+      "text": "Nature +4, Stealth +5"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "Bullywug, Common"
+    },
+    {
       "name": "Amphibious",
       "text": "The bullywug can breathe air and water."
     },
@@ -30,5 +46,5 @@
       "text": "The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug."
     }
   ],
-  "text": "# Bullywug Bog Sage\n\n*Medium Fey, Neutral*\n\n### Actions\n\n**Bog Staff.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage plus 10 (3d6) Poison damage."
+  "text": "# Bullywug Bog Sage\n\n*Medium Fey, Neutral*\n\nA frog-folk mystic whose croaked incantations call up the marsh’s poisons.\n\n### Actions\n\n**Multiattack.** The bullywug makes two Bog Staff attacks. It can replace any attack with a use of Spellcasting to cast Ray of Sickness.\n\n**Bog Staff.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage plus 10 (3d6) Poison damage.\n\n**Spellcasting.** The bullywug casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13, +5 to hit with spell attacks):\n\n- At Will: Dancing Lights, Druidcraft, Ray of Sickness\n- 1/Day Each: Speak with Plants, Vitriolic Sphere\n\n### Bonus Actions\n\n**Leap.** The bullywug can jump up to 30 feet by spending 10 feet of movement."
 }

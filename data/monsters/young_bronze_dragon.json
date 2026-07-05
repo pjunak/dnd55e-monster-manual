@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +3, Wis +4"
+    },
+    {
+      "name": "Skills",
+      "text": "Insight +4, Perception +7, Stealth +3"
+    },
+    {
       "name": "Immunities",
       "text": "Lightning"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 30 ft.; Darkvision 120 ft.; Passive Perception 17"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Amphibious",
       "text": "The dragon can breathe air and water."
     }
   ],
-  "text": "# Young Bronze Dragon\n\n*Large Dragon (Metallic), Lawful Good*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +8, reach 10 ft. Hit: 16 (2d10 + 5) Slashing damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 15, each creature in a 60-foot-long, 5-foot-wide Line. Failure: 49 (9d10) Lightning damage. Success: Half damage.\n\n**Repulsion Breath.** Strength Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: The target is pushed up to 40 feet straight away from the dragon and has the Prone condition."
+  "text": "# Young Bronze Dragon\n\n*Large Dragon (Metallic), Lawful Good*\n\nA young bronze dragon coming into its power: a duty-bound coastal guardian that breathes searing lightning and prizes honorable causes.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +8, reach 10 ft. Hit: 16 (2d10 + 5) Slashing damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 15, each creature in a 60-foot-long, 5-foot-wide Line. Failure: 49 (9d10) Lightning damage. Success: Half damage.\n\n**Repulsion Breath.** Strength Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: The target is pushed up to 40 feet straight away from the dragon and has the Prone condition."
 }

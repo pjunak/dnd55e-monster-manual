@@ -3,36 +3,36 @@
   "kind": "monster",
   "name": "Lamia",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
-  "creatureType": "Fiend (Devil)",
-  "size": "Medium",
-  "type": "Medium Fiend (Devil)",
-  "alignment": "Lawful Evil",
-  "ac": "9",
-  "hp": "9 (2d8)",
-  "speed": "20 ft.",
+  "cr": "4 (XP 1,100; PB +2)",
+  "crValue": 4,
+  "creatureType": "Fiend",
+  "size": "Large",
+  "type": "Large Fiend",
+  "alignment": "Chaotic Evil",
+  "ac": "13",
+  "hp": "97 (13d10 + 26)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 10,
-    "DEX": 5,
-    "CON": 11,
-    "INT": 1,
-    "WIS": 11,
-    "CHA": 3
+    "STR": 16,
+    "DEX": 13,
+    "CON": 15,
+    "INT": 14,
+    "WIS": 15,
+    "CHA": 16
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Cold"
+      "name": "Skills",
+      "text": "Deception +7, Insight +4, Stealth +5"
     },
     {
-      "name": "Immunities",
-      "text": "Fire, Poison; Charmed, Frightened, Poisoned"
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 12"
     },
     {
-      "name": "Hellish Restoration",
-      "text": "If the lemure dies in the Nine Hells, it revives with all its Hit Points in 1d10 days unless it is killed by a creature under the effects of a Bless spell or its remains are sprinkled with Holy Water."
+      "name": "Languages",
+      "text": "Abyssal, Common"
     }
   ],
-  "text": "# Lamia\n\n*Medium Fiend (Devil), Lawful Evil*\n\n### Actions\n\n**Vile Slime.** Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Poison damage."
+  "text": "# Lamia\n\n*Large Fiend, Chaotic Evil*\n\nA lion-bodied deceiver that lures the vain into ruin with geas and illusion.\n\n### Actions\n\n**Claw.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage plus 7 (2d6) Psychic damage.\n\n**Corrupting Touch.** Wisdom Saving Throw: DC 13, one creature the lamia can see within 5 feet. Failure: 13 (3d8) Psychic damage, and the target is cursed for 1 hour. Until the curse ends, the target has the Charmed and Poisoned conditions."
 }

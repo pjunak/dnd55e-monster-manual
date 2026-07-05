@@ -5,21 +5,34 @@
   "edition": "2024",
   "cr": "2 (XP 450; PB +2)",
   "crValue": 2,
-  "creatureType": "Monstrosity",
-  "size": "Large",
-  "type": "Large Monstrosity",
+  "creatureType": "Aberration",
+  "size": "Medium",
+  "type": "Medium Aberration",
   "alignment": "Unaligned",
-  "ac": "12",
-  "hp": "59 (7d10 + 21)",
-  "speed": "30 ft., Fly 80 ft.",
+  "ac": "14",
+  "hp": "54 (12d8)",
+  "speed": "30 ft., Climb 30 ft.",
   "stats": {
-    "STR": 18,
-    "DEX": 15,
-    "CON": 16,
-    "INT": 2,
-    "WIS": 13,
-    "CHA": 8
+    "STR": 14,
+    "DEX": 14,
+    "CON": 11,
+    "INT": 3,
+    "WIS": 14,
+    "CHA": 5
   },
-  "traits": [],
-  "text": "# Grick\n\n*Large Monstrosity, Unaligned*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +6, reach 5 ft. Hit: 8 (1d8 + 4) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 14) from both of the griffon’s front claws."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Stealth +4"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Grick\n\n*Medium Aberration, Unaligned*\n\nA tentacled tunnel predator whose stony hide blends into cavern rock.\n\n### Actions\n\n**Beak.** Melee Attack Roll: +4, reach 5 ft. Hit: 9 (2d6 + 2) Piercing damage.\n\n**Tentacles.** Melee Attack Roll: +4, reach 5 ft. Hit: 7 (1d10 + 2) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12) from all four tentacles."
 }

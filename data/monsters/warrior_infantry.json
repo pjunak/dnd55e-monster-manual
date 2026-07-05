@@ -22,9 +22,17 @@
   },
   "traits": [
     {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Common"
+    },
+    {
       "name": "Pack Tactics",
       "text": "The warrior has Advantage on an attack roll against a creature if at least one of the warrior’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
     }
   ],
-  "text": "# Warrior Infantry\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Spear.** Melee or Ranged Attack Roll: +3, reach 5 ft. or range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage."
+  "text": "# Warrior Infantry\n\n*Medium or Small Humanoid, Neutral*\n\nA rank-and-file soldier trained to hold formation.\n\n### Actions\n\n**Spear.** Melee or Ranged Attack Roll: +3, reach 5 ft. or range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage."
 }

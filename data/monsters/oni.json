@@ -3,23 +3,48 @@
   "kind": "monster",
   "name": "Oni",
   "edition": "2024",
-  "cr": "5 (XP 1,800; PB +3)",
-  "crValue": 5,
-  "creatureType": "Aberration",
+  "cr": "7 (XP 2,900; PB +3)",
+  "crValue": 7,
+  "creatureType": "Fiend",
   "size": "Large",
-  "type": "Large Aberration",
-  "alignment": "Neutral",
-  "ac": "14",
-  "hp": "104 (11d10 + 44)",
-  "speed": "30 ft.",
+  "type": "Large Fiend",
+  "alignment": "Lawful Evil",
+  "ac": "17",
+  "hp": "119 (14d10 + 42)",
+  "speed": "30 ft., Fly 30 ft. (hover)",
   "stats": {
-    "STR": 16,
+    "STR": 19,
     "DEX": 11,
-    "CON": 19,
-    "INT": 6,
-    "WIS": 13,
-    "CHA": 6
+    "CON": 16,
+    "INT": 14,
+    "WIS": 12,
+    "CHA": 15
   },
-  "traits": [],
-  "text": "# Oni\n\n*Large Aberration, Neutral*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage, and the target has the Poisoned condition. Whenever the Poisoned target finishes a Long Rest, it is subjected to the following effect. Constitution Saving Throw: DC 15. Failure: The target’s Hit Point maximum decreases by 5 (1d10) and doesn’t return to normal until the Poisoned condition ends on the target. Success: The Poisoned condition ends.\n\n**Tentacle.** Melee Attack Roll: +6, reach 10 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two tentacles.\n\n**Tentacle Slam.** Constitution Saving Throw: DC 14, each creature Grappled by the otyugh. Failure: 16 (3d8 + 3) Bludgeoning damage, and the target has the Stunned condition until the start of the otyugh’s next turn. Success: Half damage only."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Dex +3, Con +6, Wis +4, Cha +5"
+    },
+    {
+      "name": "Skills",
+      "text": "Arcana +5, Deception +8, Perception +4"
+    },
+    {
+      "name": "Resistances",
+      "text": "Cold"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Giant"
+    },
+    {
+      "name": "Regeneration",
+      "text": "The oni regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point."
+    }
+  ],
+  "text": "# Oni\n\n*Large Fiend, Lawful Evil*\n\nA shape-shifting giant-kin trickster that regenerates wounds and stalks the night in borrowed forms.\n\n### Actions\n\n**Claw.** Melee Attack Roll: +7, reach 10 ft. Hit: 10 (1d12 + 4) Slashing damage plus 9 (2d8) Necrotic damage.\n\n**Nightmare Ray.** Ranged Attack Roll: +5, range 60 ft. Hit: 9 (2d6 + 2) Psychic damage, and the target has the Frightened condition until the start of the oni’s next turn."
 }

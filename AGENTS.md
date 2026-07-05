@@ -3,7 +3,7 @@
 **What this repo is.** The D&D 5.5e (2024) bestiary addon for the
 [ttrpg-codex](https://github.com/pjunak/ttrpg-codex) host app. Addon id
 `dnd55e-monster-manual` (≠ repo dir name — the host keys on the manifest id).
-333 creature records as a per-record JSON tree the HOST serves via manifest
+313 creature records as a per-record JSON tree the HOST serves via manifest
 `"contentDir": "data"` — **no server code, no restart**; `/bestiary` browse
 pages; the `monster` wiki scope (`[[Name|monster]]`); a `provide()` data API
 for future consumers.
@@ -13,9 +13,10 @@ for future consumers.
 1. [`README.md`](README.md) — purpose, serving model, dev + release flow.
 2. [`data/SCHEMA.md`](data/SCHEMA.md) — the record shape (incl. the mandatory
    `"kind": "monster"` field and the optional `image` seam).
-3. [`data/KNOWN_ISSUES.md`](data/KNOWN_ISSUES.md) — ⚠ a subset of records is
-   MISATTRIBUTED (wrong monster's stat block under the name). Do not trust or
-   bulk-transform the data without reading this.
+3. [`data/KNOWN_ISSUES.md`](data/KNOWN_ISSUES.md) — data provenance: the
+   original scrape was misattributed (wrong monster's stat block under a
+   name); it has since been repaired against the SRD 5.2. Read it before
+   bulk-transforming the data.
 4. The **canonical addon-authoring contract** lives in the host repo:
    `../ttrpg-codex/examples/addons/AGENTS.md` (condensed) and
    `../ttrpg-codex/examples/addons/AUTHORING.md` (full reference,

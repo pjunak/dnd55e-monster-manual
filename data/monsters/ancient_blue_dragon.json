@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +7, Wis +10"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +17, Stealth +7"
+    },
+    {
       "name": "Immunities",
       "text": "Lightning"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Darkvision 120 ft.; Passive Perception 27"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
       "text": "If the dragon fails a saving throw, it can choose to succeed instead."
     }
   ],
-  "text": "# Ancient Blue Dragon\n\n*Gargantuan Dragon (Chromatic), Lawful Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +16, reach 15 ft. Hit: 18 (2d8 + 9) Slashing damage plus 11 (2d10) Lightning damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 23, each creature in a 120-foot-long, 10-foot-wide Line. Failure: 88 (16d10) Lightning damage. Success: Half damage."
+  "text": "# Ancient Blue Dragon\n\n*Gargantuan Dragon (Chromatic), Lawful Evil*\n\nAn ancient blue dragon of world-shaking power: a lightning-wreathed schemer that lairs beneath shifting desert sands.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +16, reach 15 ft. Hit: 18 (2d8 + 9) Slashing damage plus 11 (2d10) Lightning damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 23, each creature in a 120-foot-long, 10-foot-wide Line. Failure: 88 (16d10) Lightning damage. Success: Half damage."
 }

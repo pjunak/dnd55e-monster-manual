@@ -3,23 +3,40 @@
   "kind": "monster",
   "name": "Dire Wolf",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
+  "cr": "1 (XP 200; PB +2)",
+  "crValue": 1,
   "creatureType": "Beast",
   "size": "Large",
   "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "10",
-  "hp": "15 (2d10 + 4)",
-  "speed": "40 ft.",
+  "ac": "14",
+  "hp": "22 (3d10 + 6)",
+  "speed": "50 ft.",
   "stats": {
-    "STR": 18,
-    "DEX": 10,
+    "STR": 17,
+    "DEX": 15,
     "CON": 15,
-    "INT": 2,
-    "WIS": 11,
+    "INT": 3,
+    "WIS": 12,
     "CHA": 7
   },
-  "traits": [],
-  "text": "# Dire Wolf\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Bludgeoning damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +5, Stealth +4"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The wolf has Advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+    }
+  ],
+  "text": "# Dire Wolf\n\n*Large Beast, Unaligned*\n\nA wolf of monstrous size that hunts in coordinated, terrifying packs.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Piercing damage. If the target is a Large or smaller creature, it has the Prone condition."
 }

@@ -3,28 +3,44 @@
   "kind": "monster",
   "name": "Giant Vulture",
   "edition": "2024",
-  "cr": "1/2 (XP 100; PB +2)",
-  "crValue": 0.5,
-  "creatureType": "Beast",
-  "size": "Medium",
-  "type": "Medium Beast",
-  "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "22 (5d8)",
-  "speed": "10 ft., Fly 50 ft.",
+  "cr": "1 (XP 200; PB +2)",
+  "crValue": 1,
+  "creatureType": "Monstrosity",
+  "size": "Large",
+  "type": "Large Monstrosity",
+  "alignment": "Neutral Evil",
+  "ac": "10",
+  "hp": "25 (3d10 + 9)",
+  "speed": "10 ft., Fly 60 ft.",
   "stats": {
-    "STR": 10,
-    "DEX": 14,
-    "CON": 10,
-    "INT": 1,
-    "WIS": 10,
-    "CHA": 3
+    "STR": 15,
+    "DEX": 10,
+    "CON": 16,
+    "INT": 6,
+    "WIS": 12,
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Flyby",
-      "text": "The wasp doesn’t provoke an Opportunity Attack when it flies out of an enemy’s reach."
+      "name": "Skills",
+      "text": "Perception +3"
+    },
+    {
+      "name": "Resistances",
+      "text": "Necrotic"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "Understands Common but can't speak"
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The vulture has Advantage on an attack roll against a creature if at least one of the vulture’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
     }
   ],
-  "text": "# Giant Vulture\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Sting.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 5 (2d4) Poison damage."
+  "text": "# Giant Vulture\n\n*Large Monstrosity, Neutral Evil*\n\nA carrion bird of ill omen with an appetite for the dying as well as the dead.\n\n### Actions\n\n**Gouge.** Melee Attack Roll: +4, reach 5 ft. Hit: 9 (2d6 + 2) Piercing damage, and the target has the Poisoned condition until the end of its next turn."
 }

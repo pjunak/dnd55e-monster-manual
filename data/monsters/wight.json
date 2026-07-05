@@ -3,44 +3,48 @@
   "kind": "monster",
   "name": "Wight",
   "edition": "2024",
-  "cr": "2 (XP 450; PB +2)",
-  "crValue": 2,
+  "cr": "3 (XP 700; PB +2)",
+  "crValue": 3,
   "creatureType": "Undead",
-  "size": "Tiny",
-  "type": "Tiny Undead",
-  "alignment": "Chaotic Evil",
-  "ac": "19",
-  "hp": "27 (11d4)",
-  "speed": "5 ft., Fly 50 ft. (hover)",
+  "size": "Medium",
+  "type": "Medium Undead",
+  "alignment": "Neutral Evil",
+  "ac": "14",
+  "hp": "82 (11d8 + 33)",
+  "speed": "30 ft.",
   "stats": {
-    "STR": 1,
-    "DEX": 28,
-    "CON": 10,
-    "INT": 13,
-    "WIS": 14,
-    "CHA": 11
+    "STR": 15,
+    "DEX": 14,
+    "CON": 16,
+    "INT": 10,
+    "WIS": 13,
+    "CHA": 15
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Perception +3, Stealth +4"
+    },
+    {
       "name": "Resistances",
-      "text": "Acid, Bludgeoning, Cold, Fire, Necrotic, Piercing, Slashing"
+      "text": "Necrotic"
     },
     {
       "name": "Immunities",
-      "text": "Lightning, Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+      "text": "Poison; Exhaustion, Poisoned"
     },
     {
-      "name": "Ephemeral",
-      "text": "The wisp can’t wear or carry anything."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 13"
     },
     {
-      "name": "Illumination",
-      "text": "The wisp sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet."
+      "name": "Languages",
+      "text": "Common plus one other language"
     },
     {
-      "name": "Incorporeal Movement",
-      "text": "The wisp can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object."
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the wight has Disadvantage on ability checks and attack rolls."
     }
   ],
-  "text": "# Wight\n\n*Tiny Undead, Chaotic Evil*\n\n### Actions\n\n**Shock.** Melee Attack Roll: +4, reach 5 ft. Hit: 11 (2d8 + 2) Lightning damage.\n\n**Consume Life.** Constitution Saving Throw: DC 10, one living creature the wisp can see within 5 feet that has 0 Hit Points. Failure: The target dies, and the wisp regains 10 (3d6) Hit Points."
+  "text": "# Wight\n\n*Medium Undead, Neutral Evil*\n\nA hate-driven undead commander that reaps life with every blow and raises the slain as thralls.\n\n### Actions\n\n**Necrotic Sword.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Slashing damage plus 4 (1d8) Necrotic damage.\n\n**Necrotic Bow.** Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage plus 4 (1d8) Necrotic damage.\n\n**Life Drain.** Constitution Saving Throw: DC 13, one creature within 5 feet. Failure: 6 (1d8 + 2) Necrotic damage, and the target’s Hit Point maximum decreases by an amount equal to the damage taken."
 }

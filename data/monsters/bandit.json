@@ -20,6 +20,15 @@
     "WIS": 10,
     "CHA": 10
   },
-  "traits": [],
-  "text": "# Bandit\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Scimitar.** Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.\n\n**Light Crossbow.** Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage."
+  "traits": [
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Thieves' cant"
+    }
+  ],
+  "text": "# Bandit\n\n*Medium or Small Humanoid, Neutral*\n\nA roadside robber who prefers easy marks and quick escapes.\n\n### Actions\n\n**Scimitar.** Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.\n\n**Light Crossbow.** Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage."
 }

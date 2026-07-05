@@ -3,32 +3,44 @@
   "kind": "monster",
   "name": "Giant Elk",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
-  "creatureType": "Beast",
-  "size": "Small",
-  "type": "Small Beast",
-  "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "4 (1d6 + 1)",
-  "speed": "30 ft., Climb 30 ft.",
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
+  "creatureType": "Celestial",
+  "size": "Huge",
+  "type": "Huge Celestial",
+  "alignment": "Neutral Good",
+  "ac": "14",
+  "hp": "42 (5d12 + 10)",
+  "speed": "60 ft.",
   "stats": {
-    "STR": 8,
-    "DEX": 10,
-    "CON": 12,
-    "INT": 1,
-    "WIS": 7,
-    "CHA": 3
+    "STR": 19,
+    "DEX": 18,
+    "CON": 14,
+    "INT": 7,
+    "WIS": 14,
+    "CHA": 10
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Fire"
+      "name": "Saving Throws",
+      "text": "Str +6, Dex +6"
     },
     {
-      "name": "Illumination",
-      "text": "The beetle sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet."
+      "name": "Skills",
+      "text": "Perception +4"
+    },
+    {
+      "name": "Resistances",
+      "text": "Necrotic, Radiant"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 90 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "Celestial; understands Common, Elvish, And Sylvan but can't speak them"
     }
   ],
-  "text": "# Giant Elk\n\n*Small Beast, Unaligned*"
+  "text": "# Giant Elk\n\n*Huge Celestial, Neutral Good*\n\nA majestic beast of legend whose appearance is said to herald great events.\n\n### Actions\n\n**Ram.** Melee Attack Roll: +6, reach 10 ft. Hit: 11 (2d6 + 4) Bludgeoning damage plus 5 (2d4) Radiant damage. If the target is a Huge or smaller creature and the elk moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and has the Prone condition."
 }

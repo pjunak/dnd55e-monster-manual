@@ -22,12 +22,24 @@
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Arcana +12, History +12, Perception +8, Religion +12"
+    },
+    {
       "name": "Resistances",
       "text": "Necrotic, Radiant"
     },
     {
       "name": "Immunities",
       "text": "Psychic; Charmed, Frightened"
+    },
+    {
+      "name": "Senses",
+      "text": "Truesight 120 ft.; Passive Perception 18"
+    },
+    {
+      "name": "Languages",
+      "text": "Celestial, Common"
     },
     {
       "name": "Inscrutable",
@@ -38,5 +50,5 @@
       "text": "If the sphinx fails a saving throw, it can choose to succeed instead."
     }
   ],
-  "text": "# Sphinx of Lore\n\n*Large Celestial, Lawful Neutral*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +8, reach 5 ft. Hit: 14 (3d6 + 4) Slashing damage.\n\n**Mind-Rending Roar (Recharge 5–6).** Wisdom Saving Throw: DC 16, each enemy in a 300-foot Emanation originating from the sphinx. Failure: 35 (10d6) Psychic damage, and the target has the Incapacitated condition until the start of the sphinx’s next turn.\n\n**Weight of Years.** Constitution Saving Throw: DC 16, one creature the sphinx can see within 120 feet. Failure: The target gains 1 Exhaustion level. While the target has any Exhaustion levels, it appears 3d10 years older. Failure or Success: The sphinx can’t take this action again until the start of its next turn."
+  "text": "# Sphinx of Lore\n\n*Large Celestial, Lawful Neutral*\n\nA riddling lion-bodied guardian of forbidden knowledge.\n\n### Actions\n\n**Claw.** Melee Attack Roll: +8, reach 5 ft. Hit: 14 (3d6 + 4) Slashing damage.\n\n**Mind-Rending Roar (Recharge 5–6).** Wisdom Saving Throw: DC 16, each enemy in a 300-foot Emanation originating from the sphinx. Failure: 35 (10d6) Psychic damage, and the target has the Incapacitated condition until the start of the sphinx’s next turn.\n\n**Weight of Years.** Constitution Saving Throw: DC 16, one creature the sphinx can see within 120 feet. Failure: The target gains 1 Exhaustion level. While the target has any Exhaustion levels, it appears 3d10 years older. Failure or Success: The sphinx can’t take this action again until the start of its next turn."
 }

@@ -3,32 +3,40 @@
   "kind": "monster",
   "name": "Giant Fire Beetle",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
+  "cr": "0 (XP 10; PB +2)",
+  "crValue": 0,
   "creatureType": "Beast",
-  "size": "Medium",
-  "type": "Medium Beast",
+  "size": "Small",
+  "type": "Small Beast",
   "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "18 (4d8)",
-  "speed": "30 ft., Swim 30 ft.",
+  "ac": "13",
+  "hp": "4 (1d6 + 1)",
+  "speed": "30 ft., Climb 30 ft.",
   "stats": {
-    "STR": 12,
-    "DEX": 13,
-    "CON": 11,
-    "INT": 2,
-    "WIS": 10,
+    "STR": 8,
+    "DEX": 10,
+    "CON": 12,
+    "INT": 1,
+    "WIS": 7,
     "CHA": 3
   },
   "traits": [
     {
-      "name": "Amphibious",
-      "text": "The frog can breathe air and water."
+      "name": "Resistances",
+      "text": "Fire"
     },
     {
-      "name": "Standing Leap",
-      "text": "The frog’s Long Jump is up to 20 feet and its High Jump is up to 10 feet with or without a running start."
+      "name": "Senses",
+      "text": "Blindsight 30 ft.; Passive Perception 8"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Illumination",
+      "text": "The beetle sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet."
     }
   ],
-  "text": "# Giant Fire Beetle\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 11)."
+  "text": "# Giant Fire Beetle\n\nA dog-sized beetle prized for the glowing glands that light miners’ tunnels.\n\n*Small Beast, Unaligned*"
 }

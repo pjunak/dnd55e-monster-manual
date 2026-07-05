@@ -5,38 +5,34 @@
   "edition": "2024",
   "cr": "1/2 (XP 100; PB +2)",
   "crValue": 0.5,
-  "creatureType": "Fiend",
+  "creatureType": "Monstrosity",
   "size": "Medium",
-  "type": "Medium Fiend",
-  "alignment": "Lawful Evil",
-  "ac": "12",
-  "hp": "22 (4d8 + 4)",
-  "speed": "30 ft., Swim 40 ft.",
+  "type": "Medium Monstrosity",
+  "alignment": "Unaligned",
+  "ac": "14",
+  "hp": "33 (6d8 + 6)",
+  "speed": "40 ft.",
   "stats": {
     "STR": 13,
-    "DEX": 11,
-    "CON": 12,
-    "INT": 12,
+    "DEX": 12,
+    "CON": 13,
+    "INT": 2,
     "WIS": 13,
-    "CHA": 9
+    "CHA": 6
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Acid, Cold"
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 11"
     },
     {
-      "name": "Blood Frenzy",
-      "text": "The sahuagin has Advantage on attack rolls against any creature that doesn’t have all its Hit Points."
+      "name": "Languages",
+      "text": "None"
     },
     {
-      "name": "Limited Amphibiousness",
-      "text": "The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water."
-    },
-    {
-      "name": "Shark Telepathy",
-      "text": "The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy."
+      "name": "Iron Scent",
+      "text": "The rust monster can pinpoint the location of ferrous metal within 30 feet of itself."
     }
   ],
-  "text": "# Rust Monster\n\n*Medium Fiend, Lawful Evil*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage."
+  "text": "# Rust Monster\n\n*Medium Monstrosity, Unaligned*\n\nA docile cave grazer whose corroding touch is the terror of armored adventurers.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Piercing damage.\n\n**Antennae.** The rust monster targets one nonmagical metal object—armor or a weapon—worn or carried by a creature within 5 feet of itself. Dexterity Saving Throw: DC 11, the creature with the object. Failure: The object takes a −1 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches −5. The penalty can be removed by casting the Mending spell on the armor or weapon."
 }

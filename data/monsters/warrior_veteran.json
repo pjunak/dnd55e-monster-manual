@@ -20,6 +20,19 @@
     "WIS": 11,
     "CHA": 10
   },
-  "traits": [],
-  "text": "# Warrior Veteran\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Greatsword.** Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.\n\n**Heavy Crossbow.** Ranged Attack Roll: +3, range 100/400 ft. Hit: 12 (2d10 + 1) Piercing damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Athletics +5, Perception +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus one other language"
+    }
+  ],
+  "text": "# Warrior Veteran\n\n*Medium or Small Humanoid, Neutral*\n\nA scarred campaigner whose survival is its own credential.\n\n### Actions\n\n**Greatsword.** Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.\n\n**Heavy Crossbow.** Ranged Attack Roll: +3, range 100/400 ft. Hit: 12 (2d10 + 1) Piercing damage."
 }

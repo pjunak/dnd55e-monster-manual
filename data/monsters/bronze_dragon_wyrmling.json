@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +2, Wis +2"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +4, Stealth +2"
+    },
+    {
       "name": "Immunities",
       "text": "Lightning"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 10 ft.; Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "Draconic"
     },
     {
       "name": "Amphibious",
       "text": "The dragon can breathe air and water."
     }
   ],
-  "text": "# Bronze Dragon Wyrmling\n\n*Medium Dragon (Metallic), Lawful Good*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Slashing damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 12, each creature in a 40-foot-long, 5-foot-wide Line. Failure: 16 (3d10) Lightning damage. Success: Half damage.\n\n**Repulsion Breath.** Strength Saving Throw: DC 12, each creature in a 30-foot Cone. Failure: The target is pushed up to 30 feet straight away from the dragon and has the Prone condition."
+  "text": "# Bronze Dragon Wyrmling\n\n*Medium Dragon (Metallic), Lawful Good*\n\nA newly hatched bronze dragon, already drawn to coastlines and causes worth defending.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Slashing damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 12, each creature in a 40-foot-long, 5-foot-wide Line. Failure: 16 (3d10) Lightning damage. Success: Half damage.\n\n**Repulsion Breath.** Strength Saving Throw: DC 12, each creature in a 30-foot Cone. Failure: The target is pushed up to 30 feet straight away from the dragon and has the Prone condition."
 }

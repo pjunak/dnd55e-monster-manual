@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Ape",
   "edition": "2024",
-  "cr": "4 (XP 1,100; PB +2)",
-  "crValue": 4,
-  "creatureType": "Beast (Dinosaur)",
-  "size": "Huge",
-  "type": "Huge Beast (Dinosaur)",
+  "cr": "1/2 (XP 100; PB +2)",
+  "crValue": 0.5,
+  "creatureType": "Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "17",
-  "hp": "90 (12d12 + 12)",
-  "speed": "20 ft., Swim 80 ft.",
+  "ac": "12",
+  "hp": "19 (3d8 + 6)",
+  "speed": "30 ft., Climb 30 ft.",
   "stats": {
-    "STR": 18,
-    "DEX": 16,
-    "CON": 13,
-    "INT": 4,
-    "WIS": 14,
-    "CHA": 6
+    "STR": 16,
+    "DEX": 14,
+    "CON": 14,
+    "INT": 6,
+    "WIS": 12,
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Amphibious",
-      "text": "The archelon can breathe air and water."
+      "name": "Skills",
+      "text": "Athletics +5, Perception +3"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Ape\n\n*Huge Beast (Dinosaur), Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 5 ft. Hit: 14 (3d6 + 4) Piercing damage."
+  "text": "# Ape\n\n*Medium Beast, Unaligned*\n\nA powerful territorial primate that batters intruders with fists and hurled stones.\n\n### Actions\n\n**Fist.** Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Bludgeoning damage.\n\n**Rock (Recharge 6).** Ranged Attack Roll: +5, range 25/50 ft. Hit: 10 (2d6 + 3) Bludgeoning damage."
 }

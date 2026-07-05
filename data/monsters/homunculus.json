@@ -3,40 +3,44 @@
   "kind": "monster",
   "name": "Homunculus",
   "edition": "2024",
-  "cr": "11 (XP 7,200; PB +4)",
-  "crValue": 11,
-  "creatureType": "Fiend (Devil)",
-  "size": "Large",
-  "type": "Large Fiend (Devil)",
-  "alignment": "Lawful Evil",
-  "ac": "18",
-  "hp": "199 (19d10 + 95)",
-  "speed": "30 ft., Fly 60 ft.",
+  "cr": "0 (XP 10; PB +2)",
+  "crValue": 0,
+  "creatureType": "Construct",
+  "size": "Tiny",
+  "type": "Tiny Construct",
+  "alignment": "Neutral",
+  "ac": "13",
+  "hp": "4 (1d4 + 2)",
+  "speed": "20 ft., Fly 40 ft.",
   "stats": {
-    "STR": 22,
-    "DEX": 17,
-    "CON": 21,
-    "INT": 12,
-    "WIS": 16,
-    "CHA": 18
+    "STR": 4,
+    "DEX": 15,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 10,
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Cold"
+      "name": "Saving Throws",
+      "text": "Wis +2, Cha +0"
     },
     {
       "name": "Immunities",
-      "text": "Fire, Poison; Poisoned"
+      "text": "Poison; Charmed, Poisoned"
     },
     {
-      "name": "Diabolical Restoration",
-      "text": "If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 10"
     },
     {
-      "name": "Magic Resistance",
-      "text": "The devil has Advantage on saving throws against spells and other magical effects."
+      "name": "Languages",
+      "text": "Understands Common plus one other language but can't speak"
+    },
+    {
+      "name": "Telepathic Bond",
+      "text": "While the homunculus is on the same plane of existence as its master, the two of them can communicate telepathically with each other."
     }
   ],
-  "text": "# Homunculus\n\n*Large Fiend (Devil), Lawful Evil*\n\n### Actions\n\n**Searing Fork.** Melee Attack Roll: +10, reach 10 ft. Hit: 15 (2d8 + 6) Piercing damage plus 9 (2d8) Fire damage.\n\n**Hurl Flame.** Ranged Attack Roll: +8, range 150 ft. Hit: 26 (5d8 + 4) Fire damage. If the target is a flammable object that isn’t being worn or carried, it starts burning.\n\n**Infernal Tail.** Dexterity Saving Throw: DC 17, one creature the devil can see within 10 feet. Failure: 10 (1d8 + 6) Necrotic damage, and the target receives an infernal wound if it doesn’t have one. While wounded, the target loses 10 (3d6) Hit Points at the start of each of its turns. The wound closes after 1 minute, after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 17 Wisdom (Medicine) check."
+  "text": "# Homunculus\n\n*Tiny Construct, Neutral*\n\nA tiny winged construct bound to its maker’s thoughts as messenger and spy.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage, and the target is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target has the Poisoned condition until the end of the homunculus’s next turn. Failure by 5 or More: The target has the Poisoned condition for 1 minute. While Poisoned, the target has the Unconscious condition, which ends early if the target takes any damage."
 }

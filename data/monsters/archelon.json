@@ -3,28 +3,40 @@
   "kind": "monster",
   "name": "Archelon",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
-  "creatureType": "Beast",
-  "size": "Small",
-  "type": "Small Beast",
+  "cr": "4 (XP 1,100; PB +2)",
+  "crValue": 4,
+  "creatureType": "Beast (Dinosaur)",
+  "size": "Huge",
+  "type": "Huge Beast (Dinosaur)",
   "alignment": "Unaligned",
-  "ac": "12",
-  "hp": "3 (1d6)",
-  "speed": "30 ft., Climb 30 ft.",
+  "ac": "17",
+  "hp": "90 (12d12 + 12)",
+  "speed": "20 ft., Swim 80 ft.",
   "stats": {
-    "STR": 8,
-    "DEX": 14,
-    "CON": 11,
+    "STR": 18,
+    "DEX": 16,
+    "CON": 13,
     "INT": 4,
-    "WIS": 12,
+    "WIS": 14,
     "CHA": 6
   },
   "traits": [
     {
-      "name": "Pack Tactics",
-      "text": "The baboon has Advantage on an attack roll against a creature if at least one of the baboon’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+      "name": "Skills",
+      "text": "Stealth +5"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Amphibious",
+      "text": "The archelon can breathe air and water."
     }
   ],
-  "text": "# Archelon\n\n*Small Beast, Unaligned*"
+  "text": "# Archelon\n\n*Huge Beast (Dinosaur), Unaligned*\n\nA house-sized sea turtle that plies warm currents, placid until provoked.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 5 ft. Hit: 14 (3d6 + 4) Piercing damage."
 }

@@ -3,36 +3,40 @@
   "kind": "monster",
   "name": "Pegasus",
   "edition": "2024",
-  "cr": "3 (XP 700; PB +2)",
-  "crValue": 3,
-  "creatureType": "Monstrosity",
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
+  "creatureType": "Celestial",
   "size": "Large",
-  "type": "Large Monstrosity",
-  "alignment": "Unaligned",
-  "ac": "14",
-  "hp": "45 (7d10 + 7)",
-  "speed": "30 ft., Climb 30 ft.",
+  "type": "Large Celestial",
+  "alignment": "Chaotic Good",
+  "ac": "12",
+  "hp": "59 (7d10 + 21)",
+  "speed": "60 ft., Fly 90 ft.",
   "stats": {
-    "STR": 15,
-    "DEX": 16,
-    "CON": 12,
-    "INT": 6,
-    "WIS": 10,
-    "CHA": 6
+    "STR": 18,
+    "DEX": 15,
+    "CON": 16,
+    "INT": 10,
+    "WIS": 15,
+    "CHA": 13
   },
   "traits": [
     {
-      "name": "Ethereal Sight",
-      "text": "The spider can see 60 feet into the Ethereal Plane while on the Material Plane and vice versa."
+      "name": "Saving Throws",
+      "text": "Dex +4, Con +5, Wis +4, Cha +3"
     },
     {
-      "name": "Spider Climb",
-      "text": "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      "name": "Skills",
+      "text": "Perception +6"
     },
     {
-      "name": "Web Walker",
-      "text": "The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web."
+      "name": "Senses",
+      "text": "Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "Understands Celestial, Common, Elvish, And Sylvan but can't speak"
     }
   ],
-  "text": "# Pegasus\n\n*Large Monstrosity, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Piercing damage plus 9 (2d8) Poison damage. If this damage reduces the target to 0 Hit Points, the target becomes Stable, and it has the Poisoned condition for 1 hour. While Poisoned, the target also has the Paralyzed condition."
+  "text": "# Pegasus\n\n*Large Celestial, Chaotic Good*\n\nA winged celestial steed that serves only the worthy.\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +6, reach 5 ft. Hit: 7 (1d6 + 4) Bludgeoning damage plus 5 (2d4) Radiant damage."
 }

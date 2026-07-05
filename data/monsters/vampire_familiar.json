@@ -22,6 +22,14 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +5, Wis +2"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +4, Persuasion +4, Stealth +7"
+    },
+    {
       "name": "Resistances",
       "text": "Necrotic"
     },
@@ -30,9 +38,17 @@
       "text": "Charmed (except from its vampire master)"
     },
     {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus one other language"
+    },
+    {
       "name": "Vampiric Connection",
       "text": "While the familiar and its vampire master are on the same plane of existence, the vampire can communicate with the familiar telepathically, and the vampire can perceive through the familiar’s senses."
     }
   ],
-  "text": "# Vampire Familiar\n\n*Medium or Small Humanoid, Neutral Evil*\n\n### Actions\n\n**Umbral Dagger.** Melee or Ranged Attack Roll: +5, reach 5 ft. or range 20/60 ft. Hit: 5 (1d4 + 3) Piercing damage plus 7 (3d4) Necrotic damage. If the target is reduced to 0 Hit Points by this attack, the target becomes Stable but has the Poisoned condition for 1 hour. While it has the Poisoned condition, the target has the Paralyzed condition."
+  "text": "# Vampire Familiar\n\n*Medium or Small Humanoid, Neutral Evil*\n\nA mortal thrall bound to a vampire’s will by tainted blood.\n\n### Actions\n\n**Umbral Dagger.** Melee or Ranged Attack Roll: +5, reach 5 ft. or range 20/60 ft. Hit: 5 (1d4 + 3) Piercing damage plus 7 (3d4) Necrotic damage. If the target is reduced to 0 Hit Points by this attack, the target becomes Stable but has the Poisoned condition for 1 hour. While it has the Poisoned condition, the target has the Paralyzed condition."
 }

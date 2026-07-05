@@ -22,9 +22,17 @@
   },
   "traits": [
     {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Goblin"
+    },
+    {
       "name": "Pack Tactics",
       "text": "The hobgoblin has Advantage on an attack roll against a creature if at least one of the hobgoblin’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
     }
   ],
-  "text": "# Hobgoblin Warrior\n\n*Medium Fey (Goblinoid), Lawful Evil*\n\n### Actions\n\n**Longsword.** Melee Attack Roll: +3, reach 5 ft. Hit: 12 (2d10 + 1) Slashing damage.\n\n**Longbow.** Ranged Attack Roll: +3, range 150/600 ft. Hit: 5 (1d8 + 1) Piercing damage plus 7 (3d4) Poison damage."
+  "text": "# Hobgoblin Warrior\n\n*Medium Fey (Goblinoid), Lawful Evil*\n\nA regimented fey-born soldier that fights best in formation.\n\n### Actions\n\n**Longsword.** Melee Attack Roll: +3, reach 5 ft. Hit: 12 (2d10 + 1) Slashing damage.\n\n**Longbow.** Ranged Attack Roll: +3, range 150/600 ft. Hit: 5 (1d8 + 1) Piercing damage plus 7 (3d4) Poison damage."
 }

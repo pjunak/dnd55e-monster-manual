@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Giant Wasp",
   "edition": "2024",
-  "cr": "1/8 (XP 25; PB +2)",
-  "crValue": 0.125,
+  "cr": "1/2 (XP 100; PB +2)",
+  "crValue": 0.5,
   "creatureType": "Beast",
   "size": "Medium",
   "type": "Medium Beast",
   "alignment": "Unaligned",
   "ac": "13",
-  "hp": "9 (2d8)",
-  "speed": "40 ft., Climb 30 ft.",
+  "hp": "22 (5d8)",
+  "speed": "10 ft., Fly 50 ft.",
   "stats": {
-    "STR": 11,
-    "DEX": 17,
+    "STR": 10,
+    "DEX": 14,
     "CON": 10,
-    "INT": 4,
-    "WIS": 12,
-    "CHA": 5
+    "INT": 1,
+    "WIS": 10,
+    "CHA": 3
   },
-  "traits": [],
-  "text": "# Giant Wasp\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Piercing damage."
+  "traits": [
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Flyby",
+      "text": "The wasp doesn’t provoke an Opportunity Attack when it flies out of an enemy’s reach."
+    }
+  ],
+  "text": "# Giant Wasp\n\n*Medium Beast, Unaligned*\n\nA droning aerial hunter whose sting paralyzes its prey for the larder.\n\n### Actions\n\n**Sting.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 5 (2d4) Poison damage."
 }

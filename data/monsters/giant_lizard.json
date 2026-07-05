@@ -3,28 +3,40 @@
   "kind": "monster",
   "name": "Giant Lizard",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
   "creatureType": "Beast",
   "size": "Large",
   "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "45 (7d10 + 7)",
-  "speed": "10 ft., Swim 60 ft.",
+  "ac": "12",
+  "hp": "19 (3d10 + 3)",
+  "speed": "40 ft., Climb 40 ft.",
   "stats": {
-    "STR": 17,
-    "DEX": 13,
+    "STR": 15,
+    "DEX": 12,
     "CON": 13,
-    "INT": 5,
+    "INT": 2,
     "WIS": 10,
-    "CHA": 4
+    "CHA": 5
   },
   "traits": [
     {
-      "name": "Water Breathing",
-      "text": "The octopus can breathe only underwater. It can hold its breath for 1 hour outside water."
+      "name": "Saving Throws",
+      "text": "Dex +3"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check."
     }
   ],
-  "text": "# Giant Lizard\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Tentacles.** Melee Attack Roll: +5, reach 10 ft. Hit: 10 (2d6 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from all eight tentacles. While Grappled, the target has the Restrained condition."
+  "text": "# Giant Lizard\n\n*Large Beast, Unaligned*\n\nA horse-sized reptile used as mount and pack beast in the Underdark.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage."
 }

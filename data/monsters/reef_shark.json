@@ -3,23 +3,44 @@
   "kind": "monster",
   "name": "Reef Shark",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
+  "cr": "1/2 (XP 100; PB +2)",
+  "crValue": 0.5,
   "creatureType": "Beast",
-  "size": "Large",
-  "type": "Large Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "13 (2d10 + 2)",
-  "speed": "60 ft.",
+  "ac": "12",
+  "hp": "22 (4d8 + 4)",
+  "speed": "5 ft., Swim 30 ft.",
   "stats": {
-    "STR": 16,
-    "DEX": 13,
-    "CON": 12,
-    "INT": 2,
-    "WIS": 11,
-    "CHA": 7
+    "STR": 14,
+    "DEX": 15,
+    "CON": 13,
+    "INT": 1,
+    "WIS": 10,
+    "CHA": 4
   },
-  "traits": [],
-  "text": "# Reef Shark\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 30 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The shark has Advantage on an attack roll against a creature if at least one of the shark’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+    },
+    {
+      "name": "Water Breathing",
+      "text": "The shark can breathe only underwater."
+    }
+  ],
+  "text": "# Reef Shark\n\n*Medium Beast, Unaligned*\n\nA pack-hunting shark of warm shallows.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage."
 }

@@ -28,7 +28,15 @@
     {
       "name": "Resistances",
       "text": "Bludgeoning, Piercing"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus one other language"
     }
   ],
-  "text": "# Awakened Tree\n\n*Huge Plant, Neutral*\n\n### Actions\n\n**Slam.** Melee Attack Roll: +6, reach 10 ft. Hit: 14 (3d6 + 4) Bludgeoning damage."
+  "text": "# Awakened Tree\n\n*Huge Plant, Neutral*\n\nA mighty tree roused to lumbering wakefulness, its boughs swinging like siege engines.\n\n### Actions\n\n**Slam.** Melee Attack Roll: +6, reach 10 ft. Hit: 14 (3d6 + 4) Bludgeoning damage."
 }

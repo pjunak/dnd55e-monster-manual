@@ -3,32 +3,36 @@
   "kind": "monster",
   "name": "Druid",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
-  "creatureType": "Fey",
-  "size": "Medium",
-  "type": "Medium Fey",
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
+  "creatureType": "Humanoid",
+  "size": "Medium or Small",
+  "type": "Medium or Small Humanoid",
   "alignment": "Neutral",
-  "ac": "16",
-  "hp": "22 (5d8)",
+  "ac": "13",
+  "hp": "44 (8d8 + 8)",
   "speed": "30 ft.",
   "stats": {
     "STR": 10,
     "DEX": 12,
-    "CON": 11,
-    "INT": 14,
-    "WIS": 15,
-    "CHA": 18
+    "CON": 13,
+    "INT": 12,
+    "WIS": 16,
+    "CHA": 11
   },
   "traits": [
     {
-      "name": "Magic Resistance",
-      "text": "The dryad has Advantage on saving throws against spells and other magical effects."
+      "name": "Skills",
+      "text": "Medicine +5, Nature +3, Perception +5"
     },
     {
-      "name": "Speak with Beasts and Plants",
-      "text": "The dryad can communicate with Beasts and Plants as if they shared a language."
+      "name": "Senses",
+      "text": "Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Druidic, Sylvan"
     }
   ],
-  "text": "# Druid\n\n*Medium Fey, Neutral*\n\n### Actions\n\n**Vine Lash.** Melee Attack Roll: +6, reach 10 ft. Hit: 8 (1d8 + 4) Slashing damage.\n\n**Thorn Burst.** Ranged Attack Roll: +6, range 60 ft. Hit: 7 (1d6 + 4) Piercing damage."
+  "text": "# Druid\n\n*Medium or Small Humanoid, Neutral*\n\nA keeper of the old ways who speaks for beast and briar with nature’s own magic.\n\n### Actions\n\n**Vine Staff.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage plus 2 (1d4) Poison damage.\n\n**Verdant Wisp.** Ranged Attack Roll: +5, range 90 ft. Hit: 10 (3d6) Radiant damage."
 }

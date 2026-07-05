@@ -3,40 +3,52 @@
   "kind": "monster",
   "name": "Invisible Stalker",
   "edition": "2024",
-  "cr": "16 (XP 15,000; PB +5)",
-  "crValue": 16,
-  "creatureType": "Construct",
+  "cr": "6 (XP 2,300; PB +3)",
+  "crValue": 6,
+  "creatureType": "Elemental",
   "size": "Large",
-  "type": "Large Construct",
-  "alignment": "Unaligned",
-  "ac": "20",
-  "hp": "252 (24d10 + 120)",
-  "speed": "30 ft.",
+  "type": "Large Elemental",
+  "alignment": "Neutral",
+  "ac": "14",
+  "hp": "97 (13d10 + 26)",
+  "speed": "50 ft., Fly 50 ft. (hover)",
   "stats": {
-    "STR": 24,
-    "DEX": 9,
-    "CON": 20,
-    "INT": 3,
-    "WIS": 11,
-    "CHA": 1
+    "STR": 16,
+    "DEX": 19,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 15,
+    "CHA": 11
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Perception +8, Stealth +10"
+    },
+    {
+      "name": "Resistances",
+      "text": "Bludgeoning, Piercing, Slashing"
+    },
+    {
       "name": "Immunities",
-      "text": "Fire, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+      "text": "Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
     },
     {
-      "name": "Fire Absorption",
-      "text": "Whenever the golem is subjected to Fire damage, it regains a number of Hit Points equal to the Fire damage dealt."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 18"
     },
     {
-      "name": "Immutable Form",
-      "text": "The golem can’t shape-shift."
+      "name": "Languages",
+      "text": "Common, Primordial (Auran)"
     },
     {
-      "name": "Magic Resistance",
-      "text": "The golem has Advantage on saving throws against spells and other magical effects."
+      "name": "Air Form",
+      "text": "The stalker can enter an enemy’s space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so."
+    },
+    {
+      "name": "Invisibility",
+      "text": "The stalker has the Invisible condition."
     }
   ],
-  "text": "# Invisible Stalker\n\n*Large Construct, Unaligned*\n\n### Actions\n\n**Bladed Arm.** Melee Attack Roll: +12, reach 10 ft. Hit: 20 (3d8 + 7) Slashing damage plus 10 (3d6) Fire damage.\n\n**Fiery Bolt.** Ranged Attack Roll: +10, range 120 ft. Hit: 36 (8d8) Fire damage.\n\n**Poison Breath (Recharge 6).** Constitution Saving Throw: DC 18, each creature in a 60-foot Cone. Failure: 55 (10d10) Poison damage. Success: Half damage."
+  "text": "# Invisible Stalker\n\n*Large Elemental, Neutral*\n\nAn air elemental bound to hunt, unseen and untiring, until its quarry is found.\n\n### Actions\n\n**Wind Swipe.** Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Force damage.\n\n**Vortex.** Constitution Saving Throw: DC 14, one Large or smaller creature in the stalker’s space. Failure: 7 (1d8 + 3) Thunder damage, and the target has the Grappled condition (escape DC 13). Until the grapple ends, the target can’t cast spells with a Verbal component and takes 7 (2d6) Thunder damage at the start of each of the stalker’s turns."
 }

@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +3, Wis +2"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +4, Stealth +3"
+    },
+    {
       "name": "Immunities",
       "text": "Poison; Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 10 ft.; Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "Draconic"
     },
     {
       "name": "Amphibious",
       "text": "The dragon can breathe air and water."
     }
   ],
-  "text": "# Green Dragon Wyrmling\n\n*Medium Dragon (Chromatic), Lawful Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +4, reach 5 ft. Hit: 7 (1d10 + 2) Slashing damage plus 3 (1d6) Poison damage.\n\n**Poison Breath (Recharge 5–6).** Constitution Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: 21 (6d6) Poison damage. Success: Half damage."
+  "text": "# Green Dragon Wyrmling\n\n*Medium Dragon (Chromatic), Lawful Evil*\n\nA newly hatched green dragon, already scheming, its poison breath dangerous beyond its size.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +4, reach 5 ft. Hit: 7 (1d10 + 2) Slashing damage plus 3 (1d6) Poison damage.\n\n**Poison Breath (Recharge 5–6).** Constitution Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: 21 (6d6) Poison damage. Success: Half damage."
 }

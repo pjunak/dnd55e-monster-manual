@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Boar",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
   "creatureType": "Beast",
-  "size": "Large",
-  "type": "Large Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
   "ac": "11",
-  "hp": "22 (3d10 + 6)",
-  "speed": "40 ft., Climb 30 ft.",
+  "hp": "13 (2d8 + 4)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 17,
-    "DEX": 12,
-    "CON": 15,
+    "STR": 13,
+    "DEX": 11,
+    "CON": 14,
     "INT": 2,
-    "WIS": 13,
-    "CHA": 7
+    "WIS": 9,
+    "CHA": 5
   },
-  "traits": [],
-  "text": "# Boar\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage.\n\n**Claw.** Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition."
+  "traits": [
+    {
+      "name": "Senses",
+      "text": "Passive Perception 9"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Bloodied Fury",
+      "text": "While Bloodied, the boar has Advantage on attack rolls."
+    }
+  ],
+  "text": "# Boar\n\n*Medium Beast, Unaligned*\n\nA bristle-backed wild pig that gores attackers and refuses to fall.\n\n### Actions\n\n**Gore.** Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. If the target is a Medium or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 (1d6) Piercing damage and has the Prone condition."
 }

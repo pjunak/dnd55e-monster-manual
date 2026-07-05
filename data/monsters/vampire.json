@@ -22,8 +22,24 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +9, Con +9, Wis +7, Cha +9"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +7, Stealth +9"
+    },
+    {
       "name": "Resistances",
       "text": "Necrotic"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 120 ft.; Passive Perception 17"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus two other languages"
     },
     {
       "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
@@ -58,5 +74,5 @@
       "text": "The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
     }
   ],
-  "text": "# Vampire\n\n*Medium or Small Undead, Lawful Evil*\n\n### Actions\n\n**Grave Strike (Vampire Form Only).** Melee Attack Roll: +9, reach 5 ft. Hit: 8 (1d8 + 4) Bludgeoning damage plus 7 (2d6) Necrotic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two hands.\n\n**Bite (Bat or Vampire Form Only).** Constitution Saving Throw: DC 17, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 6 (1d4 + 4) Piercing damage plus 13 (3d8) Necrotic damage. The target’s Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a Vampire Spawn under the vampire’s control."
+  "text": "# Vampire\n\n*Medium or Small Undead, Lawful Evil*\n\nAn undead aristocrat of the night who feeds on the living and commands the creatures of darkness.\n\n### Actions\n\n**Grave Strike (Vampire Form Only).** Melee Attack Roll: +9, reach 5 ft. Hit: 8 (1d8 + 4) Bludgeoning damage plus 7 (2d6) Necrotic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two hands.\n\n**Bite (Bat or Vampire Form Only).** Constitution Saving Throw: DC 17, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 6 (1d4 + 4) Piercing damage plus 13 (3d8) Necrotic damage. The target’s Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a Vampire Spawn under the vampire’s control."
 }

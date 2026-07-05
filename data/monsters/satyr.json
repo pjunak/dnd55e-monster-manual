@@ -5,21 +5,38 @@
   "edition": "2024",
   "cr": "1/2 (XP 100; PB +2)",
   "crValue": 0.5,
-  "creatureType": "Humanoid",
-  "size": "Medium or Small",
-  "type": "Medium or Small Humanoid",
-  "alignment": "Neutral",
+  "creatureType": "Fey",
+  "size": "Medium",
+  "type": "Medium Fey",
+  "alignment": "Chaotic Neutral",
   "ac": "13",
-  "hp": "16 (3d8 + 3)",
-  "speed": "30 ft.",
+  "hp": "31 (7d8)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 11,
-    "DEX": 14,
-    "CON": 12,
-    "INT": 11,
-    "WIS": 13,
-    "CHA": 11
+    "STR": 12,
+    "DEX": 16,
+    "CON": 11,
+    "INT": 12,
+    "WIS": 10,
+    "CHA": 14
   },
-  "traits": [],
-  "text": "# Satyr\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Shortsword.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.\n\n**Longbow.** Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +2, Performance +6, Stealth +5"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Elvish, Sylvan"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The satyr has Advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "text": "# Satyr\n\n*Medium Fey, Chaotic Neutral*\n\nA revel-loving fey with a ram’s horns and an irresistible invitation to abandon.\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, the satyr pushes the target up to 10 feet straight away from itself.\n\n**Mockery.** Wisdom Saving Throw: DC 12, one creature the satyr can see within 90 feet. Failure: 5 (1d6 + 2) Psychic damage."
 }

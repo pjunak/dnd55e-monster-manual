@@ -3,28 +3,56 @@
   "kind": "monster",
   "name": "Flesh Golem",
   "edition": "2024",
-  "cr": "8 (XP 3,900; PB +3)",
-  "crValue": 8,
-  "creatureType": "Giant",
-  "size": "Huge",
-  "type": "Huge Giant",
-  "alignment": "Neutral Evil",
-  "ac": "15",
-  "hp": "149 (13d12 + 65)",
-  "speed": "40 ft.",
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
+  "creatureType": "Construct",
+  "size": "Medium",
+  "type": "Medium Construct",
+  "alignment": "Neutral",
+  "ac": "9",
+  "hp": "127 (15d8 + 60)",
+  "speed": "30 ft.",
   "stats": {
-    "STR": 23,
+    "STR": 19,
     "DEX": 9,
-    "CON": 21,
-    "INT": 9,
+    "CON": 18,
+    "INT": 6,
     "WIS": 10,
-    "CHA": 12
+    "CHA": 5
   },
   "traits": [
     {
       "name": "Immunities",
-      "text": "Cold"
+      "text": "Lightning, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Understands Common plus one other language but can't speak"
+    },
+    {
+      "name": "Aversion to Fire",
+      "text": "If the golem takes Fire damage, it has Disadvantage on attack rolls and ability checks until the end of its next turn."
+    },
+    {
+      "name": "Berserk",
+      "text": "Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it remains so until it is destroyed or it is no longer Bloodied."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The golem can’t shape-shift."
+    },
+    {
+      "name": "Lightning Absorption",
+      "text": ". Whenever the golem is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The golem has Advantage on saving throws against spells and other magical effects."
     }
   ],
-  "text": "# Flesh Golem\n\n*Huge Giant, Neutral Evil*\n\n### Actions\n\n**Frost Axe.** Melee Attack Roll: +9, reach 10 ft. Hit: 19 (2d12 + 6) Slashing damage plus 9 (2d8) Cold damage.\n\n**Great Bow.** Ranged Attack Roll: +9, range 150/600 ft. Hit: 17 (2d10 + 6) Piercing damage plus 7 (2d6) Cold damage, and the target’s Speed decreases by 10 feet until the end of its next turn."
+  "text": "# Flesh Golem\n\n*Medium Construct, Neutral*\n\nA stitched-together imitation of life, animated by lightning and prone to rage.\n\n### Actions\n\n**Slam.** Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage plus 4 (1d8) Lightning damage."
 }

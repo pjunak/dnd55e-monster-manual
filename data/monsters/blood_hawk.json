@@ -3,28 +3,40 @@
   "kind": "monster",
   "name": "Blood Hawk",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
+  "cr": "1/8 (XP 25; PB +2)",
+  "crValue": 0.125,
   "creatureType": "Beast",
-  "size": "Medium",
-  "type": "Medium Beast",
+  "size": "Small",
+  "type": "Small Beast",
   "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "13 (2d8 + 4)",
-  "speed": "40 ft.",
+  "ac": "12",
+  "hp": "7 (2d6)",
+  "speed": "10 ft., Fly 60 ft.",
   "stats": {
-    "STR": 13,
-    "DEX": 11,
-    "CON": 14,
-    "INT": 2,
-    "WIS": 9,
+    "STR": 6,
+    "DEX": 14,
+    "CON": 10,
+    "INT": 3,
+    "WIS": 14,
     "CHA": 5
   },
   "traits": [
     {
-      "name": "Bloodied Fury",
-      "text": "While Bloodied, the boar has Advantage on attack rolls."
+      "name": "Skills",
+      "text": "Perception +6"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The hawk has Advantage on an attack roll against a creature if at least one of the hawk’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
     }
   ],
-  "text": "# Blood Hawk\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Gore.** Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. If the target is a Medium or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 (1d6) Piercing damage and has the Prone condition."
+  "text": "# Blood Hawk\n\n*Small Beast, Unaligned*\n\nA fearless raptor with a blade-sharp beak, drawn to the scent of blood.\n\n### Actions\n\n**Beak.** Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage, or 6 (1d8 + 2) Piercing damage if the target is Bloodied."
 }

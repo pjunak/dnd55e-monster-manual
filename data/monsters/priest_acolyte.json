@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Priest Acolyte",
   "edition": "2024",
-  "cr": "2 (XP 450; PB +2)",
-  "crValue": 2,
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
   "creatureType": "Humanoid (Cleric)",
   "size": "Medium or Small",
   "type": "Medium or Small Humanoid (Cleric)",
   "alignment": "Neutral",
   "ac": "13",
-  "hp": "38 (7d8 + 7)",
+  "hp": "11 (2d8 + 2)",
   "speed": "30 ft.",
   "stats": {
-    "STR": 16,
+    "STR": 14,
     "DEX": 10,
     "CON": 12,
-    "INT": 13,
-    "WIS": 16,
-    "CHA": 13
+    "INT": 10,
+    "WIS": 14,
+    "CHA": 11
   },
-  "traits": [],
-  "text": "# Priest Acolyte\n\n*Medium or Small Humanoid (Cleric), Neutral*\n\n### Actions\n\n**Mace.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage plus 5 (2d4) Radiant damage.\n\n**Radiant Flame.** Ranged Attack Roll: +5, range 60 ft. Hit: 11 (2d10) Radiant damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Medicine +4, Religion +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Common"
+    }
+  ],
+  "text": "# Priest Acolyte\n\n*Medium or Small Humanoid (Cleric), Neutral*\n\nA junior cleric still learning to channel the divine.\n\n### Actions\n\n**Mace.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage plus 2 (1d4) Radiant damage.\n\n**Radiant Flame.** Ranged Attack Roll: +4, range 60 ft. Hit: 7 (2d6) Radiant damage."
 }

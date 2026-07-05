@@ -3,23 +3,48 @@
   "kind": "monster",
   "name": "Wraith",
   "edition": "2024",
-  "cr": "6 (XP 2,300; PB +3)",
-  "crValue": 6,
-  "creatureType": "Dragon",
-  "size": "Large",
-  "type": "Large Dragon",
-  "alignment": "Unaligned",
-  "ac": "14",
-  "hp": "127 (15d10 + 45)",
-  "speed": "30 ft., Fly 80 ft.",
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
+  "creatureType": "Undead",
+  "size": "Medium or Small",
+  "type": "Medium or Small Undead",
+  "alignment": "Neutral Evil",
+  "ac": "13",
+  "hp": "67 (9d8 + 27)",
+  "speed": "5 ft., Fly 60 ft. (hover)",
   "stats": {
-    "STR": 19,
-    "DEX": 10,
+    "STR": 6,
+    "DEX": 16,
     "CON": 16,
-    "INT": 5,
-    "WIS": 12,
-    "CHA": 6
+    "INT": 12,
+    "WIS": 14,
+    "CHA": 15
   },
-  "traits": [],
-  "text": "# Wraith\n\n*Large Dragon, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Piercing damage.\n\n**Sting.** Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Piercing damage plus 24 (7d6) Poison damage, and the target has the Poisoned condition until the start of the wyvern’s next turn."
+  "traits": [
+    {
+      "name": "Resistances",
+      "text": "Acid, Bludgeoning, Cold, Fire, Piercing, Slashing"
+    },
+    {
+      "name": "Immunities",
+      "text": "Necrotic, Poison; Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus two other languages"
+    },
+    {
+      "name": "Incorporeal Movement",
+      "text": "The wraith can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the wraith has Disadvantage on ability checks and attack rolls."
+    }
+  ],
+  "text": "# Wraith\n\n*Medium or Small Undead, Neutral Evil*\n\nA soul-devouring shadow of hatred that withers life with a touch.\n\n### Actions\n\n**Life Drain.** Melee Attack Roll: +6, reach 5 ft. Hit: 21 (4d8 + 3) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken."
 }

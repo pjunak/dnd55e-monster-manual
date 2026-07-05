@@ -3,32 +3,36 @@
   "kind": "monster",
   "name": "Giant Venomous Snake",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
-  "creatureType": "Monstrosity",
-  "size": "Large",
-  "type": "Large Monstrosity",
-  "alignment": "Neutral Evil",
-  "ac": "10",
-  "hp": "25 (3d10 + 9)",
-  "speed": "10 ft., Fly 60 ft.",
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
+  "creatureType": "Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
+  "alignment": "Unaligned",
+  "ac": "14",
+  "hp": "11 (2d8 + 2)",
+  "speed": "40 ft., Swim 40 ft.",
   "stats": {
-    "STR": 15,
-    "DEX": 10,
-    "CON": 16,
-    "INT": 6,
-    "WIS": 12,
-    "CHA": 7
+    "STR": 10,
+    "DEX": 18,
+    "CON": 13,
+    "INT": 2,
+    "WIS": 10,
+    "CHA": 3
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Necrotic"
+      "name": "Skills",
+      "text": "Perception +2"
     },
     {
-      "name": "Pack Tactics",
-      "text": "The vulture has Advantage on an attack roll against a creature if at least one of the vulture’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+      "name": "Senses",
+      "text": "Blindsight 10 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Giant Venomous Snake\n\n*Large Monstrosity, Neutral Evil*\n\n### Actions\n\n**Gouge.** Melee Attack Roll: +4, reach 5 ft. Hit: 9 (2d6 + 2) Piercing damage, and the target has the Poisoned condition until the end of its next turn."
+  "text": "# Giant Venomous Snake\n\n*Medium Beast, Unaligned*\n\nA serpent of alarming speed with venom to match its size.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 10 ft. Hit: 6 (1d4 + 4) Piercing damage plus 4 (1d8) Poison damage."
 }

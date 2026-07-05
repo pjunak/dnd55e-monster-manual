@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Black Bear",
   "edition": "2024",
-  "cr": "1/8 (XP 25; PB +2)",
-  "crValue": 0.125,
+  "cr": "1/2 (XP 100; PB +2)",
+  "crValue": 0.5,
   "creatureType": "Beast",
-  "size": "Small",
-  "type": "Small Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "12",
-  "hp": "7 (2d6)",
-  "speed": "10 ft., Fly 60 ft.",
+  "ac": "11",
+  "hp": "19 (3d8 + 6)",
+  "speed": "30 ft., Climb 30 ft., Swim 30 ft.",
   "stats": {
-    "STR": 6,
-    "DEX": 14,
-    "CON": 10,
-    "INT": 3,
-    "WIS": 14,
-    "CHA": 5
+    "STR": 15,
+    "DEX": 12,
+    "CON": 14,
+    "INT": 2,
+    "WIS": 12,
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Pack Tactics",
-      "text": "The hawk has Advantage on an attack roll against a creature if at least one of the hawk’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+      "name": "Skills",
+      "text": "Perception +5"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Black Bear\n\n*Small Beast, Unaligned*\n\n### Actions\n\n**Beak.** Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage, or 6 (1d8 + 2) Piercing damage if the target is Bloodied."
+  "text": "# Black Bear\n\n*Medium Beast, Unaligned*\n\nA forest forager that grows dangerous when surprised or defending cubs.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage."
 }

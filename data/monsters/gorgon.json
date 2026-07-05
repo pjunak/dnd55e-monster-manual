@@ -3,40 +3,40 @@
   "kind": "monster",
   "name": "Gorgon",
   "edition": "2024",
-  "cr": "1/2 (XP 100; PB +2)",
-  "crValue": 0.5,
-  "creatureType": "Ooze",
-  "size": "Medium",
-  "type": "Medium Ooze",
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
+  "creatureType": "Construct",
+  "size": "Large",
+  "type": "Large Construct",
   "alignment": "Unaligned",
-  "ac": "9",
-  "hp": "22 (3d8 + 9)",
-  "speed": "10 ft., Climb 10 ft.",
+  "ac": "19",
+  "hp": "114 (12d10 + 48)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 12,
-    "DEX": 6,
-    "CON": 16,
-    "INT": 1,
-    "WIS": 6,
-    "CHA": 2
+    "STR": 20,
+    "DEX": 11,
+    "CON": 18,
+    "INT": 2,
+    "WIS": 12,
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Acid, Cold, Fire"
+      "name": "Skills",
+      "text": "Perception +7"
     },
     {
       "name": "Immunities",
-      "text": "Blinded, Charmed, Deafened, Exhaustion, Frightened, Grappled, Prone, Restrained"
+      "text": "Exhaustion, Petrified"
     },
     {
-      "name": "Amorphous",
-      "text": "The ooze can move through a space as narrow as 1 inch without expending extra movement to do so."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 17"
     },
     {
-      "name": "Corrosive Form",
-      "text": "Nonmagical ammunition is destroyed immediately after hitting the ooze and dealing any damage. Any nonmagical weapon takes a cumulative −1 penalty to attack rolls immediately after dealing damage to the ooze and coming into contact with it. The weapon is destroyed if the penalty reaches −5. The penalty can be removed by casting the Mending spell on the weapon."
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Gorgon\n\n*Medium Ooze, Unaligned*\n\n### Actions\n\n**Pseudopod.** Melee Attack Roll: +3, reach 5 ft. Hit: 10 (2d8 + 1) Acid damage. Nonmagical armor worn by the target takes a −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the Mending spell on the armor."
+  "text": "# Gorgon\n\n*Large Construct, Unaligned*\n\nA bull of living iron plates whose breath petrifies whole hunting parties.\n\n### Actions\n\n**Gore.** Melee Attack Roll: +8, reach 5 ft. Hit: 18 (2d12 + 5) Piercing damage. If the target is a Large or smaller creature and the gorgon moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.\n\n**Petrifying Breath (Recharge 5–6).** Constitution Saving Throw: DC 15, each creature in a 30-foot Cone. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.\n\n**Trample.** Dexterity Saving Throw: DC 16, one creature within 5 feet that has the Prone condition. Failure: 16 (2d10 + 5) Bludgeoning damage. Success: Half damage."
 }

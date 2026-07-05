@@ -3,28 +3,40 @@
   "kind": "monster",
   "name": "Hunter Shark",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
   "creatureType": "Beast",
-  "size": "Medium",
-  "type": "Medium Beast",
+  "size": "Large",
+  "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "5 (1d8 + 1)",
-  "speed": "50 ft.",
+  "ac": "12",
+  "hp": "45 (6d10 + 12)",
+  "speed": "5 ft., Swim 40 ft.",
   "stats": {
-    "STR": 11,
-    "DEX": 13,
-    "CON": 12,
-    "INT": 2,
-    "WIS": 12,
-    "CHA": 5
+    "STR": 18,
+    "DEX": 14,
+    "CON": 15,
+    "INT": 1,
+    "WIS": 10,
+    "CHA": 4
   },
   "traits": [
     {
-      "name": "Pack Tactics",
-      "text": "The hyena has Advantage on an attack roll against a creature if at least one of the hyena’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+      "name": "Skills",
+      "text": "Perception +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Water Breathing",
+      "text": "The shark can breathe only underwater."
     }
   ],
-  "text": "# Hunter Shark\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +2, reach 5 ft. Hit: 3 (1d6) Piercing damage."
+  "text": "# Hunter Shark\n\n*Large Beast, Unaligned*\n\nA deep-reef predator built of muscle and appetite.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6 (with Advantage if the target doesn’t have all its Hit Points), reach 5 ft. Hit: 14 (3d6 + 4) Piercing damage."
 }

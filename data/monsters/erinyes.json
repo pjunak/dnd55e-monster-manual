@@ -3,32 +3,60 @@
   "kind": "monster",
   "name": "Erinyes",
   "edition": "2024",
-  "cr": "2 (XP 450; PB +2)",
-  "crValue": 2,
-  "creatureType": "Monstrosity",
+  "cr": "12 (XP 8,400; PB +4)",
+  "crValue": 12,
+  "creatureType": "Fiend (Devil)",
   "size": "Medium",
-  "type": "Medium Monstrosity",
-  "alignment": "Neutral Evil",
-  "ac": "13",
-  "hp": "44 (8d8 + 8)",
-  "speed": "30 ft., Climb 30 ft.",
+  "type": "Medium Fiend (Devil)",
+  "alignment": "Lawful Evil",
+  "ac": "18",
+  "hp": "178 (21d8 + 84)",
+  "speed": "30 ft., Fly 60 ft.",
   "stats": {
-    "STR": 14,
-    "DEX": 15,
-    "CON": 13,
-    "INT": 7,
-    "WIS": 12,
-    "CHA": 8
+    "STR": 18,
+    "DEX": 16,
+    "CON": 18,
+    "INT": 14,
+    "WIS": 14,
+    "CHA": 18
   },
   "traits": [
     {
-      "name": "Spider Climb",
-      "text": "The ettercap can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      "name": "Saving Throws",
+      "text": "Dex +7, Con +8, Cha +8"
     },
     {
-      "name": "Web Walker",
-      "text": "The ettercap ignores movement restrictions caused by webs, and the ettercap knows the location of any other creature in contact with the same web."
+      "name": "Skills",
+      "text": "Perception +6, Persuasion +8"
+    },
+    {
+      "name": "Resistances",
+      "text": "Cold"
+    },
+    {
+      "name": "Immunities",
+      "text": "Fire, Poison; Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Truesight 120 ft.; Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "Infernal; telepathy 120 ft."
+    },
+    {
+      "name": "Diabolical Restoration",
+      "text": "If the erinyes dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The erinyes has Advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Rope",
+      "text": "The erinyes has a magic rope. While bearing it, the erinyes can use the Entangling Rope action. The rope has AC 20, HP 90, and Immunity to Poison and Psychic damage. The rope turns to dust if reduced to 0 Hit Points, if it is 5+ feet away from the erinyes for 1 hour or more, or if the erinyes dies. If the rope is damaged or destroyed, the erinyes can fully restore it when finishing a Short or Long Rest."
     }
   ],
-  "text": "# Erinyes\n\n*Medium Monstrosity, Neutral Evil*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 2 (1d4) Poison damage, and the target has the Poisoned condition until the start of the ettercap’s next turn.\n\n**Claw.** Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Slashing damage.\n\n**Web Strand (Recharge 5–6).** Dexterity Saving Throw: DC 12, one Large or smaller creature the ettercap can see within 30 feet. Failure: The target has the Restrained condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Bludgeoning, Poison, and Psychic damage)."
+  "text": "# Erinyes\n\n*Medium Fiend (Devil), Lawful Evil*\n\nA fallen celestial turned infernal executioner, beautiful and merciless on black wings.\n\n### Actions\n\n**Withering Sword.** Melee Attack Roll: +8, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage plus 11 (2d10) Necrotic damage.\n\n**Entangling Rope (Requires Magic Rope).** Strength Saving Throw: DC 16, one creature the erinyes can see within 120 feet. Failure: 14 (4d6) Force damage, and the target has the Restrained condition until the rope is destroyed, the erinyes uses a Bonus Action to release the target, or the erinyes uses Entangling Rope again."
 }

@@ -3,23 +3,40 @@
   "kind": "monster",
   "name": "Vulture",
   "edition": "2024",
-  "cr": "1/2 (XP 100; PB +2)",
-  "crValue": 0.5,
+  "cr": "0 (XP 10; PB +2)",
+  "crValue": 0,
   "creatureType": "Beast",
-  "size": "Large",
-  "type": "Large Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "19 (3d10 + 3)",
-  "speed": "60 ft.",
+  "ac": "10",
+  "hp": "5 (1d8 + 1)",
+  "speed": "10 ft., Fly 50 ft.",
   "stats": {
-    "STR": 18,
-    "DEX": 12,
+    "STR": 7,
+    "DEX": 10,
     "CON": 13,
     "INT": 2,
     "WIS": 12,
-    "CHA": 7
+    "CHA": 4
   },
-  "traits": [],
-  "text": "# Vulture\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Bludgeoning damage. If the target is a Large or smaller creature and the horse moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and has the Prone condition."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +3"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The vulture has Advantage on an attack roll against a creature if at least one of the vulture’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+    }
+  ],
+  "text": "# Vulture\n\n*Medium Beast, Unaligned*\n\nA patient carrion bird circling the dying.\n\n### Actions\n\n**Beak.** Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Piercing damage."
 }

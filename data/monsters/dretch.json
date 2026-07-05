@@ -3,36 +3,40 @@
   "kind": "monster",
   "name": "Dretch",
   "edition": "2024",
-  "cr": "6 (XP 2,300; PB +3)",
-  "crValue": 6,
-  "creatureType": "Monstrosity",
-  "size": "Large",
-  "type": "Large Monstrosity",
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
+  "creatureType": "Fiend (Demon)",
+  "size": "Small",
+  "type": "Small Fiend (Demon)",
   "alignment": "Chaotic Evil",
-  "ac": "19",
-  "hp": "123 (13d10 + 52)",
-  "speed": "30 ft., Climb 30 ft.",
+  "ac": "11",
+  "hp": "18 (4d6 + 4)",
+  "speed": "20 ft.",
   "stats": {
-    "STR": 16,
-    "DEX": 19,
-    "CON": 18,
-    "INT": 13,
-    "WIS": 16,
-    "CHA": 12
+    "STR": 12,
+    "DEX": 11,
+    "CON": 12,
+    "INT": 5,
+    "WIS": 8,
+    "CHA": 3
   },
   "traits": [
     {
-      "name": "Spider Climb",
-      "text": "The drider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      "name": "Resistances",
+      "text": "Cold, Fire, Lightning"
     },
     {
-      "name": "Sunlight Sensitivity",
-      "text": "While in sunlight, the drider has Disadvantage on ability checks and attack rolls."
+      "name": "Immunities",
+      "text": "Poison; Poisoned"
     },
     {
-      "name": "Web Walker",
-      "text": "The drider ignores movement restrictions caused by webs, and the drider knows the location of any other creature in contact with the same web."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 9"
+    },
+    {
+      "name": "Languages",
+      "text": "Abyssal; telepathy 60 ft. (works only with creatures that understand Abyssal)"
     }
   ],
-  "text": "# Dretch\n\n*Large Monstrosity, Chaotic Evil*\n\n### Actions\n\n**Foreleg.** Melee Attack Roll: +7, reach 10 ft. Hit: 13 (2d8 + 4) Piercing damage.\n\n**Poison Burst.** Ranged Attack Roll: +6, range 120 ft. Hit: 13 (3d6 + 3) Poison damage."
+  "text": "# Dretch\n\n*Small Fiend (Demon), Chaotic Evil*\n\nThe wretched least of demons, spawned from the Abyss’s misery in endless sniveling hordes.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.\n\n**Fetid Cloud (1/Day).** Constitution Saving Throw: DC 11, each creature in a 10-foot Emanation originating from the dretch. Failure: The target has the Poisoned condition until the end of its next turn. While Poisoned, the creature can take either an action or a Bonus Action on its turn, not both, and it can’t take Reactions."
 }

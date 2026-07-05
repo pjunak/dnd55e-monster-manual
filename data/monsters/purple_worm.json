@@ -3,36 +3,40 @@
   "kind": "monster",
   "name": "Purple Worm",
   "edition": "2024",
-  "cr": "1 (XP 200; PB +2)",
-  "crValue": 1,
-  "creatureType": "Fiend (Demon)",
-  "size": "Tiny",
-  "type": "Tiny Fiend (Demon)",
-  "alignment": "Chaotic Evil",
-  "ac": "13",
-  "hp": "25 (10d4)",
-  "speed": "40 ft.",
+  "cr": "15 (XP 13,000; PB +5)",
+  "crValue": 15,
+  "creatureType": "Monstrosity",
+  "size": "Gargantuan",
+  "type": "Gargantuan Monstrosity",
+  "alignment": "Unaligned",
+  "ac": "18",
+  "hp": "247 (15d20 + 90)",
+  "speed": "50 ft., Burrow 50 ft.",
   "stats": {
-    "STR": 5,
-    "DEX": 17,
-    "CON": 10,
-    "INT": 7,
-    "WIS": 10,
-    "CHA": 10
+    "STR": 28,
+    "DEX": 7,
+    "CON": 22,
+    "INT": 1,
+    "WIS": 8,
+    "CHA": 4
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Cold, Fire, Lightning"
+      "name": "Saving Throws",
+      "text": "Con +11, Wis +4"
     },
     {
-      "name": "Immunities",
-      "text": "Poison; Poisoned"
+      "name": "Senses",
+      "text": "Blindsight 30 ft.; Tremorsense 60 ft.; Passive Perception 9"
     },
     {
-      "name": "Magic Resistance",
-      "text": "The quasit has Advantage on saving throws against spells and other magical effects."
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Tunneler",
+      "text": "The worm can burrow through solid rock at half its Burrow Speed and leaves a 10-foot-diameter tunnel in its wake."
     }
   ],
-  "text": "# Purple Worm\n\n*Tiny Fiend (Demon), Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage, and the target has the Poisoned condition until the start of the quasit’s next turn.\n\n**Scare (1/Day).** Wisdom Saving Throw: DC 10, one creature within 20 feet. Failure: The target has the Frightened condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+  "text": "# Purple Worm\n\n*Gargantuan Monstrosity, Unaligned*\n\nA mountain-boring leviathan whose passage leaves tunnels and whose hunger leaves nothing.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +14, reach 10 ft. Hit: 22 (3d8 + 9) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 19), and it has the Restrained condition until the grapple ends.\n\n**Tail Stinger.** Melee Attack Roll: +14, reach 10 ft. Hit: 16 (2d6 + 9) Piercing damage plus 35 (10d6) Poison damage.\n\n**Swallow.** Strength Saving Throw: DC 19, one Large or smaller creature Grappled by the worm (it can have up to three creatures swallowed at a time). Failure: The target is swallowed by the worm, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the worm, and takes 17 (5d6) Acid damage at the start of each of the worm’s turns."
 }

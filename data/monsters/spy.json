@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Spy",
   "edition": "2024",
-  "cr": "1/8 (XP 25; PB +2)",
-  "crValue": 0.125,
-  "creatureType": "Monstrosity",
-  "size": "Tiny",
-  "type": "Tiny Monstrosity",
-  "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "5 (2d4)",
-  "speed": "10 ft., Fly 40 ft.",
+  "cr": "1 (XP 200; PB +2)",
+  "crValue": 1,
+  "creatureType": "Humanoid",
+  "size": "Medium or Small",
+  "type": "Medium or Small Humanoid",
+  "alignment": "Neutral",
+  "ac": "12",
+  "hp": "27 (6d8)",
+  "speed": "30 ft., Climb 30 ft.",
   "stats": {
-    "STR": 4,
-    "DEX": 16,
-    "CON": 11,
-    "INT": 2,
-    "WIS": 8,
-    "CHA": 6
+    "STR": 10,
+    "DEX": 15,
+    "CON": 10,
+    "INT": 12,
+    "WIS": 14,
+    "CHA": 16
   },
-  "traits": [],
-  "text": "# Spy\n\n*Tiny Monstrosity, Unaligned*\n\n### Actions\n\n**Proboscis.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage, and the stirge attaches to the target. While attached, the stirge can’t make Proboscis attacks, and the target takes 5 (2d4) Necrotic damage at the start of each of the stirge’s turns."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Deception +5, Insight +4, Investigation +5, Perception +6, Sleight of Hand +4, Stealth +6"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus one other language"
+    }
+  ],
+  "text": "# Spy\n\n*Medium or Small Humanoid, Neutral*\n\nA trained infiltrator who deals in secrets and quiet exits.\n\n### Actions\n\n**Shortsword.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage plus 7 (2d6) Poison damage.\n\n**Hand Crossbow.** Ranged Attack Roll: +4, range 30/120 ft. Hit: 5 (1d6 + 2) Piercing damage plus 7 (2d6) Poison damage."
 }

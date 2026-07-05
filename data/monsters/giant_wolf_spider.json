@@ -3,23 +3,40 @@
   "kind": "monster",
   "name": "Giant Wolf Spider",
   "edition": "2024",
-  "cr": "0 (XP 10; PB +2)",
-  "crValue": 0,
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
   "creatureType": "Beast",
   "size": "Medium",
   "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "10",
-  "hp": "4 (1d8)",
-  "speed": "40 ft., Climb 30 ft.",
+  "ac": "13",
+  "hp": "11 (2d8 + 2)",
+  "speed": "40 ft., Climb 40 ft.",
   "stats": {
-    "STR": 11,
-    "DEX": 10,
-    "CON": 11,
-    "INT": 2,
-    "WIS": 10,
-    "CHA": 5
+    "STR": 12,
+    "DEX": 16,
+    "CON": 13,
+    "INT": 3,
+    "WIS": 12,
+    "CHA": 4
   },
-  "traits": [],
-  "text": "# Giant Wolf Spider\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Ram.** Melee Attack Roll: +2, reach 5 ft. Hit: 1 Bludgeoning damage, or 2 (1d4) Bludgeoning damage if the goat moved 20+ feet straight toward the target immediately before the hit."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +3, Stealth +7"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 10 ft.; Darkvision 60 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+    }
+  ],
+  "text": "# Giant Wolf Spider\n\n*Medium Beast, Unaligned*\n\nA roving hunter-spider that runs down prey rather than webbing it.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Piercing damage plus 5 (2d4) Poison damage."
 }

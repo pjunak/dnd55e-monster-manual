@@ -22,9 +22,21 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +4"
+    },
+    {
       "name": "Immunities",
       "text": "Poison, Psychic; Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Passive Perception 7"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Animated Flying Sword\n\n*Small Construct, Unaligned*\n\n### Actions\n\n**Slash.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Slashing damage."
+  "text": "# Animated Flying Sword\n\n*Small Construct, Unaligned*\n\nA blade that fights on without a hand to wield it, darting through the air on invisible currents of magic.\n\n### Actions\n\n**Slash.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Slashing damage."
 }

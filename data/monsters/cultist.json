@@ -20,6 +20,23 @@
     "WIS": 11,
     "CHA": 10
   },
-  "traits": [],
-  "text": "# Cultist\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Ritual Sickle.** Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Slashing damage plus 1 Necrotic damage."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Wis +2"
+    },
+    {
+      "name": "Skills",
+      "text": "Deception +2, Religion +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Common"
+    }
+  ],
+  "text": "# Cultist\n\n*Medium or Small Humanoid, Neutral*\n\nA robed devotee of forbidden powers, more zealous than skilled.\n\n### Actions\n\n**Ritual Sickle.** Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Slashing damage plus 1 Necrotic damage."
 }

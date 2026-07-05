@@ -22,6 +22,18 @@
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Stealth +4"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Bullywug, Common"
+    },
+    {
       "name": "Amphibious",
       "text": "The bullywug can breathe air and water."
     },
@@ -30,5 +42,5 @@
       "text": "The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug."
     }
   ],
-  "text": "# Bullywug Warrior\n\n*Medium Fey, Neutral*\n\n### Actions\n\n**Insectile Rapier.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage plus 2 (1d4) Poison damage."
+  "text": "# Bullywug Warrior\n\n*Medium Fey, Neutral*\n\nA pompous frog-folk skirmisher that leaps from stagnant water with rapier drawn.\n\n### Actions\n\n**Insectile Rapier.** Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage plus 2 (1d4) Poison damage.\n\n### Bonus Actions\n\n**Leap.** The bullywug can jump up to 30 feet by spending 10 feet of movement."
 }

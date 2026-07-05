@@ -22,12 +22,28 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Int +5, Wis +9"
+    },
+    {
+      "name": "Skills",
+      "text": "History +5, Perception +9, Religion +5"
+    },
+    {
       "name": "Vulnerabilities",
       "text": "Fire"
     },
     {
       "name": "Immunities",
       "text": "Necrotic, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Truesight 60 ft.; Passive Perception 19"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus three other languages"
     },
     {
       "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
@@ -42,5 +58,5 @@
       "text": "If destroyed, the mummy gains a new body in 24 hours if its heart is intact, reviving with all its Hit Points. The new body appears in an unoccupied space within the mummy’s lair. The heart is a Tiny object that has AC 17, HP 10, and Immunity to all damage except Fire."
     }
   ],
-  "text": "# Mummy Lord\n\n*Medium or Small Undead (Cleric), Lawful Evil*\n\n### Actions\n\n**Rotting Fist.** Melee Attack Roll: +9, reach 5 ft. Hit: 15 (2d10 + 4) Bludgeoning damage plus 10 (3d6) Necrotic damage. If the target is a creature, it is cursed. While cursed, the target can’t regain Hit Points, it gains no benefit from finishing a Long Rest, and its Hit Point maximum decreases by 10 (3d6) every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Hit Points by this attack.\n\n**Channel Negative Energy.** Ranged Attack Roll: +9, range 60 ft. Hit: 25 (6d6 + 4) Necrotic damage.\n\n**Dreadful Glare.** Wisdom Saving Throw: DC 17, one creature the mummy can see within 60 feet. Failure: 25 (6d6 + 4) Psychic damage, and the target has the Paralyzed condition until the end of the mummy’s next turn."
+  "text": "# Mummy Lord\n\n*Medium or Small Undead (Cleric), Lawful Evil*\n\nAn ancient priest-king whose funerary rites became a font of dreadful power.\n\n### Actions\n\n**Rotting Fist.** Melee Attack Roll: +9, reach 5 ft. Hit: 15 (2d10 + 4) Bludgeoning damage plus 10 (3d6) Necrotic damage. If the target is a creature, it is cursed. While cursed, the target can’t regain Hit Points, it gains no benefit from finishing a Long Rest, and its Hit Point maximum decreases by 10 (3d6) every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Hit Points by this attack.\n\n**Channel Negative Energy.** Ranged Attack Roll: +9, range 60 ft. Hit: 25 (6d6 + 4) Necrotic damage.\n\n**Dreadful Glare.** Wisdom Saving Throw: DC 17, one creature the mummy can see within 60 feet. Failure: 25 (6d6 + 4) Psychic damage, and the target has the Paralyzed condition until the end of the mummy’s next turn."
 }

@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Eagle",
   "edition": "2024",
-  "cr": "4 (XP 1,100; PB +2)",
-  "crValue": 4,
+  "cr": "0 (XP 10; PB +2)",
+  "crValue": 0,
   "creatureType": "Beast",
-  "size": "Huge",
-  "type": "Huge Beast",
+  "size": "Small",
+  "type": "Small Beast",
   "alignment": "Unaligned",
   "ac": "12",
-  "hp": "76 (8d12 + 24)",
-  "speed": "40 ft.",
+  "hp": "4 (1d6 + 1)",
+  "speed": "10 ft., Fly 60 ft.",
   "stats": {
-    "STR": 22,
-    "DEX": 9,
-    "CON": 17,
-    "INT": 3,
-    "WIS": 11,
-    "CHA": 6
+    "STR": 6,
+    "DEX": 15,
+    "CON": 12,
+    "INT": 2,
+    "WIS": 14,
+    "CHA": 7
   },
-  "traits": [],
-  "text": "# Eagle\n\n*Huge Beast, Unaligned*\n\n### Actions\n\n**Gore.** Melee Attack Roll: +8, reach 5 ft. Hit: 15 (2d8 + 6) Piercing damage. If the target is a Huge or smaller creature and the elephant moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.\n\n**Trample.** Dexterity Saving Throw: DC 16, one creature within 5 feet that has the Prone condition. Failure: 17 (2d10 + 6) Bludgeoning damage. Success: Half damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +6"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Eagle\n\n*Small Beast, Unaligned*\n\nA keen-eyed raptor that stoops from great heights.\n\n### Actions\n\n**Talons.** Melee Attack Roll: +4, reach 5 feet. Hit: 4 (1d4 + 2) Slashing damage."
 }

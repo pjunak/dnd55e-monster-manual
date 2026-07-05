@@ -22,9 +22,21 @@
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Stealth +6, Survival +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Goblin"
+    },
+    {
       "name": "Abduct",
       "text": "The bugbear needn’t spend extra movement to move a creature it is grappling."
     }
   ],
-  "text": "# Bugbear Warrior\n\n*Medium Fey (Goblinoid), Chaotic Evil*\n\n### Actions\n\n**Grab.** Melee Attack Roll: +4, reach 10 ft. Hit: 9 (2d6 + 2) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12).\n\n**Light Hammer.** Melee or Ranged Attack Roll: +4 (with Advantage if the target is Grappled by the bugbear), reach 10 ft. or range 20/60 ft. Hit: 9 (3d4 + 2) Bludgeoning damage."
+  "text": "# Bugbear Warrior\n\n*Medium Fey (Goblinoid), Chaotic Evil*\n\nA shaggy goblinoid bruiser that likes long reach and longer odds in its favor.\n\n### Actions\n\n**Grab.** Melee Attack Roll: +4, reach 10 ft. Hit: 9 (2d6 + 2) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12).\n\n**Light Hammer.** Melee or Ranged Attack Roll: +4 (with Advantage if the target is Grappled by the bugbear), reach 10 ft. or range 20/60 ft. Hit: 9 (3d4 + 2) Bludgeoning damage."
 }

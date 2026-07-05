@@ -1,34 +1,54 @@
 {
   "id": "will_o_wisp",
   "kind": "monster",
-  "name": "Will-o’-Wisp",
+  "name": "Will-o'-Wisp",
   "edition": "2024",
-  "cr": "3 (XP 700; PB +2)",
-  "crValue": 3,
-  "creatureType": "Monstrosity",
-  "size": "Large",
-  "type": "Large Monstrosity",
-  "alignment": "Neutral Evil",
-  "ac": "13",
-  "hp": "75 (10d10 + 20)",
-  "speed": "50 ft.",
+  "cr": "2 (XP 450; PB +2)",
+  "crValue": 2,
+  "creatureType": "Undead",
+  "size": "Tiny",
+  "type": "Tiny Undead",
+  "alignment": "Chaotic Evil",
+  "ac": "19",
+  "hp": "27 (11d4)",
+  "speed": "5 ft., Fly 50 ft. (hover)",
   "stats": {
-    "STR": 18,
-    "DEX": 13,
-    "CON": 14,
-    "INT": 7,
-    "WIS": 12,
-    "CHA": 8
+    "STR": 1,
+    "DEX": 28,
+    "CON": 10,
+    "INT": 13,
+    "WIS": 14,
+    "CHA": 11
   },
   "traits": [
     {
-      "name": "Immunities",
-      "text": "Cold"
+      "name": "Resistances",
+      "text": "Acid, Bludgeoning, Cold, Fire, Necrotic, Piercing, Slashing"
     },
     {
-      "name": "Pack Tactics",
-      "text": "The wolf has Advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+      "name": "Immunities",
+      "text": "Lightning, Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 120 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus one other language"
+    },
+    {
+      "name": "Ephemeral",
+      "text": "The wisp can’t wear or carry anything."
+    },
+    {
+      "name": "Illumination",
+      "text": "The wisp sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet."
+    },
+    {
+      "name": "Incorporeal Movement",
+      "text": "The wisp can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object."
     }
   ],
-  "text": "# Will-o’-Wisp\n\n*Large Monstrosity, Neutral Evil*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 5 ft. Hit: 11 (2d6 + 4) Piercing damage. If the target is a Large or smaller creature, it has the Prone condition.\n\n**Cold Breath (Recharge 5–6).** Constitution Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 18 (4d8) Cold damage. Success: Half damage."
+  "text": "# Will-o'-Wisp\n\n*Tiny Undead, Chaotic Evil*\n\nA malevolent bobbing light that lures travelers into mire and feeds on their despair.\n\n### Actions\n\n**Shock.** Melee Attack Roll: +4, reach 5 ft. Hit: 11 (2d8 + 2) Lightning damage.\n\n**Consume Life.** Constitution Saving Throw: DC 10, one living creature the wisp can see within 5 feet that has 0 Hit Points. Failure: The target dies, and the wisp regains 10 (3d6) Hit Points."
 }

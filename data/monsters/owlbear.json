@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Owlbear",
   "edition": "2024",
-  "cr": "2 (XP 450; PB +2)",
-  "crValue": 2,
-  "creatureType": "Celestial",
+  "cr": "3 (XP 700; PB +2)",
+  "crValue": 3,
+  "creatureType": "Monstrosity",
   "size": "Large",
-  "type": "Large Celestial",
-  "alignment": "Chaotic Good",
-  "ac": "12",
+  "type": "Large Monstrosity",
+  "alignment": "Unaligned",
+  "ac": "13",
   "hp": "59 (7d10 + 21)",
-  "speed": "60 ft., Fly 90 ft.",
+  "speed": "40 ft., Climb 40 ft.",
   "stats": {
-    "STR": 18,
-    "DEX": 15,
-    "CON": 16,
-    "INT": 10,
-    "WIS": 15,
-    "CHA": 13
+    "STR": 20,
+    "DEX": 12,
+    "CON": 17,
+    "INT": 3,
+    "WIS": 12,
+    "CHA": 7
   },
-  "traits": [],
-  "text": "# Owlbear\n\n*Large Celestial, Chaotic Good*\n\n### Actions\n\n**Hooves.** Melee Attack Roll: +6, reach 5 ft. Hit: 7 (1d6 + 4) Bludgeoning damage plus 5 (2d4) Radiant damage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +5"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Owlbear\n\n*Large Monstrosity, Unaligned*\n\nA notoriously bad-tempered fusion of owl and bear that attacks nearly anything that moves.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Slashing damage."
 }

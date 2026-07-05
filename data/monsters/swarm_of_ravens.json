@@ -3,24 +3,28 @@
   "kind": "monster",
   "name": "Swarm of Ravens",
   "edition": "2024",
-  "cr": "2 (XP 450; PB +2)",
-  "crValue": 2,
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
   "creatureType": "Swarm of Tiny Beasts",
   "size": "Medium",
   "type": "Medium Swarm of Tiny Beasts",
   "alignment": "Unaligned",
-  "ac": "14",
-  "hp": "36 (8d8)",
-  "speed": "30 ft., Swim 30 ft.",
+  "ac": "12",
+  "hp": "11 (2d8 + 2)",
+  "speed": "10 ft., Fly 50 ft.",
   "stats": {
-    "STR": 8,
-    "DEX": 18,
-    "CON": 11,
-    "INT": 1,
-    "WIS": 10,
-    "CHA": 3
+    "STR": 6,
+    "DEX": 14,
+    "CON": 12,
+    "INT": 5,
+    "WIS": 12,
+    "CHA": 6
   },
   "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +5"
+    },
     {
       "name": "Resistances",
       "text": "Bludgeoning, Piercing, Slashing"
@@ -30,9 +34,17 @@
       "text": "Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned"
     },
     {
+      "name": "Senses",
+      "text": "Passive Perception 15"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
       "name": "Swarm",
-      "text": "The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can’t regain Hit Points or gain Temporary Hit Points."
+      "text": "The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can’t regain Hit Points or gain Temporary Hit Points."
     }
   ],
-  "text": "# Swarm of Ravens\n\n*Medium Swarm of Tiny Beasts, Unaligned*\n\n### Actions\n\n**Bites.** Melee Attack Roll: +6, reach 5 ft. Hit: 8 (1d8 + 4) Piercing damage—or 6 (1d4 + 4) Piercing damage if the swarm is Bloodied—plus 10 (3d6) Poison damage."
+  "text": "# Swarm of Ravens\n\n*Medium Swarm of Tiny Beasts, Unaligned*\n\nA wheeling storm of beaks and claws.\n\n### Actions\n\n**Beaks.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage, or 2 (1d4) Piercing damage if the swarm is Bloodied.\n\n**Cacophony (Recharge 6).** Wisdom Saving Throw: DC 10, one creature in the swarm’s space. Failure: The target has the Deafened condition until the start of the swarm’s next turn. While Deafened, the target also has Disadvantage on ability checks and attack rolls."
 }

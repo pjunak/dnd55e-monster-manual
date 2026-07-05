@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Tiger",
   "edition": "2024",
-  "cr": "5 (XP 1,800; PB +3)",
-  "crValue": 5,
-  "creatureType": "Beast (Dinosaur)",
-  "size": "Huge",
-  "type": "Huge Beast (Dinosaur)",
+  "cr": "1 (XP 200; PB +2)",
+  "crValue": 1,
+  "creatureType": "Beast",
+  "size": "Large",
+  "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "14",
-  "hp": "114 (12d12 + 36)",
-  "speed": "50 ft.",
+  "ac": "13",
+  "hp": "30 (4d10 + 8)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 22,
-    "DEX": 9,
-    "CON": 17,
-    "INT": 2,
-    "WIS": 11,
-    "CHA": 5
+    "STR": 17,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 3,
+    "WIS": 12,
+    "CHA": 8
   },
-  "traits": [],
-  "text": "# Tiger\n\n*Huge Beast (Dinosaur), Unaligned*\n\n### Actions\n\n**Gore.** Melee Attack Roll: +9, reach 5 ft. Hit: 19 (2d12 + 6) Piercing damage. If the target is Huge or smaller and the triceratops moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 (2d8) Piercing damage and has the Prone condition."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +3, Stealth +7"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Tiger\n\n*Large Beast, Unaligned*\n\nA striped jungle ambusher that stalks alone.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition."
 }

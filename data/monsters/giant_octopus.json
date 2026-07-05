@@ -3,32 +3,40 @@
   "kind": "monster",
   "name": "Giant Octopus",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
-  "creatureType": "Celestial",
+  "cr": "1 (XP 200; PB +2)",
+  "crValue": 1,
+  "creatureType": "Beast",
   "size": "Large",
-  "type": "Large Celestial",
-  "alignment": "Neutral",
-  "ac": "12",
-  "hp": "19 (3d10 + 3)",
-  "speed": "5 ft., Fly 60 ft.",
+  "type": "Large Beast",
+  "alignment": "Unaligned",
+  "ac": "11",
+  "hp": "45 (7d10 + 7)",
+  "speed": "10 ft., Swim 60 ft.",
   "stats": {
-    "STR": 13,
-    "DEX": 15,
-    "CON": 12,
-    "INT": 10,
-    "WIS": 14,
-    "CHA": 10
+    "STR": 17,
+    "DEX": 13,
+    "CON": 13,
+    "INT": 5,
+    "WIS": 10,
+    "CHA": 4
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Necrotic, Radiant"
+      "name": "Skills",
+      "text": "Perception +4, Stealth +5"
     },
     {
-      "name": "Flyby",
-      "text": "The owl doesn’t provoke an Opportunity Attack when it flies out of an enemy’s reach."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 14"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Water Breathing",
+      "text": "The octopus can breathe only underwater. It can hold its breath for 1 hour outside water."
     }
   ],
-  "text": "# Giant Octopus\n\n*Large Celestial, Neutral*\n\n### Actions\n\n**Talons.** Melee Attack Roll: +4, reach 5 ft. Hit: 7 (1d10 + 2) Slashing damage."
+  "text": "# Giant Octopus\n\n*Large Beast, Unaligned*\n\nA many-armed ambusher of reefs and wrecks, clever enough to unwork latches.\n\n### Actions\n\n**Tentacles.** Melee Attack Roll: +5, reach 10 ft. Hit: 10 (2d6 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from all eight tentacles. While Grappled, the target has the Restrained condition."
 }

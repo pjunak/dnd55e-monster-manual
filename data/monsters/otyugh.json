@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Otyugh",
   "edition": "2024",
-  "cr": "3 (XP 700; PB +2)",
-  "crValue": 3,
-  "creatureType": "Monstrosity",
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
+  "creatureType": "Aberration",
   "size": "Large",
-  "type": "Large Monstrosity",
-  "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "59 (7d10 + 21)",
-  "speed": "40 ft., Climb 40 ft.",
+  "type": "Large Aberration",
+  "alignment": "Neutral",
+  "ac": "14",
+  "hp": "104 (11d10 + 44)",
+  "speed": "30 ft.",
   "stats": {
-    "STR": 20,
-    "DEX": 12,
-    "CON": 17,
-    "INT": 3,
-    "WIS": 12,
-    "CHA": 7
+    "STR": 16,
+    "DEX": 11,
+    "CON": 19,
+    "INT": 6,
+    "WIS": 13,
+    "CHA": 6
   },
-  "traits": [],
-  "text": "# Otyugh\n\n*Large Monstrosity, Unaligned*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 5 ft. Hit: 14 (2d8 + 5) Slashing damage."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Con +7"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 120 ft.; Passive Perception 11"
+    },
+    {
+      "name": "Languages",
+      "text": "Otyugh; telepathy 120 ft. (doesn't allow the receiving creature to respond telepathically)"
+    }
+  ],
+  "text": "# Otyugh\n\n*Large Aberration, Neutral*\n\nA refuse-dwelling scavenger whose diseased bite guards its reeking hoard.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +6, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage, and the target has the Poisoned condition. Whenever the Poisoned target finishes a Long Rest, it is subjected to the following effect. Constitution Saving Throw: DC 15. Failure: The target’s Hit Point maximum decreases by 5 (1d10) and doesn’t return to normal until the Poisoned condition ends on the target. Success: The Poisoned condition ends.\n\n**Tentacle.** Melee Attack Roll: +6, reach 10 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two tentacles.\n\n**Tentacle Slam.** Constitution Saving Throw: DC 14, each creature Grappled by the otyugh. Failure: 16 (3d8 + 3) Bludgeoning damage, and the target has the Stunned condition until the start of the otyugh’s next turn. Success: Half damage only."
 }

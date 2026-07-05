@@ -3,32 +3,52 @@
   "kind": "monster",
   "name": "Storm Giant",
   "edition": "2024",
-  "cr": "4 (XP 1,100; PB +2)",
-  "crValue": 4,
-  "creatureType": "Fiend",
-  "size": "Medium",
-  "type": "Medium Fiend",
-  "alignment": "Neutral Evil",
-  "ac": "15",
-  "hp": "71 (13d8 + 13)",
-  "speed": "30 ft., Fly 60 ft.",
+  "cr": "13 (XP 10,000; PB +5)",
+  "crValue": 13,
+  "creatureType": "Giant",
+  "size": "Huge",
+  "type": "Huge Giant",
+  "alignment": "Chaotic Good",
+  "ac": "16",
+  "hp": "230 (20d12 + 100)",
+  "speed": "50 ft., Fly 25 ft. (hover), Swim 50 ft.",
   "stats": {
-    "STR": 8,
-    "DEX": 17,
-    "CON": 13,
-    "INT": 15,
-    "WIS": 12,
-    "CHA": 20
+    "STR": 29,
+    "DEX": 14,
+    "CON": 20,
+    "INT": 16,
+    "WIS": 20,
+    "CHA": 18
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Cold, Fire, Poison, Psychic"
+      "name": "Saving Throws",
+      "text": "Str +14, Con +10, Wis +10, Cha +9"
     },
     {
-      "name": "Incubus Form",
-      "text": "When the succubus finishes a Long Rest, it can shape-shift into an Incubus, using that stat block instead of this one."
+      "name": "Skills",
+      "text": "Arcana +8, Athletics +14, History +8, Perception +10"
+    },
+    {
+      "name": "Resistances",
+      "text": "Cold"
+    },
+    {
+      "name": "Immunities",
+      "text": "Lightning, Thunder"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 120 ft.; Truesight 30 ft.; Passive Perception 20"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Giant"
+    },
+    {
+      "name": "Amphibious",
+      "text": "The giant can breathe air and water."
     }
   ],
-  "text": "# Storm Giant\n\n*Medium Fiend, Neutral Evil*\n\n### Actions\n\n**Fiendish Touch.** Melee Attack Roll: +7, reach 5 ft. Hit: 16 (2d10 + 5) Psychic damage.\n\n**Draining Kiss.** Constitution Saving Throw: DC 15, one creature Charmed by the succubus within 5 feet. Failure: 13 (3d8) Psychic damage. Success: Half damage. Failure or Success: The target’s Hit Point maximum decreases by an amount equal to the damage taken."
+  "text": "# Storm Giant\n\n*Huge Giant, Chaotic Good*\n\nA prophetic titan of sea and sky who broods over omens in deep-water citadels.\n\n### Actions\n\n**Storm Sword.** Melee Attack Roll: +14, reach 10 ft. Hit: 23 (4d6 + 9) Slashing damage plus 13 (3d8) Lightning damage.\n\n**Thunderbolt.** Ranged Attack Roll: +14, range 500 ft. Hit: 22 (2d12 + 9) Lightning damage, and the target has the Blinded and Deafened conditions until the start of the giant’s next turn.\n\n**Lightning Storm (Recharge 5–6).** Dexterity Saving Throw: DC 18, each creature in a 10-foot-radius, 40-foot-high Cylinder originating from a point the giant can see within 500 feet. Failure: 55 (10d10) Lightning damage. Success: Half damage."
 }

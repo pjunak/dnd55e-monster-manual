@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +4, Wis +4"
+    },
+    {
+      "name": "Skills",
+      "text": "Deception +5, Perception +7, Stealth +4"
+    },
+    {
       "name": "Immunities",
       "text": "Poison; Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 30 ft.; Darkvision 120 ft.; Passive Perception 17"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Amphibious",
       "text": "The dragon can breathe air and water."
     }
   ],
-  "text": "# Young Green Dragon\n\n*Large Dragon (Chromatic), Lawful Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Slashing damage plus 7 (2d6) Poison damage.\n\n**Poison Breath (Recharge 5–6).** Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 42 (12d6) Poison damage. Success: Half damage."
+  "text": "# Young Green Dragon\n\n*Large Dragon (Chromatic), Lawful Evil*\n\nA young green dragon coming into its power: a manipulative forest-dweller whose poisonous breath chokes whole glades and whose words ensnare minds.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +7, reach 10 ft. Hit: 11 (2d6 + 4) Slashing damage plus 7 (2d6) Poison damage.\n\n**Poison Breath (Recharge 5–6).** Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 42 (12d6) Poison damage. Success: Half damage."
 }

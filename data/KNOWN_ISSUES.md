@@ -1,64 +1,65 @@
-# Known data-quality issues (READ BEFORE TRUSTING RECORDS)
+# Data provenance & repair history
 
-**Status 2026-07-03: a significant subset of the 333 records carries ANOTHER
-monster's stat block under its name.** The corruption is inherited from the
-scrape that produced the Living-scroll source tree
-(`Living-scroll/modules/compendium/data/dnd_2024/players_handbook/monsters/*.md`
-— note monsters live under *players_handbook* upstream): frontmatter AND prose
-were shifted against the filename list in several alphabet ranges, and each
-record's `# Heading` was later regenerated from the filename — so every record
-is **self-consistent and looks fine in the UI**, it's just attributed to the
-wrong creature. No internal check can catch the swaps (a duplicate-stat scan
-across all 333 found zero duplicates — it's a chain displacement, not a copy).
+**Status 2026-07-04: the misattribution corruption is FIXED.** Every shipped
+record now carries its own creature's stat block, verified against the SRD 5.2
+(the 2024 rules System Reference Document) via Open5e.
 
-## Confirmed misattributed (record → what the content actually is)
+## What was wrong
 
-| id | content is actually |
-|---|---|
-| `aboleth` | Air Elemental |
-| `earth_elemental` | Efreeti ("Large Elemental (Genie)", CR 11) |
-| `fire_elemental` | Fire Giant ("Huge Giant", CR 9) |
-| `ogre` | Oni ("Large Fiend", CR 7) |
-| `priest` | Pseudodragon ("Tiny Dragon", CR 1/4) |
-| `warhorse` | (a Tiny Beast, CR 0 — likely Weasel) |
-| `weasel` | (a Medium Beast, CR 1/4 — likely Wolf) |
-| `water_elemental` | a lycanthrope ("Medium or Small Monstrosity (Lycanthrope)") |
-| `wight` | Will-o'-Wisp ("Tiny Undead", CR 2) |
-| `winter_wolf` | Worg ("Large Fey", CR 1/2) |
-| `worg` | Wight ("Medium or Small Undead") |
-| `wraith` | Wyvern ("Large Dragon", CR 6) |
+The original bulk scrape (via the Living-scroll source tree) chain-shifted
+content against the filename list: a record could carry ANOTHER monster's
+complete stat block under its name, with the `# Heading` regenerated from the
+filename — so every record looked self-consistent in the UI while being
+attributed to the wrong creature. The corruption lived in the SOURCE, so
+re-importing reproduced it.
 
-## Confirmed missing entirely (no file at all)
+## How it was repaired
 
-`werewolf`, `wolf`, `commoner` — and possibly more; the displacement chains
-imply some creatures' true content was dropped where the shifts began.
+1. **Fingerprint matching.** Each record's content fingerprint (the six
+   ability scores + AC + HP + CR) was matched against the SRD 5.2 creature
+   list. 221 records were confirmed misattributed; 83 were already correct.
+2. **Re-homing (authentic content preserved).** 197 + 26 displaced stat blocks
+   were moved to their true ids (only the id/name/heading were corrected —
+   the scraped prose is authentic book text). This included content parked
+   under 24 spurious plural "group page" ids (`black_dragons` held Black
+   Pudding, `mummies` held Nalfeshnee, …), which were deleted after their
+   content was re-homed.
+3. **Rebuilds from SRD 5.2.** Slots whose true content was lost in the shift
+   were regenerated from SRD 5.2 data (stat line, traits, actions), formatted
+   to this repo's schema and 2024 book conventions ("Medium or Small"
+   humanoids, "Swarm of Tiny X", subtype tags like Devil/Demon/Angel/Genie).
+4. **Recovered creatures.** `wolf`, `werewolf`, `commoner` (missing entirely)
+   and `bone_devil` (found displaced with no slot) were created.
+5. **Non-SRD creatures.** Five 2024-MM creatures outside the SRD
+   (`carrion_crawler`, `nothic`, `slaad_tadpole`, `bullywug_warrior`,
+   `bullywug_bog_sage`) were verified/rebuilt against the 2024 Monster Manual
+   via secondary sources (cross-checked stat lines).
 
-## Verified CORRECT (spot checks against the printed 2024 MM)
+The bestiary now ships 313 records, each verified either against the SRD 5.2
+fingerprint (308) or against 2024 MM secondary sources (the five non-SRD ids).
 
-`zombie`, `skeleton`, `goblin_warrior`, `adult_red_dragon`, `bandit`, `mage`,
-`vampire`. The corruption clusters in ranges (A/E/F/O/P/W probed so far);
-staples between them check out — but **treat any individual record as
-unverified until audited**.
+## Follow-up enrichment (2026-07-05)
 
-## What was already fixed here (2026-07-03)
+The limitations noted after the misattribution repair have been addressed:
 
-36 records had a mechanically mis-split `creatureType` (`"or Small Humanoid"`
-etc. — the lost derivation script split `"Medium or Small Humanoid"` on the
-first space). Fixed: `size` now carries the full `"Medium or Small"`,
-`creatureType` the clean type. This fix is orthogonal to the misattribution
-above (it normalized fields, it could not re-home content).
+- **Senses / Languages / Saving Throws / Skills** are now on every record as
+  `traits[]` entries (the schema's existing display mechanism, rendered as
+  labeled chips alongside Resistances/Immunities). Sourced from the SRD 5.2
+  for the 308 fingerprint-matched records and from verified 2024 MM secondary
+  sources for the five non-SRD ids. Saving Throws lists only proficient saves
+  (those differing from the raw ability modifier), matching 2024 stat block
+  style.
+- **Flavor prose**: every record now opens with a one-line description after
+  the size/type line. These lines are ORIGINAL summaries written for this
+  addon — the 2024 Monster Manual's own descriptive paragraphs are copyrighted
+  and are not distributed in the SRD, so they cannot be shipped. Anyone with
+  book access can replace a line by editing the record's `text`.
+- **Encoding artifacts** (mojibake em-dashes/quotes from the original scrape's
+  double-encoding) were normalized to proper UTF-8 across all records.
 
-## Repair strategy (future work — do NOT hand-shuffle blindly)
+## Remaining (by design)
 
-1. External truth is required: the printed 2024 Monster Manual (or a clean
-   scrape). The Living-scroll source is itself corrupted — re-running any
-   import reproduces the problem.
-2. Mechanical aids that work: (a) self-reference scan — many prose blocks name
-   their true owner ("the wraith", "the oni"); generic ones ("the elemental",
-   "the dragon") don't; (b) plausibility scan — `creatureType`/`cr` vs the
-   record name; (c) the missing-name list above shows where chains begin/end.
-3. Re-home content to the correct ids, create the missing records, then
-   spot-verify every touched record against the book.
-
-Until then the bestiary is fine as a BROWSE demo but not as a rules-accurate
-reference.
+- The one-line flavor descriptions are intentionally brief originals, not the
+  book's prose. This is a licensing boundary, not a data defect.
+- Machine-readable `actions` automation is still intentionally NOT shipped
+  (combat is out of scope for this addon — see AGENTS.md "Settled decisions").

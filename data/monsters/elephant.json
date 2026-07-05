@@ -3,23 +3,32 @@
   "kind": "monster",
   "name": "Elephant",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
+  "cr": "4 (XP 1,100; PB +2)",
+  "crValue": 4,
   "creatureType": "Beast",
-  "size": "Large",
-  "type": "Large Beast",
+  "size": "Huge",
+  "type": "Huge Beast",
   "alignment": "Unaligned",
-  "ac": "10",
-  "hp": "11 (2d10)",
-  "speed": "50 ft.",
+  "ac": "12",
+  "hp": "76 (8d12 + 24)",
+  "speed": "40 ft.",
   "stats": {
-    "STR": 16,
-    "DEX": 10,
-    "CON": 11,
-    "INT": 2,
-    "WIS": 10,
+    "STR": 22,
+    "DEX": 9,
+    "CON": 17,
+    "INT": 3,
+    "WIS": 11,
     "CHA": 6
   },
-  "traits": [],
-  "text": "# Elephant\n\n*Large Beast, Unaligned*\n\n### Actions\n\n**Ram.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage. If the target is a Large or smaller creature and the elk moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 (1d6) Bludgeoning damage and has the Prone condition."
+  "traits": [
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Elephant\n\n*Huge Beast, Unaligned*\n\nA colossal grey herbivore that tramples threats to its herd.\n\n### Actions\n\n**Gore.** Melee Attack Roll: +8, reach 5 ft. Hit: 15 (2d8 + 6) Piercing damage. If the target is a Huge or smaller creature and the elephant moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.\n\n**Trample.** Dexterity Saving Throw: DC 16, one creature within 5 feet that has the Prone condition. Failure: 17 (2d10 + 6) Bludgeoning damage. Success: Half damage."
 }

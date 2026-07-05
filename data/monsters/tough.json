@@ -22,9 +22,17 @@
   },
   "traits": [
     {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Common"
+    },
+    {
       "name": "Pack Tactics",
       "text": "The tough has Advantage on an attack roll against a creature if at least one of the tough’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
     }
   ],
-  "text": "# Tough\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Mace.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage.\n\n**Heavy Crossbow.** Ranged Attack Roll: +3, range 100/400 ft. Hit: 6 (1d10 + 1) Piercing damage."
+  "text": "# Tough\n\n*Medium or Small Humanoid, Neutral*\n\nA hired bruiser paid to make problems disappear.\n\n### Actions\n\n**Mace.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage.\n\n**Heavy Crossbow.** Ranged Attack Roll: +3, range 100/400 ft. Hit: 6 (1d10 + 1) Piercing damage."
 }

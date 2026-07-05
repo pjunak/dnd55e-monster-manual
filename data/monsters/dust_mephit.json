@@ -22,6 +22,10 @@
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Perception +2, Stealth +4"
+    },
+    {
       "name": "Vulnerabilities",
       "text": "Fire"
     },
@@ -30,9 +34,17 @@
       "text": "Poison; Exhaustion, Poisoned"
     },
     {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "Primordial (Auran, Terran)"
+    },
+    {
       "name": "Death Burst",
       "text": "The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Bludgeoning damage. Success: Half damage."
     }
   ],
-  "text": "# Dust Mephit\n\n*Small Elemental, Neutral Evil*\n\n### Actions\n\n**Claw.** Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Slashing damage.\n\n**Blinding Breath (Recharge 6).** Dexterity Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: The target has the Blinded condition until the end of the mephit’s next turn."
+  "text": "# Dust Mephit\n\n*Small Elemental, Neutral Evil*\n\nA sneering imp of grit and grave-dust that bursts into blinding powder when slain.\n\n### Actions\n\n**Claw.** Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Slashing damage.\n\n**Blinding Breath (Recharge 6).** Dexterity Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: The target has the Blinded condition until the end of the mephit’s next turn."
 }

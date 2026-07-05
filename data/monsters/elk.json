@@ -3,28 +3,36 @@
   "kind": "monster",
   "name": "Elk",
   "edition": "2024",
-  "cr": "1/8 (XP 25; PB +2)",
-  "crValue": 0.125,
-  "creatureType": "Monstrosity",
-  "size": "Tiny",
-  "type": "Tiny Monstrosity",
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
+  "creatureType": "Beast",
+  "size": "Large",
+  "type": "Large Beast",
   "alignment": "Unaligned",
-  "ac": "14",
-  "hp": "5 (2d4)",
-  "speed": "30 ft., Fly 60 ft., Swim 30 ft.",
+  "ac": "10",
+  "hp": "11 (2d10)",
+  "speed": "50 ft.",
   "stats": {
-    "STR": 4,
-    "DEX": 15,
+    "STR": 16,
+    "DEX": 10,
     "CON": 11,
     "INT": 2,
-    "WIS": 12,
-    "CHA": 5
+    "WIS": 10,
+    "CHA": 6
   },
   "traits": [
     {
-      "name": "Flyby",
-      "text": "The snake doesn’t provoke an Opportunity Attack when it flies out of an enemy’s reach."
+      "name": "Skills",
+      "text": "Perception +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Elk\n\n*Tiny Monstrosity, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage plus 5 (2d4) Poison damage."
+  "text": "# Elk\n\n*Large Beast, Unaligned*\n\nA proud antlered grazer of cold forests and high meadows.\n\n### Actions\n\n**Ram.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage. If the target is a Large or smaller creature and the elk moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 (1d6) Bludgeoning damage and has the Prone condition."
 }

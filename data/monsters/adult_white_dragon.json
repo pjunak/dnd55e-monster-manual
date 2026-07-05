@@ -22,8 +22,24 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +5, Wis +6"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +11, Stealth +5"
+    },
+    {
       "name": "Immunities",
       "text": "Cold"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Darkvision 120 ft.; Passive Perception 21"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Ice Walk",
@@ -34,5 +50,5 @@
       "text": "If the dragon fails a saving throw, it can choose to succeed instead."
     }
   ],
-  "text": "# Adult White Dragon\n\n*Huge Dragon (Chromatic), Chaotic Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +11, reach 10 ft. Hit: 13 (2d6 + 6) Slashing damage plus 4 (1d8) Cold damage.\n\n**Cold Breath (Recharge 5–6).** Constitution Saving Throw: DC 19, each creature in a 60-foot Cone. Failure: 54 (12d8) Cold damage. Success: Half damage.\n\n**Freezing Burst.** Constitution Saving Throw: DC 14, each creature in a 30-foot-radius Sphere centered on a point the dragon can see within 120 feet. Failure: 7 (2d6) Cold damage, and the target’s Speed is 0 until the end of the target’s next turn. Failure or Success: The dragon can’t take this action again until the start of its next turn."
+  "text": "# Adult White Dragon\n\n*Huge Dragon (Chromatic), Chaotic Evil*\n\nAn adult white dragon in the full flush of its might: the most feral of chromatic dragons, a glacier-hunting predator of primal hunger.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +11, reach 10 ft. Hit: 13 (2d6 + 6) Slashing damage plus 4 (1d8) Cold damage.\n\n**Cold Breath (Recharge 5–6).** Constitution Saving Throw: DC 19, each creature in a 60-foot Cone. Failure: 54 (12d8) Cold damage. Success: Half damage.\n\n**Freezing Burst.** Constitution Saving Throw: DC 14, each creature in a 30-foot-radius Sphere centered on a point the dragon can see within 120 feet. Failure: 7 (2d6) Cold damage, and the target’s Speed is 0 until the end of the target’s next turn. Failure or Success: The dragon can’t take this action again until the start of its next turn."
 }

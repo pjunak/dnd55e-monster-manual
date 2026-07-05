@@ -3,36 +3,36 @@
   "kind": "monster",
   "name": "Chimera",
   "edition": "2024",
-  "cr": "4 (XP 1,100; PB +2)",
-  "crValue": 4,
-  "creatureType": "Aberration",
+  "cr": "6 (XP 2,300; PB +3)",
+  "crValue": 6,
+  "creatureType": "Monstrosity",
   "size": "Large",
-  "type": "Large Aberration",
+  "type": "Large Monstrosity",
   "alignment": "Chaotic Evil",
-  "ac": "16",
-  "hp": "76 (9d10 + 27)",
-  "speed": "30 ft., Swim 30 ft.",
+  "ac": "14",
+  "hp": "114 (12d10 + 48)",
+  "speed": "30 ft., Fly 60 ft.",
   "stats": {
     "STR": 19,
-    "DEX": 10,
-    "CON": 16,
-    "INT": 5,
-    "WIS": 11,
-    "CHA": 5
+    "DEX": 11,
+    "CON": 19,
+    "INT": 3,
+    "WIS": 14,
+    "CHA": 10
   },
   "traits": [
     {
-      "name": "Immunities",
-      "text": "Poison; Poisoned"
+      "name": "Skills",
+      "text": "Perception +8"
     },
     {
-      "name": "Amphibious",
-      "text": "The chuul can breathe air and water."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 18"
     },
     {
-      "name": "Sense Magic",
-      "text": "The chuul senses magic within 120 feet of itself. This trait otherwise works like the Detect Magic spell but isn’t itself magical."
+      "name": "Languages",
+      "text": "Understands Draconic but can't speak"
     }
   ],
-  "text": "# Chimera\n\n*Large Aberration, Chaotic Evil*\n\n### Actions\n\n**Pincer.** Melee Attack Roll: +6, reach 10 ft. Hit: 9 (1d10 + 4) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two pincers.\n\n**Paralyzing Tentacles.** Constitution Saving Throw: DC 13, one creature Grappled by the chuul. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Poisoned, the target has the Paralyzed condition."
+  "text": "# Chimera\n\n*Large Monstrosity, Chaotic Evil*\n\nA three-headed monstrosity — dragon, lion, and goat — as vain and vicious as its draconic sire.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +7, reach 5 ft. Hit: 11 (2d6 + 4) Piercing damage, or 18 (4d6 + 4) Piercing damage if the chimera had Advantage on the attack roll.\n\n**Claw.** Melee Attack Roll: +7, reach 5 ft. Hit: 7 (1d6 + 4) Slashing damage.\n\n**Ram.** Melee Attack Roll: +7, reach 5 ft. Hit: 10 (1d12 + 4) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Prone condition.\n\n**Fire Breath (Recharge 5–6).** Dexterity Saving Throw: DC 15, each creature in a 15-foot Cone. Failure: 31 (7d8) Fire damage. Success: Half damage."
 }

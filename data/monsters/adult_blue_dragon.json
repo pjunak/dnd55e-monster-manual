@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Dex +5, Wis +7"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +12, Stealth +5"
+    },
+    {
       "name": "Immunities",
       "text": "Lightning"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Darkvision 120 ft.; Passive Perception 22"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Draconic"
     },
     {
       "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
       "text": "If the dragon fails a saving throw, it can choose to succeed instead."
     }
   ],
-  "text": "# Adult Blue Dragon\n\n*Huge Dragon (Chromatic), Lawful Evil*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +12, reach 10 ft. Hit: 16 (2d8 + 7) Slashing damage plus 5 (1d10) Lightning damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 19, each creature in a 90-foot-long, 5-foot-wide Line. Failure: 60 (11d10) Lightning damage. Success: Half damage."
+  "text": "# Adult Blue Dragon\n\n*Huge Dragon (Chromatic), Lawful Evil*\n\nAn adult blue dragon in the full flush of its might: a lightning-wreathed schemer that lairs beneath shifting desert sands.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +12, reach 10 ft. Hit: 16 (2d8 + 7) Slashing damage plus 5 (1d10) Lightning damage.\n\n**Lightning Breath (Recharge 5–6).** Dexterity Saving Throw: DC 19, each creature in a 90-foot-long, 5-foot-wide Line. Failure: 60 (11d10) Lightning damage. Success: Half damage."
 }

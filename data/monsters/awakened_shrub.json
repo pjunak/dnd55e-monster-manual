@@ -28,7 +28,15 @@
     {
       "name": "Resistances",
       "text": "Piercing"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus one other language"
     }
   ],
-  "text": "# Awakened Shrub\n\n*Small Plant, Neutral*"
+  "text": "# Awakened Shrub\n\nAn ordinary shrub granted mobility and dim awareness by magic, shuffling about on root-feet.\n\n*Small Plant, Neutral*"
 }

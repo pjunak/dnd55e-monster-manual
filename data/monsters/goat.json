@@ -6,20 +6,37 @@
   "cr": "0 (XP 10; PB +2)",
   "crValue": 0,
   "creatureType": "Beast",
-  "size": "Tiny",
-  "type": "Tiny Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "13",
-  "hp": "1 (1d4 − 1)",
-  "speed": "10 ft., Fly 60 ft.",
+  "ac": "10",
+  "hp": "4 (1d8)",
+  "speed": "40 ft., Climb 30 ft.",
   "stats": {
-    "STR": 5,
-    "DEX": 16,
-    "CON": 8,
+    "STR": 11,
+    "DEX": 10,
+    "CON": 11,
     "INT": 2,
-    "WIS": 14,
-    "CHA": 6
+    "WIS": 10,
+    "CHA": 5
   },
-  "traits": [],
-  "text": "# Goat\n\n*Tiny Beast, Unaligned*"
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Str +2"
+    },
+    {
+      "name": "Skills",
+      "text": "Perception +2"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 12"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Goat\n\n*Medium Beast, Unaligned*\n\nA sure-footed grazer that butts anything that annoys it.\n\n### Actions\n\n**Ram.** Melee Attack Roll: +2, reach 5 ft. Hit: 1 Bludgeoning damage, or 2 (1d4) Bludgeoning damage if the goat moved 20+ feet straight toward the target immediately before the hit."
 }

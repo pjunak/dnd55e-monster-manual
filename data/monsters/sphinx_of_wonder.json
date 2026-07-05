@@ -22,13 +22,25 @@
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Arcana +4, Religion +4, Stealth +5"
+    },
+    {
       "name": "Resistances",
       "text": "Necrotic, Psychic, Radiant"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 11"
+    },
+    {
+      "name": "Languages",
+      "text": "Celestial, Common"
     },
     {
       "name": "Magic Resistance",
       "text": "The sphinx has Advantage on saving throws against spells and other magical effects."
     }
   ],
-  "text": "# Sphinx of Wonder\n\n*Tiny Celestial, Lawful Good*\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage."
+  "text": "# Sphinx of Wonder\n\n*Tiny Celestial, Lawful Good*\n\nA playful cat-sized sphinx trailing motes of radiant curiosity.\n\n### Actions\n\n**Rend.** Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage."
 }

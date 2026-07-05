@@ -22,13 +22,25 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Wis +0"
+    },
+    {
       "name": "Immunities",
       "text": "Poison; Exhaustion, Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 8"
+    },
+    {
+      "name": "Languages",
+      "text": "Understands Common plus one other language but can't speak"
     },
     {
       "name": "Undead Fortitude",
       "text": "If damage reduces the zombie to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead."
     }
   ],
-  "text": "# Zombie\n\n*Medium Undead, Neutral Evil*\n\n### Actions\n\n**Slam.** Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Bludgeoning damage."
+  "text": "# Zombie\n\n*Medium Undead, Neutral Evil*\n\nA shambling corpse animated by dark magic, relentless and unfeeling.\n\n### Actions\n\n**Slam.** Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Bludgeoning damage."
 }

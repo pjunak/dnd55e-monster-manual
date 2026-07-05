@@ -5,34 +5,30 @@
   "edition": "2024",
   "cr": "3 (XP 700; PB +2)",
   "crValue": 3,
-  "creatureType": "Fiend (Devil)",
+  "creatureType": "Monstrosity",
   "size": "Medium",
-  "type": "Medium Fiend (Devil)",
-  "alignment": "Lawful Evil",
-  "ac": "13",
-  "hp": "58 (9d8 + 18)",
-  "speed": "30 ft.",
+  "type": "Medium Monstrosity",
+  "alignment": "Unaligned",
+  "ac": "15",
+  "hp": "52 (8d8 + 16)",
+  "speed": "20 ft.",
   "stats": {
     "STR": 16,
-    "DEX": 15,
+    "DEX": 8,
     "CON": 15,
-    "INT": 9,
-    "WIS": 11,
-    "CHA": 14
+    "INT": 2,
+    "WIS": 8,
+    "CHA": 7
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Cold"
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 9"
     },
     {
-      "name": "Immunities",
-      "text": "Fire, Poison; Frightened, Poisoned"
-    },
-    {
-      "name": "Magic Resistance",
-      "text": "The devil has Advantage on saving throws against spells and other magical effects."
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Basilisk\n\n*Medium Fiend (Devil), Lawful Evil*\n\n### Actions\n\n**Beard.** Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage, and the target has the Poisoned condition until the start of the devil’s next turn. Until this poison ends, the target can’t regain Hit Points.\n\n**Infernal Glaive.** Melee Attack Roll: +5, reach 10 ft. Hit: 8 (1d10 + 3) Slashing damage. If the target is a creature and doesn’t already have an infernal wound, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target receives an infernal wound. While wounded, the target loses 5 (1d10) Hit Points at the start of each of its turns. The wound closes after 1 minute, after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 12 Wisdom (Medicine) check."
+  "text": "# Basilisk\n\n*Medium Monstrosity, Unaligned*\n\nAn eight-legged reptile whose gaze slowly turns living flesh to stone.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Piercing damage plus 7 (2d6) Poison damage.\n\n**Petrifying Gaze (Recharge 4–6).** Constitution Saving Throw: DC 12, each creature in a 30-foot Cone. If the basilisk sees its reflection in the Cone, the basilisk must make this save. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition."
 }

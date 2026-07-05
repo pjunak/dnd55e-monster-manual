@@ -3,28 +3,40 @@
   "kind": "monster",
   "name": "Cloud Giant",
   "edition": "2024",
-  "cr": "1/2 (XP 100; PB +2)",
-  "crValue": 0.5,
-  "creatureType": "Monstrosity",
-  "size": "Small",
-  "type": "Small Monstrosity",
-  "alignment": "Unaligned",
-  "ac": "11",
-  "hp": "22 (5d6 + 5)",
-  "speed": "20 ft., Fly 40 ft.",
+  "cr": "9 (XP 5,000; PB +4)",
+  "crValue": 9,
+  "creatureType": "Giant",
+  "size": "Huge",
+  "type": "Huge Giant",
+  "alignment": "Neutral",
+  "ac": "14",
+  "hp": "200 (16d12 + 96)",
+  "speed": "40 ft., Fly 20 ft. (hover)",
   "stats": {
-    "STR": 6,
-    "DEX": 12,
-    "CON": 12,
-    "INT": 2,
-    "WIS": 13,
-    "CHA": 5
+    "STR": 27,
+    "DEX": 10,
+    "CON": 22,
+    "INT": 12,
+    "WIS": 16,
+    "CHA": 16
   },
   "traits": [
     {
-      "name": "Immunities",
-      "text": "Petrified"
+      "name": "Saving Throws",
+      "text": "Con +10, Wis +7"
+    },
+    {
+      "name": "Skills",
+      "text": "Insight +7, Perception +11"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 21"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Giant"
     }
   ],
-  "text": "# Cloud Giant\n\n*Small Monstrosity, Unaligned*\n\n### Actions\n\n**Petrifying Bite.** Melee Attack Roll: +3, reach 5 ft. Hit: 3 (1d4 + 1) Piercing damage. If the target is a creature, it is subjected to the following effect. Constitution Saving Throw: DC 11. First Failure: The target has the Restrained condition. The target repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition, instead of the Restrained condition, for 24 hours."
+  "text": "# Cloud Giant\n\n*Huge Giant, Neutral*\n\nA haughty giant of drifting castles who measures worth in treasure and grand wagers.\n\n### Actions\n\n**Thunderous Mace.** Melee Attack Roll: +12, reach 10 ft. Hit: 21 (3d8 + 8) Bludgeoning damage plus 7 (2d6) Thunder damage.\n\n**Thundercloud.** Ranged Attack Roll: +12, range 240 ft. Hit: 18 (3d6 + 8) Thunder damage, and the target has the Incapacitated condition until the end of its next turn."
 }

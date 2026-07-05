@@ -24,7 +24,15 @@
     {
       "name": "Immunities",
       "text": "Poison, Psychic; Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned"
+    },
+    {
+      "name": "Senses",
+      "text": "Blindsight 60 ft.; Passive Perception 6"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Animated Armor\n\n*Medium Construct, Unaligned*\n\n### Actions\n\n**Slam.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage."
+  "text": "# Animated Armor\n\n*Medium Construct, Unaligned*\n\nAn empty suit of plate given purpose by an animating enchantment, clanking tirelessly at its appointed post.\n\n### Actions\n\n**Slam.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Bludgeoning damage."
 }

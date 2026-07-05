@@ -22,13 +22,29 @@
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Int +9, Wis +6"
+    },
+    {
+      "name": "Skills",
+      "text": "Arcana +13, History +9, Perception +6"
+    },
+    {
       "name": "Immunities",
       "text": "Psychic; Charmed (with Mind Blank)"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 16"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus five other languages"
     },
     {
       "name": "Magic Resistance",
       "text": "The archmage has Advantage on saving throws against spells and other magical effects."
     }
   ],
-  "text": "# Archmage\n\n*Medium or Small Humanoid (Wizard), Neutral*\n\n### Actions\n\n**Arcane Burst.** Melee or Ranged Attack Roll: +9, reach 5 ft. or range 150 ft. Hit: 27 (4d10 + 5) Force damage."
+  "text": "# Archmage\n\n*Medium or Small Humanoid (Wizard), Neutral*\n\nA master of the arcane arts whose decades of study answer nearly any threat with the perfect spell.\n\n### Actions\n\n**Arcane Burst.** Melee or Ranged Attack Roll: +9, reach 5 ft. or range 150 ft. Hit: 27 (4d10 + 5) Force damage."
 }

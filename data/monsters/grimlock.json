@@ -3,32 +3,36 @@
   "kind": "monster",
   "name": "Grimlock",
   "edition": "2024",
-  "cr": "10 (XP 5,900; PB +4)",
-  "crValue": 10,
-  "creatureType": "Celestial",
-  "size": "Large",
-  "type": "Large Celestial",
-  "alignment": "Lawful Good",
-  "ac": "18",
-  "hp": "136 (16d10 + 48)",
-  "speed": "40 ft., Climb 40 ft., Swim 40 ft.",
+  "cr": "1/4 (XP 50; PB +2)",
+  "crValue": 0.25,
+  "creatureType": "Aberration",
+  "size": "Medium",
+  "type": "Medium Aberration",
+  "alignment": "Neutral Evil",
+  "ac": "11",
+  "hp": "11 (2d8 + 2)",
+  "speed": "30 ft., Climb 30 ft.",
   "stats": {
-    "STR": 19,
-    "DEX": 18,
-    "CON": 16,
-    "INT": 16,
-    "WIS": 19,
-    "CHA": 18
+    "STR": 16,
+    "DEX": 12,
+    "CON": 12,
+    "INT": 9,
+    "WIS": 8,
+    "CHA": 6
   },
   "traits": [
     {
-      "name": "Immunities",
-      "text": "Poison; Charmed, Paralyzed, Poisoned, Restrained"
+      "name": "Skills",
+      "text": "Athletics +5, Perception +3, Stealth +5"
     },
     {
-      "name": "Celestial Restoration",
-      "text": "If the naga dies, it returns to life in 1d6 days and regains all its Hit Points unless Dispel Evil and Good is cast on its remains."
+      "name": "Senses",
+      "text": "Blindsight 30 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
     }
   ],
-  "text": "# Grimlock\n\n*Large Celestial, Lawful Good*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +8, reach 10 ft. Hit: 17 (2d12 + 4) Piercing damage plus 22 (4d10) Poison damage.\n\n**Poisonous Spittle.** Constitution Saving Throw: DC 16, one creature the naga can see within 60 feet. Failure: 31 (7d8) Poison damage, and the target has the Blinded condition until the start of the naga’s next turn. Success: Half damage only."
+  "text": "# Grimlock\n\n*Medium Aberration, Neutral Evil*\n\nA sightless subterranean hunter that stalks by scent and sound alone.\n\n### Actions\n\n**Bone Cudgel.** Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage plus 2 (1d4) Psychic damage."
 }

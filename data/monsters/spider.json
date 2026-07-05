@@ -3,36 +3,44 @@
   "kind": "monster",
   "name": "Spider",
   "edition": "2024",
-  "cr": "1/4 (XP 50; PB +2)",
-  "crValue": 0.25,
-  "creatureType": "Swarm of Tiny Beasts",
-  "size": "Large",
-  "type": "Large Swarm of Tiny Beasts",
+  "cr": "0 (XP 10; PB +2)",
+  "crValue": 0,
+  "creatureType": "Beast",
+  "size": "Tiny",
+  "type": "Tiny Beast",
   "alignment": "Unaligned",
   "ac": "12",
-  "hp": "11 (2d10)",
-  "speed": "5 ft., Fly 30 ft.",
+  "hp": "1 (1d4 − 1)",
+  "speed": "20 ft., Climb 20 ft.",
   "stats": {
-    "STR": 5,
-    "DEX": 15,
-    "CON": 10,
-    "INT": 2,
-    "WIS": 12,
-    "CHA": 4
+    "STR": 2,
+    "DEX": 14,
+    "CON": 8,
+    "INT": 1,
+    "WIS": 10,
+    "CHA": 2
   },
   "traits": [
     {
-      "name": "Resistances",
-      "text": "Bludgeoning, Piercing, Slashing"
+      "name": "Skills",
+      "text": "Stealth +4"
     },
     {
-      "name": "Immunities",
-      "text": "Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned"
+      "name": "Senses",
+      "text": "Darkvision 30 ft.; Passive Perception 10"
     },
     {
-      "name": "Swarm",
-      "text": "The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can’t regain Hit Points or gain Temporary Hit Points."
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Web Walker",
+      "text": "The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web."
     }
   ],
-  "text": "# Spider\n\n*Large Swarm of Tiny Beasts, Unaligned*\n\n### Actions\n\n**Bites.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (2d4) Piercing damage, or 2 (1d4) Piercing damage if the swarm is Bloodied."
+  "text": "# Spider\n\n*Tiny Beast, Unaligned*\n\nA common web-spinner with a venomous bite.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage plus 2 (1d4) Poison damage."
 }

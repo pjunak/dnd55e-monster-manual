@@ -6,20 +6,37 @@
   "cr": "0 (XP 10; PB +2)",
   "crValue": 0,
   "creatureType": "Beast",
-  "size": "Small",
-  "type": "Small Beast",
+  "size": "Medium",
+  "type": "Medium Beast",
   "alignment": "Unaligned",
-  "ac": "12",
-  "hp": "3 (1d6)",
-  "speed": "40 ft.",
+  "ac": "11",
+  "hp": "5 (1d8 + 1)",
+  "speed": "50 ft.",
   "stats": {
-    "STR": 8,
-    "DEX": 15,
-    "CON": 11,
-    "INT": 3,
+    "STR": 11,
+    "DEX": 13,
+    "CON": 12,
+    "INT": 2,
     "WIS": 12,
-    "CHA": 6
+    "CHA": 5
   },
-  "traits": [],
-  "text": "# Hyena\n\n*Small Beast, Unaligned*"
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Perception +3"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 13"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The hyena has Advantage on an attack roll against a creature if at least one of the hyena’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+    }
+  ],
+  "text": "# Hyena\n\n*Medium Beast, Unaligned*\n\nA cackling scavenger bold in packs.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +2, reach 5 ft. Hit: 3 (1d6) Piercing damage."
 }

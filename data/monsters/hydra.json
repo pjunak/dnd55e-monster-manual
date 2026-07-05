@@ -3,36 +3,52 @@
   "kind": "monster",
   "name": "Hydra",
   "edition": "2024",
-  "cr": "14 (XP 11,500; PB +5)",
-  "crValue": 14,
-  "creatureType": "Fiend (Devil)",
-  "size": "Large",
-  "type": "Large Fiend (Devil)",
-  "alignment": "Lawful Evil",
-  "ac": "18",
-  "hp": "228 (24d10 + 96)",
-  "speed": "40 ft.",
+  "cr": "8 (XP 3,900; PB +3)",
+  "crValue": 8,
+  "creatureType": "Monstrosity",
+  "size": "Huge",
+  "type": "Huge Monstrosity",
+  "alignment": "Unaligned",
+  "ac": "15",
+  "hp": "184 (16d12 + 80)",
+  "speed": "40 ft., Swim 40 ft.",
   "stats": {
-    "STR": 21,
-    "DEX": 14,
-    "CON": 18,
-    "INT": 18,
-    "WIS": 15,
-    "CHA": 18
+    "STR": 20,
+    "DEX": 12,
+    "CON": 20,
+    "INT": 2,
+    "WIS": 10,
+    "CHA": 7
   },
   "traits": [
     {
+      "name": "Skills",
+      "text": "Perception +6"
+    },
+    {
       "name": "Immunities",
-      "text": "Cold, Fire, Poison; Poisoned"
+      "text": "Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious"
     },
     {
-      "name": "Diabolical Restoration",
-      "text": "If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 16"
     },
     {
-      "name": "Magic Resistance",
-      "text": "The devil has Advantage on saving throws against spells and other magical effects."
+      "name": "Languages",
+      "text": "None"
+    },
+    {
+      "name": "Hold Breath",
+      "text": "The hydra can hold its breath for 1 hour."
+    },
+    {
+      "name": "Multiple Heads",
+      "text": "The hydra has five heads. Whenever the hydra takes 25 damage or more on a single turn, one of its heads dies. The hydra dies if all its heads are dead. At the end of each of its turns when it has at least one living head, the hydra grows two heads for each of its heads that died since its last turn, unless it has taken Fire damage since its last turn. The hydra regains 20 Hit Points when it grows new heads."
+    },
+    {
+      "name": "Reactive Heads",
+      "text": "For each head the hydra has beyond one, it gets an extra Reaction that can be used only for Opportunity Attacks."
     }
   ],
-  "text": "# Hydra\n\n*Large Fiend (Devil), Lawful Evil*\n\n### Actions\n\n**Ice Spear.** Melee or Ranged Attack Roll: +10, reach 5 ft. or range 30/120 ft. Hit: 14 (2d8 + 5) Piercing damage plus 10 (3d6) Cold damage. Until the end of its next turn, the target can’t take a Bonus Action or Reaction, its Speed decreases by 10 feet, and it can move or take one action on its turn, not both. Hit or Miss: The spear magically returns to the devil’s hand immediately after a ranged attack.\n\n**Tail.** Melee Attack Roll: +10, reach 10 ft. Hit: 15 (3d6 + 5) Bludgeoning damage plus 18 (4d8) Cold damage."
+  "text": "# Hydra\n\n*Huge Monstrosity, Unaligned*\n\nA many-headed reptilian horror that grows two heads for each one severed.\n\n### Actions\n\n**Bite.** Melee Attack Roll: +8, reach 10 ft. Hit: 10 (1d10 + 5) Piercing damage."
 }

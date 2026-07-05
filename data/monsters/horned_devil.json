@@ -3,40 +3,52 @@
   "kind": "monster",
   "name": "Horned Devil",
   "edition": "2024",
-  "cr": "8 (XP 3,900; PB +3)",
-  "crValue": 8,
-  "creatureType": "Monstrosity",
-  "size": "Huge",
-  "type": "Huge Monstrosity",
-  "alignment": "Unaligned",
-  "ac": "15",
-  "hp": "184 (16d12 + 80)",
-  "speed": "40 ft., Swim 40 ft.",
+  "cr": "11 (XP 7,200; PB +4)",
+  "crValue": 11,
+  "creatureType": "Fiend (Devil)",
+  "size": "Large",
+  "type": "Large Fiend (Devil)",
+  "alignment": "Lawful Evil",
+  "ac": "18",
+  "hp": "199 (19d10 + 95)",
+  "speed": "30 ft., Fly 60 ft.",
   "stats": {
-    "STR": 20,
-    "DEX": 12,
-    "CON": 20,
-    "INT": 2,
-    "WIS": 10,
-    "CHA": 7
+    "STR": 22,
+    "DEX": 17,
+    "CON": 21,
+    "INT": 12,
+    "WIS": 16,
+    "CHA": 18
   },
   "traits": [
     {
+      "name": "Saving Throws",
+      "text": "Str +10, Dex +7, Wis +7, Cha +8"
+    },
+    {
+      "name": "Resistances",
+      "text": "Cold"
+    },
+    {
       "name": "Immunities",
-      "text": "Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious"
+      "text": "Fire, Poison; Poisoned"
     },
     {
-      "name": "Hold Breath",
-      "text": "The hydra can hold its breath for 1 hour."
+      "name": "Senses",
+      "text": "Darkvision 150 ft.; Passive Perception 13"
     },
     {
-      "name": "Multiple Heads",
-      "text": "The hydra has five heads. Whenever the hydra takes 25 damage or more on a single turn, one of its heads dies. The hydra dies if all its heads are dead. At the end of each of its turns when it has at least one living head, the hydra grows two heads for each of its heads that died since its last turn, unless it has taken Fire damage since its last turn. The hydra regains 20 Hit Points when it grows new heads."
+      "name": "Languages",
+      "text": "Infernal; telepathy 120 ft."
     },
     {
-      "name": "Reactive Heads",
-      "text": "For each head the hydra has beyond one, it gets an extra Reaction that can be used only for Opportunity Attacks."
+      "name": "Diabolical Restoration",
+      "text": "If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The devil has Advantage on saving throws against spells and other magical effects."
     }
   ],
-  "text": "# Horned Devil\n\n*Huge Monstrosity, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +8, reach 10 ft. Hit: 10 (1d10 + 5) Piercing damage."
+  "text": "# Horned Devil\n\n*Large Fiend (Devil), Lawful Evil*\n\nA winged infernal brute whose hurled flame and barbed tail break sieges.\n\n### Actions\n\n**Searing Fork.** Melee Attack Roll: +10, reach 10 ft. Hit: 15 (2d8 + 6) Piercing damage plus 9 (2d8) Fire damage.\n\n**Hurl Flame.** Ranged Attack Roll: +8, range 150 ft. Hit: 26 (5d8 + 4) Fire damage. If the target is a flammable object that isn’t being worn or carried, it starts burning.\n\n**Infernal Tail.** Dexterity Saving Throw: DC 17, one creature the devil can see within 10 feet. Failure: 10 (1d8 + 6) Necrotic damage, and the target receives an infernal wound if it doesn’t have one. While wounded, the target loses 10 (3d6) Hit Points at the start of each of its turns. The wound closes after 1 minute, after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 17 Wisdom (Medicine) check."
 }

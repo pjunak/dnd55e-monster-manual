@@ -20,6 +20,19 @@
     "WIS": 12,
     "CHA": 14
   },
-  "traits": [],
-  "text": "# Pirate\n\n*Medium or Small Humanoid, Neutral*\n\n### Actions\n\n**Dagger.** Melee or Ranged Attack Roll: +5, reach 5 ft. or range 20/60 ft. Hit: 5 (1d4 + 3) Piercing damage.\n\n**Enthralling Panache.** Wisdom Saving Throw: DC 12, one creature the pirate can see within 30 feet. Failure: The target has the Charmed condition until the start of the pirate’s next turn."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Dex +5, Cha +4"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 11"
+    },
+    {
+      "name": "Languages",
+      "text": "Common plus one other language"
+    }
+  ],
+  "text": "# Pirate\n\n*Medium or Small Humanoid, Neutral*\n\nA sea-raiding freebooter loyal to plunder first.\n\n### Actions\n\n**Dagger.** Melee or Ranged Attack Roll: +5, reach 5 ft. or range 20/60 ft. Hit: 5 (1d4 + 3) Piercing damage.\n\n**Enthralling Panache.** Wisdom Saving Throw: DC 12, one creature the pirate can see within 30 feet. Failure: The target has the Charmed condition until the start of the pirate’s next turn."
 }

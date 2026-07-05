@@ -20,6 +20,19 @@
     "WIS": 8,
     "CHA": 8
   },
-  "traits": [],
-  "text": "# Goblin Warrior\n\n*Small Fey (Goblinoid), Chaotic Neutral*\n\n### Actions\n\n**Scimitar.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, plus 2 (1d4) Slashing damage if the attack roll had Advantage.\n\n**Shortbow.** Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+  "traits": [
+    {
+      "name": "Skills",
+      "text": "Stealth +6"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 9"
+    },
+    {
+      "name": "Languages",
+      "text": "Common, Goblin"
+    }
+  ],
+  "text": "# Goblin Warrior\n\n*Small Fey (Goblinoid), Chaotic Neutral*\n\nA sneaky fey-touched raider fond of ambushes and hasty retreats.\n\n### Actions\n\n**Scimitar.** Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, plus 2 (1d4) Slashing damage if the attack roll had Advantage.\n\n**Shortbow.** Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, plus 2 (1d4) Piercing damage if the attack roll had Advantage."
 }

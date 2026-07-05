@@ -3,28 +3,56 @@
   "kind": "monster",
   "name": "Fire Elemental",
   "edition": "2024",
-  "cr": "9 (XP 5,000; PB +4)",
-  "crValue": 9,
-  "creatureType": "Giant",
-  "size": "Huge",
-  "type": "Huge Giant",
-  "alignment": "Lawful Evil",
-  "ac": "18",
-  "hp": "162 (13d12 + 78)",
-  "speed": "30 ft.",
+  "cr": "5 (XP 1,800; PB +3)",
+  "crValue": 5,
+  "creatureType": "Elemental",
+  "size": "Large",
+  "type": "Large Elemental",
+  "alignment": "Neutral",
+  "ac": "13",
+  "hp": "93 (11d10 + 33)",
+  "speed": "50 ft.",
   "stats": {
-    "STR": 25,
-    "DEX": 9,
-    "CON": 23,
-    "INT": 10,
-    "WIS": 14,
-    "CHA": 13
+    "STR": 10,
+    "DEX": 17,
+    "CON": 16,
+    "INT": 6,
+    "WIS": 10,
+    "CHA": 7
   },
   "traits": [
     {
+      "name": "Resistances",
+      "text": "Bludgeoning, Piercing, Slashing"
+    },
+    {
       "name": "Immunities",
-      "text": "Fire"
+      "text": "Fire, Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious"
+    },
+    {
+      "name": "Senses",
+      "text": "Darkvision 60 ft.; Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "Primordial (Ignan)"
+    },
+    {
+      "name": "Fire Aura",
+      "text": "At the end of each of the elemental’s turns, each creature in a 10-foot Emanation originating from the elemental takes 5 (1d10) Fire damage. Creatures and flammable objects in the Emanation start burning."
+    },
+    {
+      "name": "Fire Form",
+      "text": "The elemental can move through a space as narrow as 1 inch without expending extra movement to do so, and it can enter a creature’s space and stop there. The first time it enters a creature’s space on a turn, that creature takes 5 (1d10) Fire damage."
+    },
+    {
+      "name": "Illumination",
+      "text": "The elemental sheds Bright Light in a 30-foot radius and Dim Light for an additional 30 feet."
+    },
+    {
+      "name": "Water Susceptibility",
+      "text": "The elemental takes 3 (1d6) Cold damage for every 5 feet the elemental moves in water or for every gallon of water splashed on it."
     }
   ],
-  "text": "# Fire Elemental\n\n*Huge Giant, Lawful Evil*\n\n### Actions\n\n**Flame Sword.** Melee Attack Roll: +11, reach 10 ft. Hit: 21 (4d6 + 7) Slashing damage plus 10 (3d6) Fire damage.\n\n**Hammer Throw.** Ranged Attack Roll: +11, range 60/240 ft. Hit: 23 (3d10 + 7) Bludgeoning damage plus 4 (1d8) Fire damage, and the target is pushed up to 15 feet straight away from the giant and has Disadvantage on the next attack roll it makes before the end of its next turn."
+  "text": "# Fire Elemental\n\n*Large Elemental, Neutral*\n\nA capering pillar of living flame that ignites everything it touches.\n\n### Actions\n\n**Burn.** Melee Attack Roll: +6, reach 5 ft. Hit: 10 (2d6 + 3) Fire damage. If the target is a creature or a flammable object, it starts burning."
 }

@@ -3,23 +3,36 @@
   "kind": "monster",
   "name": "Mammoth",
   "edition": "2024",
-  "cr": "1/8 (XP 25; PB +2)",
-  "crValue": 0.125,
+  "cr": "6 (XP 2,300; PB +3)",
+  "crValue": 6,
   "creatureType": "Beast",
-  "size": "Medium",
-  "type": "Medium Beast",
+  "size": "Huge",
+  "type": "Huge Beast",
   "alignment": "Unaligned",
-  "ac": "12",
-  "hp": "5 (1d8 + 1)",
-  "speed": "40 ft.",
+  "ac": "13",
+  "hp": "126 (11d12 + 55)",
+  "speed": "50 ft.",
   "stats": {
-    "STR": 13,
-    "DEX": 14,
-    "CON": 12,
+    "STR": 24,
+    "DEX": 9,
+    "CON": 21,
     "INT": 3,
-    "WIS": 12,
-    "CHA": 7
+    "WIS": 11,
+    "CHA": 6
   },
-  "traits": [],
-  "text": "# Mammoth\n\n*Medium Beast, Unaligned*\n\n### Actions\n\n**Bite.** Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition."
+  "traits": [
+    {
+      "name": "Saving Throws",
+      "text": "Str +10, Con +8"
+    },
+    {
+      "name": "Senses",
+      "text": "Passive Perception 10"
+    },
+    {
+      "name": "Languages",
+      "text": "None"
+    }
+  ],
+  "text": "# Mammoth\n\n*Huge Beast, Unaligned*\n\nA tusked mountain of shaggy muscle from the frozen steppes.\n\n### Actions\n\n**Gore.** Melee Attack Roll: +10, reach 10 ft. Hit: 18 (2d10 + 7) Piercing damage. If the target is a Huge or smaller creature and the mammoth moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.\n\n**Trample.** Dexterity Saving Throw: DC 18, one creature within 5 feet that has the Prone condition. Failure: 29 (4d10 + 7) Bludgeoning damage. Success: Half damage."
 }
