@@ -211,9 +211,10 @@ export default function register(host) {
         <div class="page-header"><h1>${esc(t('misc.notFound'))}</h1></div>`;
     }
 
-    // Badge chips: size/type + alignment + speed.
+    // Badge chips: size/type + alignment + speed — host .codex-badge pills
+    // (the same component the PHB detail pages use; -accent = headline fact).
     const chips = [];
-    const chip = (txt, accent) => chips.push(`<span style="display:inline-flex;align-items:center;border:1px solid ${accent ? 'rgba(var(--accent-gold-rgb),.45)' : 'var(--border-subtle)'};color:${accent ? 'var(--accent-gold)' : 'var(--text-light)'};background:var(--bg-raised);border-radius:var(--radius-pill);padding:0.1rem var(--space-2);font-size:var(--text-xs)">${esc(txt)}</span>`);
+    const chip = (txt, accent) => chips.push(`<span class="codex-badge${accent ? ' codex-badge-accent' : ''}">${esc(txt)}</span>`);
     if (rec.type) chip(rec.type, true);
     if (rec.alignment) chip(rec.alignment);
     if (rec.speed) chip(`${t('label.speed')}: ${rec.speed}`);
