@@ -154,7 +154,6 @@ export default function register(host) {
       <div class="page-header"><h1>🐉 ${esc(t('page.title'))}
         <span style="color:var(--text-muted);font-size:var(--text-lg);font-weight:400">${esc(countLabel)}</span></h1></div>
       <p style="color:var(--text-muted);max-width:42rem">${esc(t('page.intro'))}</p>
-      ${!_loaded ? `<p style="color:var(--text-muted)">${esc(t('misc.loading'))}</p>` : ''}
       <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);align-items:center;margin:var(--space-3) 0">
         <input id="mm-search" class="edit-input" type="search" value="${esc(_q.search)}"
           placeholder="${esc(t('filter.searchPlaceholder'))}" style="flex:1 1 14rem;max-width:22rem"
@@ -166,8 +165,18 @@ export default function register(host) {
       </div>
       ${sorted.length
         ? `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:var(--space-1)">${sorted.map(itemLink).join('')}</div>`
-        : `<div style="color:var(--text-muted);font-size:var(--text-sm);padding:var(--space-3) 0">${esc(_loaded ? t('filter.noMatch') : t('misc.loading'))}</div>`}`;
+        : (_loaded
+          ? `<div style="color:var(--text-muted);font-size:var(--text-sm);padding:var(--space-3) 0">${esc(t('filter.noMatch'))}</div>`
+          : skelRows(8))}`;
   }
+
+  // Skeleton placeholders (the host .codex-skel shimmer) while the content fetch
+  // is in flight; the role=status wrapper keeps a screen-reader "Loading…"
+  // announcement. The shapes (row grid / prose lines) are this page's layout.
+  const skelBox = (style) => `<div class="codex-skel" aria-hidden="true" style="${style}"></div>`;
+  const skelWrap = (inner) => `<div role="status" aria-label="${esc(t('misc.loading'))}">${inner}</div>`;
+  const skelRows = (n) => skelWrap(`<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:var(--space-1)">${Array.from({ length: n }, () => skelBox('min-height:2.75rem')).join('')}</div>`);
+  const skelLines = () => skelWrap([95, 88, 92, 70, 83].map((w) => skelBox(`height:0.85rem;max-width:${w}%;margin-bottom:var(--space-2)`)).join(''));
 
   function itemLink(m) {
     const thumb = m.image
@@ -178,7 +187,9 @@ export default function register(host) {
     const sub = m.cr
       ? ` <span style="color:var(--text-muted);font-size:var(--text-xs)">· ${esc(t('monster.cr', { cr: crToken(m.cr) }))}${m.creatureType ? ' · ' + esc(m.creatureType) : ''}</span>`
       : (m.creatureType ? ` <span style="color:var(--text-muted);font-size:var(--text-xs)">· ${esc(m.creatureType)}</span>` : '');
-    return `<a href="#/bestiary/monster:${esc(m.id)}" style="display:flex;align-items:center;gap:var(--space-2);padding:var(--space-1) var(--space-2);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);color:var(--text-light);text-decoration:none;background:var(--bg-surface)">
+    // Whole row is one host <a class="codex-link-row"> — the same comfortable
+    // ~44px hover/focus-ringed target the PHB compendium uses (widgets.css).
+    return `<a href="#/bestiary/monster:${esc(m.id)}" class="codex-link-row">
       ${thumb}<span style="min-width:0"><span style="color:var(--text-parchment)">${esc(m.name || t('misc.unnamed'))}</span>${sub}</span></a>`;
   }
 
@@ -192,7 +203,7 @@ export default function register(host) {
       _ensureLoaded();
       return `${crumbBar(t('misc.loading'))}
         <div class="page-header"><h1>${esc(t('misc.loading'))}</h1></div>
-        <p style="color:var(--text-muted)">${esc(t('misc.loading'))}</p>`;
+        ${skelLines()}`;
     }
     const rec = kind === 'monster' ? getItem('monster', id) : null;
     if (!rec) {
@@ -207,12 +218,15 @@ export default function register(host) {
     if (rec.alignment) chip(rec.alignment);
     if (rec.speed) chip(`${t('label.speed')}: ${rec.speed}`);
 
-    // Headline stat tiles — the host's shared .codex-tile component. HP/CR
-    // values split their leading token big, the parenthetical small beneath.
+    // Headline stat tiles — the host's shared .codex-tile component, labelled
+    // with the same host stat glyphs the character sheet uses (h.icon →
+    // .codex-icon; feature-detected, so an older host just shows the text).
+    // HP/CR values split their leading token big, the parenthetical small beneath.
     const split = (s) => { const str = String(s || ''); const i = str.indexOf(' '); return i > 0 ? [str.slice(0, i), str.slice(i + 1)] : [str, '']; };
-    const tile = (label, value, sub, accent) => `
+    const ic = (name) => (typeof host.h.icon === 'function') ? host.h.icon(name, { size: 13 }) : '';
+    const tile = (label, value, sub, accent, glyph) => `
       <div class="codex-tile${accent ? ' codex-tile-accent' : ''}" style="max-width:11rem">
-        <div class="codex-tile-label">${esc(label)}</div>
+        <div class="codex-tile-label">${glyph ? ic(glyph) + ' ' : ''}${esc(label)}</div>
         <div class="codex-tile-value">${esc(value)}</div>
         ${sub ? `<div style="font-size:var(--text-xs);color:var(--text-muted);margin-top:1px">${esc(sub)}</div>` : ''}
       </div>`;
@@ -220,8 +234,8 @@ export default function register(host) {
     const [crMain, crSub] = split(rec.cr);
     const tiles = `
       <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-3) 0">
-        ${rec.ac != null ? tile(t('label.ac'), String(rec.ac), '', true) : ''}
-        ${rec.hp ? tile(t('label.hp'), hpMain, hpSub, true) : ''}
+        ${rec.ac != null ? tile(t('label.ac'), String(rec.ac), '', true, 'shield') : ''}
+        ${rec.hp ? tile(t('label.hp'), hpMain, hpSub, true, 'heart') : ''}
         ${rec.cr ? tile(t('label.cr'), crMain, crSub) : ''}
       </div>`;
 

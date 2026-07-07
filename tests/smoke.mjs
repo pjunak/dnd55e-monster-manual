@@ -80,9 +80,11 @@ test('bestiary: index sorts by CR and the detail renders the stat block', async 
   assert.match(idx, /CR 5/, 'CR sublabel');
   assert.match(idx, /mm-search/, 'search input on the list');
   assert.match(idx, /<select/, 'CR + type filter selects');
+  assert.match(idx, /class="codex-link-row"/, 'rows are the host whole-row link component');
   const mon = route.render('monster:aboleth');
   assert.match(mon, /Aboleth/);
   assert.match(mon, /codex-tile/, 'headline stats as host stat tiles');
+  assert.match(mon, /<svg class="codex-icon"/, 'AC/HP tiles carry the host stat glyphs');
   assert.match(mon, /Armor Class|Hit Points|Challenge Rating/, 'stat-block labels');
   assert.match(mon, /STR/, 'ability tiles');
   assert.match(mon, /\+2/, 'STR 14 → +2 modifier');
@@ -120,4 +122,8 @@ test('bestiary: degrades gracefully BEFORE the content fetch resolves', () => {
   const route = rec.routes.find(r => r.segment === 'bestiary');
   assert.match(route.render(''), /Loading…/);
   assert.match(route.render('monster:aboleth'), /Loading…/);
+  // The loading state is the host .codex-skel shimmer, announced via the
+  // role=status wrapper's aria-label (that's the Loading… matched above).
+  assert.match(route.render(''), /class="codex-skel"/, 'index pre-load shows skeleton rows');
+  assert.match(route.render('monster:aboleth'), /class="codex-skel"/, 'detail pre-load shows skeleton lines');
 });
